@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>邮件分析工具</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>上传.eml邮件文件进行分析</h2>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".eml" required>
+        <button type="submit">上传并分析</button>
+    </form>
+</body>
+</html> 

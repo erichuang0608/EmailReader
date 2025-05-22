@@ -1,0 +1,8 @@
+body { font-family: 'Segoe UI', 'Arial', sans-serif; background: #f9f9f9; margin: 0; padding: 2em; }
+h2 { color: #2d3a4b; }
+form { margin: 2em 0; }
+input[type="file"] { margin-bottom: 1em; }
+button { background: #0078d4; color: #fff; border: none; padding: 0.5em 1.5em; border-radius: 4px; cursor: pointer; }
+button:hover { background: #005fa3; }
+a { color: #0078d4; text-decoration: none; margin-top: 2em; display: inline-block; }
+a:hover { text-decoration: underline; } 

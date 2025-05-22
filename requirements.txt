@@ -1,0 +1,16 @@
+mail-parser
+pandas
+python-docx
+pytesseract
+PyMuPDF
+openpyxl
+azure-ai-ml
+requests
+python-dotenv
+loguru
+asyncio
+concurrent-log-handler
+fastapi
+uvicorn
+jinja2
+aiofiles 

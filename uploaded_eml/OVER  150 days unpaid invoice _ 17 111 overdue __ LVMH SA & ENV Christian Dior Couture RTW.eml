@@ -1,0 +1,2356 @@
+Received: from PUZPR01MB4658.apcprd01.prod.exchangelabs.com
+ (2603:1096:301:dc::8) by KL1PR01MB4862.apcprd01.prod.exchangelabs.com with
+ HTTPS; Thu, 15 May 2025 05:59:52 +0000
+Received: from SEZPR01MB4351.apcprd01.prod.exchangelabs.com
+ (2603:1096:101:42::6) by PUZPR01MB4658.apcprd01.prod.exchangelabs.com
+ (2603:1096:301:dc::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8746.14; Thu, 15 May
+ 2025 05:59:47 +0000
+Received: from SEZPR01MB4351.apcprd01.prod.exchangelabs.com
+ ([fe80::168f:c85f:ae7c:6f2f]) by SEZPR01MB4351.apcprd01.prod.exchangelabs.com
+ ([fe80::168f:c85f:ae7c:6f2f%4]) with mapi id 15.20.8746.011; Thu, 15 May 2025
+ 05:59:47 +0000
+From: Karine LECOMTE <karine.lecomte@qima.com>
+To: "margomes@christiandior.com" <margomes@christiandior.com>, Marco
+ CALABRITTO <mcalabritto@christiandior.com>
+CC: Nathalie Bergicourt <nathalie.bergicourt@qima.com>, Support
+	<support@qima.com>, Lusheena Antonio <lusheena.antonio@qima.com>
+Subject: OVER  150 days unpaid invoice / 17 111 overdue // LVMH SA & ENV
+ Christian Dior Couture RTW
+Thread-Topic: OVER  150 days unpaid invoice / 17 111 overdue // LVMH SA & ENV
+ Christian Dior Couture RTW
+Thread-Index: AQHbxV6PjD+vZqKEuUCZfPG3aE/9nA==
+Date: Thu, 15 May 2025 05:59:47 +0000
+Message-ID:
+	<SEZPR01MB435195F21CCB0CCB4D85792CEC90A@SEZPR01MB4351.apcprd01.prod.exchangelabs.com>
+References:
+	<67a5abc522776_1fb3f9af642e19c108403e0.sidekiq-frequent-fd-poduseast1-main3-green-55bd6cfc5-c5j4h@outbound-email.freshdesk.com>
+ <67eb76a962799_2413ff3245165d825903639.sidekiq-frequent-fd-poduseast1-main3-blue-858d7579d7-p8pj9@forward.freshdesk.com>
+ <KL1PR01MB539505AB1A9F23C9DD7BB408FEBA2@KL1PR01MB5395.apcprd01.prod.exchangelabs.com>
+ <KL1PR01MB53952E0D95EE995C34094E3FFE88A@KL1PR01MB5395.apcprd01.prod.exchangelabs.com>
+In-Reply-To:
+	<KL1PR01MB53952E0D95EE995C34094E3FFE88A@KL1PR01MB5395.apcprd01.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	SEZPR01MB4351.apcprd01.prod.exchangelabs.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	cb69f6d4-05ba-4d21-10ca-08dd9375b27a
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SEZPR01MB4351.apcprd01.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(13230040)(69100299015)(22122799003)(366016)(31052699007)(39142699007)(7053199007)(8096899003)(3613699012)(13003099007)(41050700001);DIR:INT;
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=qima.com;
+x-ms-office365-filtering-correlation-id: cb69f6d4-05ba-4d21-10ca-08dd9375b27a
+x-microsoft-antispam:
+	BCL:0;ARA:13230040|69100299015|22122799003|366016|31052699007|39142699007|7053199007|8096899003|3613699012|13003099007|41050700001;
+x-ms-traffictypediagnostic:
+	SEZPR01MB4351:EE_|PUZPR01MB4658:EE_|KL1PR01MB4862:EE_
+x-ms-exchange-crosstenant-originalarrivaltime: 15 May 2025 05:59:47.1148 (UTC)
+x-ms-exchange-crosstenant-network-message-id:
+	cb69f6d4-05ba-4d21-10ca-08dd9375b27a
+x-ms-exchange-crosstenant-id: ed4961a7-e434-4dab-bd13-eeb8ac6ce35c
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-transport-crosstenantheadersstamped: PUZPR01MB4658
+x-ms-exchange-transport-endtoendlatency: 00:00:04.9304507
+x-ms-exchange-processed-by-bccfoldering: 15.20.8722.017
+x-ms-exchange-atpmessageproperties: SA|SL
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	bXZve+SFFrDcbol9zA+UEPHU01GvU22RTemdK1vUzXgPQGZgLHuBgrUqVUVLATOnl577F6XqbGsyGxvbxQ1mWQ==
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource:
+	SEZPR01MB4351.apcprd01.prod.exchangelabs.com
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	FruDlDQsC9PwyO7HxA2U/rnuUuVFIjmrYjbWeO1Uebmsgqs0CjqMHr+ag5QiF3j5P/hDjJsZAhjQD2N54r9HouWFo61u/a1UtH1E0ecPIyTwY50S57eTtm+UsjUNyeNT8Z2lbr3YzvBrGrE7bicy9Jhs0ZqHCPCEAoCfoge6KDdXeogrLoBCZqpJJNYIikQ25eNS+jeG6+xi8/KYAvgSJwHrub6G7k8S2tdgQgq+iTVETnfu7lvRFkSQ7vzEUKY5qw+6U+tqFp5oO3WJfUf6P5DEY2oAgXaudNmMZD2iVettH98dtjK5Rh4KwxYI2NjVN76+SprvHm4f206i4lycQfR809wfIG+FrJdnLndrfTJiamp+VJuCiXSIlhY3ce60Cz41qJVyjyQ6T6ujLBUbeIW3ZnxZBwdIG/CvOx22f7T5ftzAKl3lJ/o/QLZYJbXrV1Wtn8lueDcvWtgSR7ps7WJLX+fAIw5DFDvcog4ShkyzCFrv9TwvoLBGxDLzhVj9BFwH4/RHYruuUcWEqpPRs+1N9kovbzWPm4+nAdoFhawcumnYevM9DT/O5NtWirx3Bo2J/M0SAUuvBRTfHK8K40DbkuT949rh4/zx3U+NVFdFNbYX/8ColdfOH6fR86IBc5dhTy2Ai0sLnsFQ2Jp1amfFWIeylhaX1jxImn5Nod9Ft9S7buE2MCPqb6s6M+I/9TFSPiztffB4PAL6K/YVfr0Sjm4GEScNt4p9WMsEzMsUb1NIQJYjUuRuwA0jbX7i9dNw/qWhBlPLU4cftd3dHpo5RgW1/z7EzIonudHEkCMVcT+48TuGLbSpAknSR/qjVB7xmLuoYkDXZAb3OEJeWw==
+Content-Type: multipart/alternative;
+	boundary="_000_SEZPR01MB435195F21CCB0CCB4D85792CEC90ASEZPR01MB4351apcp_"
+MIME-Version: 1.0
+
+--_000_SEZPR01MB435195F21CCB0CCB4D85792CEC90ASEZPR01MB4351apcp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Marlie
+
+I hope my email finds you well.
+Allow me to contact you as we have not received any feedback from you regar=
+ding the payment of the overdue invoice. QIMA has not been paid for over 15=
+0 days, and the total outstanding amount on your account is 17,111 USD.
+We noticed that you had an issue with the PO and raised the point in March.=
+ Since then, we have sent you each revised invoice, including the PO you sh=
+ared with us. However, we still have not received any payment.
+My accounts receivable team is pressing me as they want to escalate your ac=
+count to collections. Can you please share with me the payment copy of the =
+invoice this week? It is very urgent.
+
+In advance thanks for your help
+
+Karine Lecomte
+Key Account Sales Director
+
+[QIMA]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2F=
+www.qima.com%2F%3Futm_source%3Dsignature-logo%26utm_medium%3Demail%26sc%3Dn=
+l%2Fsignature-logo&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110=
+ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638828855921817=
+601%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlA=
+iOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3Dz3eqybkm=
+F2E5e82jVp1%2FK1KsUROdtloRvfVk%2BGqBFSw%3D&reserved=3D0>
+
+
+
+Building Trust
+
+
+
+Lab Testing =95 Certifications =95 Supplier Audits =95 Product Inspections
+
+[Website]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fwww.qima.com%2F%3Futm_source%3Dsignature-icon%26utm%2520medium%3Demail%2=
+6sc%3Dnl%2Fsignature-icon&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405b=
+a4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C63882885=
+5921844734%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAw=
+MCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3Dk=
+4LMK%2Bu%2FjBEO640auf3vuI%2FE2GTqBnlIIJ2D%2FpgHJwo%3D&reserved=3D0>
+
+[LinkedIn]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.linkedin.com%2Fcompany%2Fqima&data=3D05%7C02%7Csupport%40qima.com%7=
+Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C=
+0%7C638828855921858546%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYi=
+OiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%=
+7C&sdata=3D5lKj2fQUrUhs3TuVMJnYgV5SvTX4xY%2BgOBslQaVExdE%3D&reserved=3D0>
+
+[Instagram]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.instagram.com%2Fqimagroup%2F&data=3D05%7C02%7Csupport%40qima.com%7=
+Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C=
+0%7C638828855921871214%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYi=
+OiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%=
+7C&sdata=3DTRGxGu1xaO75lwGRxxYHXoVa759uvEELcWOHktxGO8g%3D&reserved=3D0>
+
+[WeChat]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fmp.weixin.qq.com%2Fs%2FDtzOnGzffDD2Xqruyt3JRQ&data=3D05%7C02%7Csupport%40=
+qima.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce=
+35c%7C0%7C0%7C638828855921883739%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOn=
+RydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%=
+7C0%7C%7C%7C&sdata=3DCoQqMrSHDO4BTCpFThTuaV6KMT0KBUGYV93a9LO8K2U%3D&reserve=
+d=3D0>
+________________________________
+From: Lusheena Antonio <lusheena.antonio@qima.com>
+Sent: Wednesday, May 7, 2025 2:13 PM
+To: margomes@christiandior.com <margomes@christiandior.com>
+Cc: Karine LECOMTE <karine.lecomte@qima.com>; Nathalie Bergicourt <nathalie=
+.bergicourt@qima.com>; Support <support@qima.com>
+Subject: Re: Outstanding Balance // LVMH SA & ENV Christian Dior Couture RT=
+W
+
+Dear Mrs Marlie ,
+
+May we kindly request an update on the pending payment.
+
+Company Name
+Login
+Invoice Number
+Days Overdue
+Due Date
+Aging Type (Unalloc Payments)
+AR Amount ($)
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240005082
+186
+02-Nov-24
+>180 Days Overdue
+$5,364
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240005380
+172
+16-Nov-24
+91-180 Days Overdue
+$4,149
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240005926
+143
+15-Dec-24
+91-180 Days Overdue
+$2,738
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240006211
+123
+04-Jan-25
+91-180 Days Overdue
+$2,430
+
+
+Lusheena Antonio
+Program Manager
+
+[QIMA]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2F=
+www.qima.com%2F%3Futm_source%3Dsignature-logo%26utm_medium%3Demail%26sc%3Dn=
+l%2Fsignature-logo&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110=
+ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638828855921905=
+747%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlA=
+iOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DfmzVACSo=
+COhE%2BLoZY2UkoLdaeqbcN8n6NHiSyT0QEk4%3D&reserved=3D0>
+
+
+
+Building Trust
+
+
+
+Lab Testing =95 Certifications =95 Supplier Audits =95 Product Inspections
+
+[Website]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fwww.qima.com%2F%3Futm_source%3Dsignature-icon%26utm%2520medium%3Demail%2=
+6sc%3Dnl%2Fsignature-icon&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405b=
+a4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C63882885=
+5921924300%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAw=
+MCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3De=
+%2FTJZcVWr8lEpW4BWo9%2Be8WQKquKqiFUSRhlFzqlclg%3D&reserved=3D0>
+
+[LinkedIn]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.linkedin.com%2Fcompany%2Fqima&data=3D05%7C02%7Csupport%40qima.com%7=
+Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C=
+0%7C638828855921939507%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYi=
+OiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%=
+7C&sdata=3DIr68FUKA26mTRBf%2B4jEQiWtXZ22ByQXx6VYRzPPfwCc%3D&reserved=3D0>
+
+[Instagram]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.instagram.com%2Fqimagroup%2F&data=3D05%7C02%7Csupport%40qima.com%7=
+Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C=
+0%7C638828855921955034%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYi=
+OiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%=
+7C&sdata=3DIkWU%2BxnEGliYO8I9KBeyUz7Dbz5GcBIZr%2B10Vo7bqXo%3D&reserved=3D0>
+
+[WeChat]<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fmp.weixin.qq.com%2Fs%2FDtzOnGzffDD2Xqruyt3JRQ&data=3D05%7C02%7Csupport%40=
+qima.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce=
+35c%7C0%7C0%7C638828855921970012%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOn=
+RydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%=
+7C0%7C%7C%7C&sdata=3D8K2dxoOjHT8coa840R%2BlCPU%2BbK9qBfCGWVZTBj0kTZw%3D&res=
+erved=3D0>
+________________________________
+From: Lusheena Antonio <lusheena.antonio@qima.com>
+Sent: 23 April 2025 14:26
+To: margomes@christiandior.com <margomes@christiandior.com>
+Cc: Karine LECOMTE <karine.lecomte@qima.com>; Nathalie Bergicourt <nathalie=
+.bergicourt@qima.com>; Support <support@qima.com>
+Subject: Re: Outstanding Balance // LVMH SA & ENV Christian Dior Couture RT=
+W
+
+Dear Mrs Marlie ,
+
+We hope this message finds you well.
+
+We wish to draw your attention to the fact that the following invoice, amou=
+nting to USD 14681, has been overdue for over 172 days. Would you please co=
+nfirm if the necessary steps have been taken to process this payment? If th=
+e payment has already been made, kindly provide a copy of the proof of paym=
+ent for our records.
+
+Company Name
+Login
+Invoice Number
+Days Overdue
+Due Date
+Aging Type (Unalloc Payments)
+AR Amount ($)
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240005082
+172
+02-Nov-24
+91-180 Days Overdue
+5,364
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240005380
+158
+16-Nov-24
+91-180 Days Overdue
+4,149
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240005926
+129
+15-Dec-24
+91-180 Days Overdue
+2,738
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240006211
+109
+04-Jan-25
+91-180 Days Overdue
+2,430
+
+If the payment has not yet been made, could you please advise us on the tim=
+eline you are planning for this payment?
+For your convenience and ours, we suggest that you include the invoice numb=
+er in the bank transfer details. This will help ensure proper and prompt re=
+conciliation of your payment with our records.
+Your prompt attention to this matter would be greatly appreciated.
+Thank you for your cooperation.
+
+
+Best Regards,
+
+Lusheena Antonio (Mrs)
+Program Manager
+Tel: +33189533773
+
+[https://s3.amazonaws.com/s3.asiainspection.com/QIMA_logo_150px.png]<https:=
+//apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%=
+2F%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba=
+4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638828855=
+921985309%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwM=
+CIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DeQ=
+XJz7cml7ysjN7gH%2BuSQnK2VqV0r52QrBTbDlbovpg%3D&reserved=3D0>
+
+Check us out!<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qim=
+a.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c=
+%7C0%7C0%7C638828855922000312%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRyd=
+WUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0=
+%7C%7C%7C&sdata=3D5VNTLjdpwZ2Zuzsv67BkzIZMtLIS1x7UmlF94lJOkkc%3D&reserved=
+=3D0> | Operating in 95 countries<https://apc01.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fquality-control-coverage%3Fsc%3Dn=
+l%252Fsignature&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110ca0=
+8dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638828855922013614=
+%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOi=
+JXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3Dc9jyqJju1mV=
+aDTp1A7vFZZBZf33RMJ7Q1f3nJJjiFyg%3D&reserved=3D0> | Find a QIMA office<http=
+s://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qima.co=
+m%2Fcontact-us%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qima.com%7C=
+cb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0=
+%7C638828855922026198%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiO=
+iIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7=
+C&sdata=3DetlbnbBGXOffBWEDXZ7QKYRJVy49iQGNTCrIuR6yuUY%3D&reserved=3D0>
+________________________________
+From: Reygie Boyles <support@qima.com>
+Sent: 01 April 2025 09:16
+To: margomes@christiandior.com <margomes@christiandior.com>
+Cc: Karine LECOMTE <karine.lecomte@qima.com>; Lusheena Antonio <lusheena.an=
+tonio@qima.com>; Nathalie Bergicourt <nathalie.bergicourt@qima.com>
+Subject: Fwd: Outstanding Balance // LVMH SA & ENV Christian Dior Couture R=
+TW
+
+Hi Marlie,
+
+Good day! I hope you are well.
+
+I just want to inquire about the payment status of the invoices that are ov=
+erdue.
+
+Company Name
+Login
+Invoice Number
+Due Date
+AR Amount ($)
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240005082
+2-Nov-24
+$5,364
+INV-13B240005380
+16-Nov-24
+$4,149
+INV-13B240005926
+15-Dec-24
+$2,738
+INV-13B240006211
+4-Jan-25
+$2,430
+INV-13B240007179
+14-Feb-25
+$2,430
+
+
+TOTAL AMOUNT TO BE PAID
+
+$17,111
+
+It would be greatly appreciated if you could provide an update on the expec=
+ted payment date.
+
+Also, be aware that due to the outstanding balance, your account has been s=
+uspended.
+
+If you have already made the payment, kindly shares the bank slip for verif=
+ication and allocation purposes.
+
+Thank you!
+
+
+Best Regards,
+
+Reygie Boyles
+Customer Service Coordinator
+
+
+[https://s3.amazonaws.com/s3.asiainspection.com/QIMA_logo_150px.png]<https:=
+//apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%=
+2F%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba=
+4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638828855=
+922039451%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwM=
+CIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DPv=
+2KZ2EdUz3rDHp5xrpLdxUmgfInZyNWhR2so37lObw%3D&reserved=3D0>
+
+Check us out!<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qim=
+a.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c=
+%7C0%7C0%7C638828855922059243%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRyd=
+WUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0=
+%7C%7C%7C&sdata=3DrF1ayBAuhVHLZMaVKtsviXjt4oYRQ6z8ISWVZElHW74%3D&reserved=
+=3D0> | Operating in 95 countries<https://apc01.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fquality-control-coverage%3Fsc%3Dn=
+l%252Fsignature&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110ca0=
+8dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638828855922072812=
+%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOi=
+JXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DUYSOrvocr3y=
+jUXQI4ix%2B7IwqvjI2pLOPRoeOeYdw%2BE8%3D&reserved=3D0> | Find a QIMA office<=
+https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qim=
+a.com%2Fcontact-us%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qima.co=
+m%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0=
+%7C0%7C638828855922086072%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsI=
+lYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%=
+7C%7C&sdata=3D8y%2BrZxUcmnR9rvgBALyIbALAvq1TIYQeigWXCK4Yuvo%3D&reserved=3D0=
+>
+On Tue, 25 Mar at 12:11 PM , Reygie Boyles <support@qima.com> wrote:
+Hi Marlie,
+
+Good day! I hope you are well.
+
+I just want to inquire about the payment status of the invoices that are ov=
+erdue.
+
+Company Name
+Login
+Invoice Number
+Due Date
+AR Amount ($)
+LVMH SA & ENV Christian Dior Couture RTW
+MARLIE2024
+INV-13B240005082
+2-Nov-24
+$5,364
+INV-13B240005380
+16-Nov-24
+$4,149
+INV-13B240005926
+15-Dec-24
+$2,738
+INV-13B240006211
+4-Jan-25
+$2,430
+INV-13B240007179
+14-Feb-25
+$2,430
+
+
+TOTAL AMOUNT TO BE PAID
+
+$17,111
+
+It would be greatly appreciated if you could provide an update on the expec=
+ted payment date.
+
+Also, be aware that due to the outstanding balance, your account has been s=
+uspended.
+
+If you have already made the payment, kindly shares the bank slip for verif=
+ication and allocation purposes.
+
+Thank you!
+
+
+Best Regards,
+
+Reygie Boyles
+Customer Service Coordinator
+
+
+[https://s3.amazonaws.com/s3.asiainspection.com/QIMA_logo_150px.png]<https:=
+//apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%=
+2F%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba=
+4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638828855=
+922098214%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwM=
+CIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3Dde=
+vwMrVwNaVPl4RcDLATFSKM8vJko8jeF09qkJt6X70%3D&reserved=3D0>
+
+Check us out!<https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qim=
+a.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c=
+%7C0%7C0%7C638828855922110450%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRyd=
+WUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0=
+%7C%7C%7C&sdata=3DUzN34bTsKEi2qnvSnSOVD1U4MAfDweHlw11ZL3bEIEA%3D&reserved=
+=3D0> | Operating in 95 countries<https://apc01.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fquality-control-coverage%3Fsc%3Dn=
+l%252Fsignature&data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110ca0=
+8dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638828855922122808=
+%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOi=
+JXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DtxQ1cYy9N6S=
+TVb%2BETCHlkhwWE7hWsDgXw%2F2fyVvFf0w%3D&reserved=3D0> | Find a QIMA office<=
+https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qim=
+a.com%2Fcontact-us%3Fsc%3Dnl%2Fsignature&data=3D05%7C02%7Csupport%40qima.co=
+m%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0=
+%7C0%7C638828855922135065%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsI=
+lYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%=
+7C%7C&sdata=3DhoU3elLY64M0ln23KmL0DAGy7kTa2M2X9KdykmIMiPo%3D&reserved=3D0>
+
+7922027:248534
+
+--_000_SEZPR01MB435195F21CCB0CCB4D85792CEC90ASEZPR01MB4351apcp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Arial, Helvetica, sans-=
+serif; font-size: 10pt; color: rgb(0, 0, 0);">
+Dear Marlie&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Arial, Helvetica, sans-=
+serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+white-space: pre-wrap; margin: 0px 0px 1.25em; font-family: Arial, Helvetic=
+a, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+I hope my email finds you well.</div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+white-space: pre-wrap; margin: 1.25em 0px; font-family: Arial, Helvetica, s=
+ans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+Allow me to contact you as we have not received any feedback from you regar=
+ding the payment of the overdue invoice.
+<b>QIMA has not been paid for over 150 days, and the total outstanding amou=
+nt on your account is 17,111 USD.</b></div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+white-space: pre-wrap; margin: 1.25em 0px; font-family: Arial, Helvetica, s=
+ans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+We noticed that you had an issue with the PO and raised the point in March.=
+ Since then, we have sent you each revised invoice, including the PO you sh=
+ared with us. However, we still have not received any payment.</div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+white-space: pre-wrap; margin: 1.25em 0px 0px; font-family: Arial, Helvetic=
+a, sans-serif; color: rgb(0, 0, 0);">
+<span style=3D"font-size: 10pt;">My accounts receivable team is pressing me=
+ as they want to escalate your account to collections.
+</span><span style=3D"font-size: 11pt;"><b>Can you please share with me the=
+ payment copy of the invoice this week? It is very urgent.</b></span></div>
+<div class=3D"elementToProof" style=3D"font-family: Arial, Helvetica, sans-=
+serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"margin: 0px; font-family: Arial, Hel=
+vetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+In advance thanks for your help</div>
+<div class=3D"elementToProof" style=3D"margin: 0px; font-family: Arial, Hel=
+vetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"margin:0px" id=3D"Signature" class=3D"elementToProof">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; width: 100=
+%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px;"=
+>
+<tbody>
+<tr>
+<td style=3D"line-height: 19px; color: rgb(47, 37, 47);">
+<div style=3D"line-height: 19px; font-family: Arial; font-size: 13px;"><b>K=
+arine Lecomte</b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 18px; color: rgb(47, 37, 47);">
+<div style=3D"line-height: 18px; font-family: Arial; font-size: 13px;">Key =
+Account Sales Director</div>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 0; height: 30px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td style=3D"vertical-align: middle;">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fwww.qima.com%2F%3Futm_source%3Dsignature-logo%26utm_medium%3Demail%=
+26sc%3Dnl%2Fsignature-logo&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6=
+d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638=
+828855921817601%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjA=
+uMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;=
+sdata=3Dz3eqybkmF2E5e82jVp1%2FK1KsUROdtloRvfVk%2BGqBFSw%3D&amp;reserved=3D0=
+" originalsrc=3D"https://www.qima.com/?utm_source=3Dsignature-logo&amp;utm_=
+medium=3Demail&amp;sc=3Dnl/signature-logo" id=3D"OWA1dff1d4b-f56c-5974-7b2e=
+-16890d7e4d16" class=3D"OWAAutoLink" data-auth=3D"NotApplicable" style=3D"m=
+argin: 0px;"><img alt=3D"QIMA" width=3D"121" style=3D"width: 121px; margin:=
+ 0px; display: block;" src=3D"https://s3.qima.com/email_signature_ico/png/Q=
+IMA-logo-4x.png"></a></td>
+<td style=3D"width: 10px;">
+<div>&nbsp;</div>
+</td>
+<td style=3D"line-height: 1px; background-color: rgb(198, 198, 198); width:=
+ 1px;">
+<div style=3D"line-height: 1px; font-size: 1px;">&nbsp;</div>
+</td>
+<td style=3D"width: 10px;">
+<div>&nbsp;</div>
+</td>
+<td style=3D"color: rgb(47, 37, 47);">
+<div style=3D"font-family: Arial; font-size: 18px;"><span style=3D"font-wei=
+ght: 325;">Building Trust</span></div>
+</td>
+</tr>
+<tr>
+<td colspan=3D"5" style=3D"line-height: 0; height: 10px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td colspan=3D"5">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; width: 100=
+%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px;"=
+>
+<tbody>
+<tr>
+<td style=3D"line-height: 1px; border-bottom: 1px solid rgb(198, 198, 198);=
+ height: 1px;">
+<div style=3D"line-height: 1px;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 0; height: 11px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 15px; color: rgb(47, 37, 47);">
+<div style=3D"line-height: 15px; font-family: Arial; font-size: 13px;">Lab =
+Testing<span style=3D"color: rgb(228, 0, 43);">&nbsp;=95
+</span>Certifications<span style=3D"color: rgb(228, 0, 43);">&nbsp;=95 </sp=
+an>Supplier Audits<span style=3D"color: rgb(228, 0, 43);">&nbsp;=95
+</span>Product Inspections</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 0; height: 14px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td style=3D"line-height: 0; height: 30px;"><span style=3D"font-size: 0px;"=
+><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.qima.com%2F%3Futm_source%3Dsignature-icon%26utm%2520medium%3Demail=
+%26sc%3Dnl%2Fsignature-icon&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f=
+6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C63=
+8828855921844734%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLj=
+AuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp=
+;sdata=3Dk4LMK%2Bu%2FjBEO640auf3vuI%2FE2GTqBnlIIJ2D%2FpgHJwo%3D&amp;reserve=
+d=3D0" originalsrc=3D"https://www.qima.com/?utm_source=3Dsignature-icon&amp=
+;utm%20medium=3Demail&amp;sc=3Dnl/signature-icon" id=3D"OWAd23b5c14-02e9-cb=
+3d-ca3a-3d769af12fd9" class=3D"OWAAutoLink" data-auth=3D"NotApplicable" sty=
+le=3D"margin: 0px;"><img alt=3D"Website" width=3D"30" style=3D"width: 30px;=
+ margin: 0px;" src=3D"https://s3.qima.com/email_signature_ico/png/web-icon4=
+x.png"></a></span></td>
+<td style=3D"line-height: 0; width: 14px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+<td style=3D"line-height: 0; height: 30px;"><span style=3D"font-size: 0px;"=
+><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.linkedin.com%2Fcompany%2Fqima&amp;data=3D05%7C02%7Csupport%40qima.=
+com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7=
+C0%7C0%7C638828855921858546%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWU=
+sIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7=
+C%7C%7C&amp;sdata=3D5lKj2fQUrUhs3TuVMJnYgV5SvTX4xY%2BgOBslQaVExdE%3D&amp;re=
+served=3D0" originalsrc=3D"https://www.linkedin.com/company/qima" id=3D"OWA=
+af105064-0de9-1437-f4f9-b1d8ac8e8993" class=3D"OWAAutoLink" data-auth=3D"No=
+tApplicable" style=3D"margin: 0px;"><img alt=3D"LinkedIn" width=3D"30" styl=
+e=3D"width: 30px; margin: 0px;" src=3D"https://s3.qima.com/email_signature_=
+ico/png/linkedIn-icon4x.png"></a></span></td>
+<td style=3D"line-height: 0; width: 14px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+<td style=3D"line-height: 0; height: 30px;"><span style=3D"font-size: 0px;"=
+><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.instagram.com%2Fqimagroup%2F&amp;data=3D05%7C02%7Csupport%40qima.c=
+om%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C=
+0%7C0%7C638828855921871214%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUs=
+IlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C=
+%7C%7C&amp;sdata=3DTRGxGu1xaO75lwGRxxYHXoVa759uvEELcWOHktxGO8g%3D&amp;reser=
+ved=3D0" originalsrc=3D"https://www.instagram.com/qimagroup/" id=3D"OWAd3ce=
+8ea4-031e-f3a0-f2d4-34b6ce6ee5d9" class=3D"OWAAutoLink" data-auth=3D"NotApp=
+licable" style=3D"margin: 0px;"><img alt=3D"Instagram" width=3D"30" style=
+=3D"width: 30px; margin: 0px;" src=3D"https://s3.qima.com/email_signature_i=
+co/png/instagram-icon4x.png"></a></span></td>
+<td style=3D"line-height: 0; width: 14px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+<td style=3D"line-height: 0; height: 30px;"><span style=3D"font-size: 0px;"=
+><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fmp.weixin.qq.com%2Fs%2FDtzOnGzffDD2Xqruyt3JRQ&amp;data=3D05%7C02%7Csup=
+port%40qima.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13ee=
+b8ac6ce35c%7C0%7C0%7C638828855921883739%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1=
+hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ=
+%3D%3D%7C0%7C%7C%7C&amp;sdata=3DCoQqMrSHDO4BTCpFThTuaV6KMT0KBUGYV93a9LO8K2U=
+%3D&amp;reserved=3D0" originalsrc=3D"https://mp.weixin.qq.com/s/DtzOnGzffDD=
+2Xqruyt3JRQ" id=3D"OWA980792d7-216d-41e8-4398-a5a244345c21" class=3D"OWAAut=
+oLink" data-auth=3D"NotApplicable" style=3D"margin: 0px;"><img alt=3D"WeCha=
+t" width=3D"30" style=3D"width: 30px; margin: 0px;" src=3D"https://s3.qima.=
+com/email_signature_ico/png/wechat-icon4x.png"></a></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div dir=3D"ltr" id=3D"divRplyFwdMsg"><span style=3D"font-family: Calibri, =
+sans-serif; font-size: 11pt; color: rgb(0, 0, 0);"><b>From:</b>&nbsp;Lushee=
+na Antonio &lt;lusheena.antonio@qima.com&gt;<br>
+<b>Sent:</b>&nbsp;Wednesday, May 7, 2025 2:13 PM<br>
+<b>To:</b>&nbsp;margomes@christiandior.com &lt;margomes@christiandior.com&g=
+t;<br>
+<b>Cc:</b>&nbsp;Karine LECOMTE &lt;karine.lecomte@qima.com&gt;; Nathalie Be=
+rgicourt &lt;nathalie.bergicourt@qima.com&gt;; Support &lt;support@qima.com=
+&gt;<br>
+<b>Subject:</b>&nbsp;Re: Outstanding Balance // LVMH SA &amp; ENV Christian=
+ Dior Couture RTW</span>
+<div>&nbsp;</div>
+</div>
+<div style=3D"direction: ltr;"><span style=3D"font-family: Arial, Helvetica=
+, sans-serif; font-size: 10pt; color: black; background-color: rgb(255, 255=
+, 255);">Dear Mrs
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 13px; colo=
+r: rgb(24, 50, 71); background-color: rgb(255, 255, 255);">Marlie</span><sp=
+an style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 10pt; col=
+or: black; background-color: rgb(255, 255, 255);">&nbsp;,</span></div>
+<div style=3D"direction: ltr; font-family: Arial, Helvetica, sans-serif; fo=
+nt-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255);"><br>
+</span></div>
+<div style=3D"direction: ltr; font-family: Arial, Helvetica, sans-serif; fo=
+nt-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255);">May we kindly request=
+ an update on the pending payment.&nbsp;</span></div>
+<div style=3D"direction: ltr; font-family: Arial, Helvetica, sans-serif; fo=
+nt-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255);"><br>
+</span></div>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"direction: ltr; width: =
+571pt; box-sizing: border-box; border-collapse: collapse; border-spacing: 0=
+px;">
+<tbody>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-width: 0.5pt; border-=
+style: solid; border-color: initial; padding-top: 1px; padding-right: 1px; =
+padding-left: 1px; vertical-align: middle; width: 103pt; height: 14.4pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">Com=
+pany Name</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 72pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">Log=
+in</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 83pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">Inv=
+oice Number</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 65pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">Day=
+s Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 47pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">Due=
+ Date</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 137pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">Agi=
+ng Type (Unalloc Payments)</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 64pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">AR =
+Amount ($)</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; border-left: 0.5pt solid; padding-top: 1px; padd=
+ing-right: 1px; padding-left: 1px; vertical-align: top; width: 103pt; heigh=
+t: 36pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">LVM=
+H SA &amp; ENV Christian Dior Couture RTW</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 72pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">MAR=
+LIE2024</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 83pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">INV=
+-13B240005082</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 65pt;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">186=
+</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 47pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">02-=
+Nov-24</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 137pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">&gt=
+;180 Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 64pt;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">$5,=
+364</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; border-left: 0.5pt solid; padding-top: 1px; padd=
+ing-right: 1px; padding-left: 1px; vertical-align: top; width: 103pt; heigh=
+t: 36pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">LVM=
+H SA &amp; ENV Christian Dior Couture RTW</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 72pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">MAR=
+LIE2024</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 83pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">INV=
+-13B240005380</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 65pt;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">172=
+</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 47pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">16-=
+Nov-24</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 137pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">91-=
+180 Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 64pt;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">$4,=
+149</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; border-left: 0.5pt solid; padding-top: 1px; padd=
+ing-right: 1px; padding-left: 1px; vertical-align: top; width: 103pt; heigh=
+t: 36pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">LVM=
+H SA &amp; ENV Christian Dior Couture RTW</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 72pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">MAR=
+LIE2024</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 83pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">INV=
+-13B240005926</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 65pt;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">143=
+</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 47pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">15-=
+Dec-24</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 137pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">91-=
+180 Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 64pt;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">$2,=
+738</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; border-left: 0.5pt solid; padding-top: 1px; padd=
+ing-right: 1px; padding-left: 1px; vertical-align: top; width: 103pt; heigh=
+t: 36pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">LVM=
+H SA &amp; ENV Christian Dior Couture RTW</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 72pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">MAR=
+LIE2024</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 83pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">INV=
+-13B240006211</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 65pt;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">123=
+</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 47pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">04-=
+Jan-25</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 137pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">91-=
+180 Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 64pt;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255); font-weight: 700;">$2,=
+430</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"direction: ltr; font-family: Arial, Helvetica, sans-serif; fo=
+nt-size: 10pt; color: black;">
+<span style=3D"background-color: rgb(255, 255, 255);"><br>
+</span></div>
+<div style=3D"direction: ltr; margin: 0px; font-family: Arial, Helvetica, s=
+ans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"margin:0px" class=3D"x_elementToProof" id=3D"x_Signature">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; width: 100=
+%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px;"=
+>
+<tbody>
+<tr>
+<td style=3D"line-height: 19px; color: rgb(47, 37, 47);">
+<div style=3D"line-height: 19px; font-family: Arial; font-size: 13px;"><b>L=
+usheena Antonio</b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 18px; color: rgb(47, 37, 47);">
+<div style=3D"line-height: 18px; font-family: Arial; font-size: 13px;">Prog=
+ram Manager</div>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 0; height: 30px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td style=3D"vertical-align: middle;">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fwww.qima.com%2F%3Futm_source%3Dsignature-logo%26utm_medium%3Demail%=
+26sc%3Dnl%2Fsignature-logo&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6=
+d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C638=
+828855921905747%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjA=
+uMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;=
+sdata=3DfmzVACSoCOhE%2BLoZY2UkoLdaeqbcN8n6NHiSyT0QEk4%3D&amp;reserved=3D0" =
+originalsrc=3D"https://www.qima.com/?utm_source=3Dsignature-logo&amp;utm_me=
+dium=3Demail&amp;sc=3Dnl/signature-logo" id=3D"OWA0e2d79ee-c840-d31b-7e51-1=
+50db6723a7d" class=3D"OWAAutoLink" originalsrc=3D"https://www.qima.com/?utm=
+_source=3Dsignature-logo&amp;utm_medium=3Demail&amp;sc=3Dnl/signature-logo"=
+ data-auth=3D"NotApplicable" style=3D"margin: 0px;"><img alt=3D"QIMA" width=
+=3D"121" style=3D"width: 121px; margin: 0px; display: block;" src=3D"https:=
+//s3.qima.com/email_signature_ico/png/QIMA-logo-4x.png"></a></td>
+<td style=3D"width: 10px;">
+<div>&nbsp;</div>
+</td>
+<td style=3D"line-height: 1px; background-color: rgb(198, 198, 198); width:=
+ 1px;">
+<div style=3D"line-height: 1px; font-size: 1px;">&nbsp;</div>
+</td>
+<td style=3D"width: 10px;">
+<div>&nbsp;</div>
+</td>
+<td style=3D"color: rgb(47, 37, 47);">
+<div style=3D"font-family: Arial; font-size: 18px;"><span style=3D"font-wei=
+ght: 325;">Building Trust</span></div>
+</td>
+</tr>
+<tr>
+<td colspan=3D"5" style=3D"line-height: 0; height: 10px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td colspan=3D"5">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; width: 100=
+%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px;"=
+>
+<tbody>
+<tr>
+<td style=3D"line-height: 1px; border-bottom: 1px solid rgb(198, 198, 198);=
+ height: 1px;">
+<div style=3D"line-height: 1px;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 0; height: 11px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 15px; color: rgb(47, 37, 47);">
+<div style=3D"line-height: 15px; font-family: Arial; font-size: 13px;">Lab =
+Testing<span style=3D"color: rgb(228, 0, 43);">&nbsp;=95
+</span>Certifications<span style=3D"color: rgb(228, 0, 43);">&nbsp;=95 </sp=
+an>Supplier Audits<span style=3D"color: rgb(228, 0, 43);">&nbsp;=95
+</span>Product Inspections</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 0; height: 14px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0px; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td style=3D"line-height: 0; height: 30px;"><span style=3D"font-size: 0px;"=
+><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.qima.com%2F%3Futm_source%3Dsignature-icon%26utm%2520medium%3Demail=
+%26sc%3Dnl%2Fsignature-icon&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f=
+6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C63=
+8828855921924300%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLj=
+AuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp=
+;sdata=3De%2FTJZcVWr8lEpW4BWo9%2Be8WQKquKqiFUSRhlFzqlclg%3D&amp;reserved=3D=
+0" originalsrc=3D"https://www.qima.com/?utm_source=3Dsignature-icon&amp;utm=
+%20medium=3Demail&amp;sc=3Dnl/signature-icon" id=3D"OWA54f8d953-7279-3072-b=
+ecf-04466b875822" class=3D"OWAAutoLink" originalsrc=3D"https://www.qima.com=
+/?utm_source=3Dsignature-icon&amp;utm%20medium=3Demail&amp;sc=3Dnl/signatur=
+e-icon" data-auth=3D"NotApplicable" style=3D"margin: 0px;"><img alt=3D"Webs=
+ite" width=3D"30" style=3D"width: 30px; margin: 0px;" src=3D"https://s3.qim=
+a.com/email_signature_ico/png/web-icon4x.png"></a></span></td>
+<td style=3D"line-height: 0; width: 14px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+<td style=3D"line-height: 0; height: 30px;"><span style=3D"font-size: 0px;"=
+><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.linkedin.com%2Fcompany%2Fqima&amp;data=3D05%7C02%7Csupport%40qima.=
+com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7=
+C0%7C0%7C638828855921939507%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWU=
+sIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7=
+C%7C%7C&amp;sdata=3DIr68FUKA26mTRBf%2B4jEQiWtXZ22ByQXx6VYRzPPfwCc%3D&amp;re=
+served=3D0" originalsrc=3D"https://www.linkedin.com/company/qima" id=3D"OWA=
+a0bffdf3-3856-8247-aced-c0b6ac1c4e9d" class=3D"OWAAutoLink" originalsrc=3D"=
+https://www.linkedin.com/company/qima" data-auth=3D"NotApplicable" style=3D=
+"margin: 0px;"><img alt=3D"LinkedIn" width=3D"30" style=3D"width: 30px; mar=
+gin: 0px;" src=3D"https://s3.qima.com/email_signature_ico/png/linkedIn-icon=
+4x.png"></a></span></td>
+<td style=3D"line-height: 0; width: 14px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+<td style=3D"line-height: 0; height: 30px;"><span style=3D"font-size: 0px;"=
+><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.instagram.com%2Fqimagroup%2F&amp;data=3D05%7C02%7Csupport%40qima.c=
+om%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C=
+0%7C0%7C638828855921955034%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUs=
+IlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C=
+%7C%7C&amp;sdata=3DIkWU%2BxnEGliYO8I9KBeyUz7Dbz5GcBIZr%2B10Vo7bqXo%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.instagram.com/qimagroup/" id=3D"OWA=
+f12203c8-5e12-3f8b-d647-ea58684dbf10" class=3D"OWAAutoLink" originalsrc=3D"=
+https://www.instagram.com/qimagroup/" data-auth=3D"NotApplicable" style=3D"=
+margin: 0px;"><img alt=3D"Instagram" width=3D"30" style=3D"width: 30px; mar=
+gin: 0px;" src=3D"https://s3.qima.com/email_signature_ico/png/instagram-ico=
+n4x.png"></a></span></td>
+<td style=3D"line-height: 0; width: 14px;">
+<div style=3D"line-height: 0; font-size: 0px;">&nbsp;</div>
+</td>
+<td style=3D"line-height: 0; height: 30px;"><span style=3D"font-size: 0px;"=
+><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fmp.weixin.qq.com%2Fs%2FDtzOnGzffDD2Xqruyt3JRQ&amp;data=3D05%7C02%7Csup=
+port%40qima.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13ee=
+b8ac6ce35c%7C0%7C0%7C638828855921970012%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1=
+hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ=
+%3D%3D%7C0%7C%7C%7C&amp;sdata=3D8K2dxoOjHT8coa840R%2BlCPU%2BbK9qBfCGWVZTBj0=
+kTZw%3D&amp;reserved=3D0" originalsrc=3D"https://mp.weixin.qq.com/s/DtzOnGz=
+ffDD2Xqruyt3JRQ" id=3D"OWA1ebf3d61-1375-dd30-e51d-83b6cbb2aea3" class=3D"OW=
+AAutoLink" originalsrc=3D"https://mp.weixin.qq.com/s/DtzOnGzffDD2Xqruyt3JRQ=
+" data-auth=3D"NotApplicable" style=3D"margin: 0px;"><img alt=3D"WeChat" wi=
+dth=3D"30" style=3D"width: 30px; margin: 0px;" src=3D"https://s3.qima.com/e=
+mail_signature_ico/png/wechat-icon4x.png"></a></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=3D"x_appendonsend"></div>
+<hr style=3D"direction: ltr; display: inline-block; width: 98%;">
+<div dir=3D"ltr" id=3D"x_divRplyFwdMsg"><span style=3D"font-family: Calibri=
+, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);"><b>From:</b>&nbsp;Lush=
+eena Antonio &lt;lusheena.antonio@qima.com&gt;<br>
+<b>Sent:</b>&nbsp;23 April 2025 14:26<br>
+<b>To:</b>&nbsp;margomes@christiandior.com &lt;margomes@christiandior.com&g=
+t;<br>
+<b>Cc:</b>&nbsp;Karine LECOMTE &lt;karine.lecomte@qima.com&gt;; Nathalie Be=
+rgicourt &lt;nathalie.bergicourt@qima.com&gt;; Support &lt;support@qima.com=
+&gt;<br>
+<b>Subject:</b>&nbsp;Re: Outstanding Balance // LVMH SA &amp; ENV Christian=
+ Dior Couture RTW</span>
+<div>&nbsp;</div>
+</div>
+<div style=3D"direction: ltr; line-height: 1.284; margin: 0cm 0cm 0.0001pt;=
+"><span style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 10pt=
+; color: rgb(0, 0, 0);">Dear Mrs
+</span><span style=3D"font-family: arial, sans-serif; font-size: 13px; colo=
+r: rgb(24, 50, 71);">Marlie</span><span style=3D"font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">&nbsp;,</span></div=
+>
+<div style=3D"direction: ltr; line-height: 1.284; margin: 0cm 0cm 0.0001pt;=
+ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0, =
+0, 0);">
+&nbsp;</div>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 0.0001pt=
+; font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0,=
+ 0, 0);">
+We hope this message finds you well.</div>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 0.0001pt=
+; font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0,=
+ 0, 0);">
+&nbsp;</div>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 8pt; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0=
+);">
+We wish to draw your attention to the fact that the following invoice, amou=
+nting to USD 14681, has been overdue for over 172 days. Would you please co=
+nfirm if the necessary steps have been taken to process this payment? If th=
+e payment has already been made,
+ kindly provide a copy of the proof of payment for our records.</div>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 8pt; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0=
+);">
+<br>
+</div>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"direction: ltr; width: =
+459pt; box-sizing: border-box; border-collapse: collapse; border-spacing: 0=
+px;">
+<tbody>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-width: 0.5pt; border-=
+style: solid; border-color: initial; padding-top: 1px; padding-right: 1px; =
+padding-left: 1px; vertical-align: middle; width: 104pt; height: 24pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">Company Name</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 82pt; heig=
+ht: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">Login</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 85pt; heig=
+ht: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">Invoice Number</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 31pt; heig=
+ht: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 47pt; heig=
+ht: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">Due Date</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 60pt; heig=
+ht: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">Aging Type (Unalloc Payments)</span></div=
+>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-top: 0.5pt solid; bor=
+der-right: 0.5pt solid; border-bottom: 0.5pt solid; padding-top: 1px; paddi=
+ng-right: 1px; padding-left: 1px; vertical-align: middle; width: 50pt; heig=
+ht: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">AR Amount ($)</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; border-left: 0.5pt solid; padding-top: 1px; padd=
+ing-right: 1px; padding-left: 1px; vertical-align: top; width: 104pt; heigh=
+t: 36pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">LVMH SA &amp; ENV Christian Dior Couture =
+RTW</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 82pt; height: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">MARLIE2024</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 85pt; height: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">INV-13B240005082</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 31pt; height: 49.7273px;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">172</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 47pt; height: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">02-Nov-24</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 60pt; height: 49.7273px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">91-180 Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 50pt; height: 49.7273px;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">5,364</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; border-left: 0.5pt solid; padding-top: 1px; padd=
+ing-right: 1px; padding-left: 1px; vertical-align: top; width: 104pt; heigh=
+t: 36pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">LVMH SA &amp; ENV Christian Dior Couture =
+RTW</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 82pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">MARLIE2024</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 85pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">INV-13B240005380</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 31pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">158</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 47pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">16-Nov-24</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 60pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">91-180 Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 50pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">4,149</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; border-left: 0.5pt solid; padding-top: 1px; padd=
+ing-right: 1px; padding-left: 1px; vertical-align: top; width: 104pt; heigh=
+t: 36pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">LVMH SA &amp; ENV Christian Dior Couture =
+RTW</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 82pt; height: 49.7274px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">MARLIE2024</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 85pt; height: 49.7274px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">INV-13B240005926</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 31pt; height: 49.7274px;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">129</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 47pt; height: 49.7274px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">15-Dec-24</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 60pt; height: 49.7274px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">91-180 Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 50pt; height: 49.7274px;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">2,738</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; border-left: 0.5pt solid; padding-top: 1px; padd=
+ing-right: 1px; padding-left: 1px; vertical-align: top; width: 104pt; heigh=
+t: 36pt;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">LVMH SA &amp; ENV Christian Dior Couture =
+RTW</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 82pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">MARLIE2024</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 85pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">INV-13B240006211</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 31pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">109</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 47pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">04-Jan-25</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; border-right: 0.5pt solid; b=
+order-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-le=
+ft: 1px; vertical-align: top; width: 60pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: left; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">91-180 Days Overdue</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: right; border-right: 0.5pt solid; =
+border-bottom: 0.5pt solid; padding-top: 1px; padding-right: 1px; padding-l=
+eft: 1px; vertical-align: top; width: 50pt; height: 49.7272px;">
+<div style=3D"direction: ltr; text-align: right; font-family: Arial, Helvet=
+ica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0);">
+<span style=3D"font-weight: 700;">2,430</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 8pt; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0=
+);">
+<br>
+</div>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 8pt; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0=
+);">
+If the payment has not yet been made, could you please advise us on the tim=
+eline you are planning for this payment?</div>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 8pt; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0=
+);">
+For your convenience and ours, we suggest that you include the invoice numb=
+er in the bank transfer details. This will help ensure proper and prompt re=
+conciliation of your payment with our records.</div>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 8pt; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0=
+);">
+Your prompt attention to this matter would be greatly appreciated.</div>
+<div style=3D"direction: ltr; line-height: normal; margin: 0cm 0cm 8pt; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: rgb(0, 0, 0=
+);">
+Thank you for your cooperation.</div>
+<div style=3D"direction: ltr; font-family: Arial, Helvetica, sans-serif; fo=
+nt-size: 10pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"direction: ltr; font-family: Arial, Helvetica, sans-serif; fo=
+nt-size: 10pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"x_x_elementToProof" id=3D"x_x_Signature">
+<div style=3D"font-family: arial; font-size: 13px;">Best Regards,</div>
+<div style=3D"font-family: arial; font-size: 13px;"><br>
+</div>
+<div style=3D"font-family: arial; font-size: 13px;"><b>Lusheena Antonio (Mr=
+s)</b></div>
+<div style=3D"font-size: 13px;"><span style=3D"font-family: arial;">Program=
+ Manager<br>
+</span><span style=3D"font-family: Arial; color: black; background-color: w=
+hite;">Tel:&nbsp;+33189533773</span><span style=3D"font-family: arial;"><br=
+>
+<br>
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&amp;data=3D05%7C02%7Csupport%40qi=
+ma.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35=
+c%7C0%7C0%7C638828855921985309%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRy=
+dWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C=
+0%7C%7C%7C&amp;sdata=3DeQXJz7cml7ysjN7gH%2BuSQnK2VqV0r52QrBTbDlbovpg%3D&amp=
+;reserved=3D0" originalsrc=3D"https://www.qima.com/?sc=3Dnl/signature" id=
+=3D"OWA3fd31937-9f9a-1787-a509-4cbd1b1e583a" class=3D"OWAAutoLink" original=
+src=3D"https://www.qima.com/?sc=3Dnl/signature" data-auth=3D"NotApplicable"=
+><img src=3D"https://s3.amazonaws.com/s3.asiainspection.com/QIMA_logo_150px=
+.png"></a><br>
+<br>
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&amp;data=3D05%7C02%7Csupport%40qi=
+ma.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35=
+c%7C0%7C0%7C638828855922000312%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRy=
+dWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C=
+0%7C%7C%7C&amp;sdata=3D5VNTLjdpwZ2Zuzsv67BkzIZMtLIS1x7UmlF94lJOkkc%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.qima.com/?sc=3Dnl/signature" id=3D"=
+OWA16c7f33c-4d79-3014-de4d-374e8aef0532" class=3D"OWAAutoLink" originalsrc=
+=3D"https://www.qima.com/?sc=3Dnl/signature" data-auth=3D"NotApplicable">Ch=
+eck
+ us out!</a>&nbsp;| <a href=3D"https://apc01.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fquality-control-coverage%3Fsc%3Dnl%2=
+52Fsignature&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110ca=
+08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C63882885592201361=
+4%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiO=
+iJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3Dc9jyqJ=
+ju1mVaDTp1A7vFZZBZf33RMJ7Q1f3nJJjiFyg%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://www.qima.com/quality-control-coverage?sc=3Dnl%2Fsignature" id=3D"OWA=
+38d2f6fc-89e9-7795-799d-64faece11b65" class=3D"OWAAutoLink" originalsrc=3D"=
+https://www.qima.com/quality-control-coverage?sc=3Dnl%2Fsignature" data-aut=
+h=3D"NotApplicable">
+Operating in 95 countries</a>&nbsp;| <a href=3D"https://apc01.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fcontact-us%3Fsc%3Dn=
+l%2Fsignature&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110c=
+a08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C6388288559220261=
+98%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAi=
+OiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3Detlbn=
+bBGXOffBWEDXZ7QKYRJVy49iQGNTCrIuR6yuUY%3D&amp;reserved=3D0" originalsrc=3D"=
+https://www.qima.com/contact-us?sc=3Dnl/signature" id=3D"OWAf3a7e698-e374-6=
+9b9-6c9c-f1d6a0be26c6" class=3D"OWAAutoLink" originalsrc=3D"https://www.qim=
+a.com/contact-us?sc=3Dnl/signature" data-auth=3D"NotApplicable">
+Find a QIMA office</a></span></div>
+</div>
+<div id=3D"x_x_appendonsend"></div>
+<hr style=3D"direction: ltr; display: inline-block; width: 98%;">
+<div dir=3D"ltr" id=3D"x_x_divRplyFwdMsg"><span style=3D"font-family: Calib=
+ri, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);"><b>From:</b>&nbsp;Re=
+ygie Boyles &lt;support@qima.com&gt;<br>
+<b>Sent:</b>&nbsp;01 April 2025 09:16<br>
+<b>To:</b>&nbsp;margomes@christiandior.com &lt;margomes@christiandior.com&g=
+t;<br>
+<b>Cc:</b>&nbsp;Karine LECOMTE &lt;karine.lecomte@qima.com&gt;; Lusheena An=
+tonio &lt;lusheena.antonio@qima.com&gt;; Nathalie Bergicourt &lt;nathalie.b=
+ergicourt@qima.com&gt;<br>
+<b>Subject:</b>&nbsp;Fwd: Outstanding Balance // LVMH SA &amp; ENV Christia=
+n Dior Couture RTW</span>
+<div>&nbsp;</div>
+</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+Hi Marlie,</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+<br>
+</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+Good day!&nbsp;I hope you are well.<br>
+&nbsp;<br>
+I just want to inquire about the payment status of the invoices that are ov=
+erdue.&nbsp;</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+<br>
+</div>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"direction: ltr; text-al=
+ign: left; text-indent: 0px; width: 529pt; max-width: 100%; box-sizing: bor=
+der-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-w=
+idth: 0.5pt; border-style: solid; border-color: windowtext; background-colo=
+r: rgb(255, 192, 0); vertical-align: bottom; color: black; width: 211pt; he=
+ight: 15pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">Company Name</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-t=
+op: 0.5pt solid windowtext; border-right: 0.5pt solid windowtext; border-bo=
+ttom: 0.5pt solid windowtext; background-color: rgb(255, 192, 0); vertical-=
+align: bottom; color: black; width: 65pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">Login</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-t=
+op: 0.5pt solid windowtext; border-right: 0.5pt solid windowtext; border-bo=
+ttom: 0.5pt solid windowtext; background-color: rgb(255, 192, 0); vertical-=
+align: bottom; color: black; width: 126pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">Invoice Number</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-t=
+op: 0.5pt solid windowtext; border-right: 0.5pt solid windowtext; border-bo=
+ttom: 0.5pt solid windowtext; background-color: rgb(255, 192, 0); vertical-=
+align: bottom; color: black; width: 53pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">Due Date</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-t=
+op: 0.5pt solid windowtext; border-right: 0.5pt solid windowtext; border-bo=
+ttom: 0.5pt solid windowtext; background-color: rgb(255, 192, 0); vertical-=
+align: bottom; color: black; width: 74pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">AR Amount ($)</span></div>
+</td>
+</tr>
+<tr>
+<td rowspan=3D"5" style=3D"direction: ltr; text-align: center; text-indent:=
+ 0px; border-right: 0.5pt solid windowtext; border-bottom: 0.5pt solid wind=
+owtext; border-left: 0.5pt solid windowtext; vertical-align: middle; color:=
+ black; height: 75pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+LVMH SA &amp; ENV Christian Dior Couture RTW</div>
+</td>
+<td rowspan=3D"5" style=3D"direction: ltr; text-align: center; text-indent:=
+ 0px; border-right: 0.5pt solid windowtext; border-bottom: 0.5pt solid wind=
+owtext; border-left: 0.5pt solid windowtext; vertical-align: middle; color:=
+ black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+MARLIE2024</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+INV-13B240005082</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+2-Nov-24</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+$5,364</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+INV-13B240005380</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+16-Nov-24</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+$4,149</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+INV-13B240005926</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+15-Dec-24</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+$2,738</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+INV-13B240006211</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+4-Jan-25</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+$2,430</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+INV-13B240007179</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+14-Feb-25</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-r=
+ight: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; vertic=
+al-align: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+$2,430</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: left; text-indent: 0px; vertical-a=
+lign: bottom; color: black; height: 15.75pt;">
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: Calibri, sans-serif; font-size: 15px;">
+<br>
+</div>
+</td>
+<td style=3D"direction: ltr; text-align: left; text-indent: 0px; vertical-a=
+lign: bottom; color: black;">
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: Calibri, sans-serif; font-size: 15px;">
+<br>
+</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; vertical=
+-align: bottom; color: red;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">TOTAL AMOUNT TO BE PAID</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: left; text-indent: 0px; vertical-a=
+lign: bottom; color: red;">
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: Calibri, sans-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;"><br>
+</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; text-indent: 0px; border-b=
+ottom: 1pt solid windowtext; vertical-align: bottom; color: red;">
+<div style=3D"direction: ltr; text-align: center; text-indent: 0px; font-fa=
+mily: Calibri, sans-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">$17,111</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+<br>
+</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+It would be greatly appreciated if you could provide an update on the expec=
+ted payment date.</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+<br>
+</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+Also, be aware that due to the outstanding balance, your account has been s=
+uspended.<br>
+&nbsp;<br>
+If you have already made the payment, kindly shares the bank slip for verif=
+ication and allocation purposes.<br>
+<br>
+Thank you!</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; font-fami=
+ly: arial, sans-serif; font-size: 13px; color: rgb(24, 50, 71);">
+<br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;"><br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;">Best Regards,</div>
+<div style=3D"direction: ltr; font-family: Arial; font-size: 13px; color: r=
+gb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;"><b>Reygie Boyles</b></div>
+<div style=3D"direction: ltr; font-family: Arial; font-size: 13px; color: r=
+gb(0, 0, 0);">
+Customer Service Coordinator<br>
+<br>
+<br>
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&amp;data=3D05%7C02%7Csupport%40qi=
+ma.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35=
+c%7C0%7C0%7C638828855922039451%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRy=
+dWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C=
+0%7C%7C%7C&amp;sdata=3DPv2KZ2EdUz3rDHp5xrpLdxUmgfInZyNWhR2so37lObw%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.qima.com/?sc=3Dnl/signature" id=3D"=
+OWA16369f14-2f71-2074-aab9-62adfc865216" class=3D"OWAAutoLink" title=3D"htt=
+ps://www.qima.com/?sc=3Dnl/signature" originalsrc=3D"https://www.qima.com/?=
+sc=3Dnl/signature" data-auth=3D"NotApplicable"><img src=3D"https://s3.amazo=
+naws.com/s3.asiainspection.com/QIMA_logo_150px.png"></a><br>
+<br>
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&amp;data=3D05%7C02%7Csupport%40qi=
+ma.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35=
+c%7C0%7C0%7C638828855922059243%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRy=
+dWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C=
+0%7C%7C%7C&amp;sdata=3DrF1ayBAuhVHLZMaVKtsviXjt4oYRQ6z8ISWVZElHW74%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.qima.com/?sc=3Dnl/signature" id=3D"=
+OWA0d34f344-7cc8-e55a-f3f9-f4acb2e92064" class=3D"OWAAutoLink" title=3D"htt=
+ps://www.qima.com/?sc=3Dnl/signature" originalsrc=3D"https://www.qima.com/?=
+sc=3Dnl/signature" data-auth=3D"NotApplicable">Check
+ us out!</a>&nbsp;| <a href=3D"https://apc01.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fquality-control-coverage%3Fsc%3Dnl%2=
+52Fsignature&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110ca=
+08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C63882885592207281=
+2%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiO=
+iJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DUYSOrv=
+ocr3yjUXQI4ix%2B7IwqvjI2pLOPRoeOeYdw%2BE8%3D&amp;reserved=3D0" originalsrc=
+=3D"https://www.qima.com/quality-control-coverage?sc=3Dnl%2Fsignature" id=
+=3D"OWAf6a22f94-5327-ecf2-0c6c-c3b47c931809" class=3D"OWAAutoLink" title=3D=
+"https://www.qima.com/quality-control-coverage?sc=3Dnl%2Fsignature" origina=
+lsrc=3D"https://www.qima.com/quality-control-coverage?sc=3Dnl%2Fsignature" =
+data-auth=3D"NotApplicable">
+Operating in 95 countries</a>&nbsp;| <a href=3D"https://apc01.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fcontact-us%3Fsc%3Dn=
+l%2Fsignature&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110c=
+a08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C6388288559220860=
+72%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAi=
+OiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D8y%2B=
+rZxUcmnR9rvgBALyIbALAvq1TIYQeigWXCK4Yuvo%3D&amp;reserved=3D0" originalsrc=
+=3D"https://www.qima.com/contact-us?sc=3Dnl/signature" id=3D"OWAcceb1ec1-98=
+9f-8ed9-a3f2-83e5d19845e1" class=3D"OWAAutoLink" title=3D"https://www.qima.=
+com/contact-us?sc=3Dnl/signature" originalsrc=3D"https://www.qima.com/conta=
+ct-us?sc=3Dnl/signature" data-auth=3D"NotApplicable">
+Find a QIMA office</a></div>
+<blockquote>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;">On Tue, 25 Mar at 12:11 PM , Reygie Boyles &lt;support@qima.com&gt; wr=
+ote:</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;">Hi Marlie,</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;"><br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;">Good day!&nbsp;I hope you are well.<br>
+&nbsp;<br>
+I just want to inquire about the payment status of the invoices that are ov=
+erdue.&nbsp;</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;"><br>
+</div>
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"direction: ltr; width: =
+529pt; box-sizing: border-box; border-collapse: collapse; border-spacing: 0=
+px;">
+<tbody>
+<tr>
+<td style=3D"direction: ltr; text-align: center; border-width: 0.5pt; borde=
+r-style: solid; border-color: windowtext; background-color: rgb(255, 192, 0=
+); vertical-align: bottom; color: black; width: 211pt; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">Company Name</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-top: 0.5pt solid wi=
+ndowtext; border-right: 0.5pt solid windowtext; border-bottom: 0.5pt solid =
+windowtext; background-color: rgb(255, 192, 0); vertical-align: bottom; col=
+or: black; width: 65pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">Login</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-top: 0.5pt solid wi=
+ndowtext; border-right: 0.5pt solid windowtext; border-bottom: 0.5pt solid =
+windowtext; background-color: rgb(255, 192, 0); vertical-align: bottom; col=
+or: black; width: 126pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">Invoice Number</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-top: 0.5pt solid wi=
+ndowtext; border-right: 0.5pt solid windowtext; border-bottom: 0.5pt solid =
+windowtext; background-color: rgb(255, 192, 0); vertical-align: bottom; col=
+or: black; width: 53pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">Due Date</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-top: 0.5pt solid wi=
+ndowtext; border-right: 0.5pt solid windowtext; border-bottom: 0.5pt solid =
+windowtext; background-color: rgb(255, 192, 0); vertical-align: bottom; col=
+or: black; width: 74pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">AR Amount ($)</span></div>
+</td>
+</tr>
+<tr>
+<td rowspan=3D"5" style=3D"direction: ltr; text-align: center; border-right=
+: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; border-lef=
+t: 0.5pt solid windowtext; vertical-align: middle; color: black; height: 75=
+pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+LVMH SA &amp; ENV Christian Dior Couture RTW</div>
+</td>
+<td rowspan=3D"5" style=3D"direction: ltr; text-align: center; border-right=
+: 0.5pt solid windowtext; border-bottom: 0.5pt solid windowtext; border-lef=
+t: 0.5pt solid windowtext; vertical-align: middle; color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+MARLIE2024</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+INV-13B240005082</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+2-Nov-24</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+$5,364</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+INV-13B240005380</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+16-Nov-24</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+$4,149</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+INV-13B240005926</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+15-Dec-24</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+$2,738</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+INV-13B240006211</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+4-Jan-25</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+$2,430</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black; height: 15pt;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+INV-13B240007179</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+14-Feb-25</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-right: 0.5pt solid =
+windowtext; border-bottom: 0.5pt solid windowtext; vertical-align: bottom; =
+color: black;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+$2,430</div>
+</td>
+</tr>
+<tr>
+<td style=3D"direction: ltr; vertical-align: bottom; color: black; height: =
+15.75pt;">
+<div style=3D"direction: ltr; font-family: Calibri, sans-serif; font-size: =
+15px;"><br>
+</div>
+</td>
+<td style=3D"direction: ltr; vertical-align: bottom; color: black;">
+<div style=3D"direction: ltr; font-family: Calibri, sans-serif; font-size: =
+15px;"><br>
+</div>
+</td>
+<td style=3D"direction: ltr; text-align: center; vertical-align: bottom; co=
+lor: red;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">TOTAL AMOUNT TO BE PAID</span></div>
+</td>
+<td style=3D"direction: ltr; vertical-align: bottom; color: red;">
+<div style=3D"direction: ltr; font-family: Calibri, sans-serif; font-size: =
+15px;"><span style=3D"font-weight: 700;"><br>
+</span></div>
+</td>
+<td style=3D"direction: ltr; text-align: center; border-bottom: 1pt solid w=
+indowtext; vertical-align: bottom; color: red;">
+<div style=3D"direction: ltr; text-align: center; font-family: Calibri, san=
+s-serif; font-size: 15px;">
+<span style=3D"font-weight: 700;">$17,111</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;"><br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;">It would be greatly appreciated if you could provide an update on the =
+expected payment date.</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;"><br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;">Also, be aware that due to the outstanding balance, your account has b=
+een suspended.<br>
+&nbsp;<br>
+If you have already made the payment, kindly shares the bank slip for verif=
+ication and allocation purposes.<br>
+<br>
+Thank you!<br>
+<br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;"><br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;">Best Regards,</div>
+<div style=3D"direction: ltr; font-family: Arial; font-size: 13px; color: r=
+gb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"direction: ltr; font-family: arial, sans-serif; font-size: 13=
+px;"><b>Reygie Boyles</b></div>
+<div style=3D"direction: ltr; font-family: Arial; font-size: 13px; color: r=
+gb(0, 0, 0);">
+Customer Service Coordinator<br>
+<br>
+<br>
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&amp;data=3D05%7C02%7Csupport%40qi=
+ma.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35=
+c%7C0%7C0%7C638828855922098214%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRy=
+dWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C=
+0%7C%7C%7C&amp;sdata=3DdevwMrVwNaVPl4RcDLATFSKM8vJko8jeF09qkJt6X70%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.qima.com/?sc=3Dnl/signature" id=3D"=
+OWA16369f14-2f71-2074-aab9-62adfc865216" class=3D"OWAAutoLink" title=3D"htt=
+ps://www.qima.com/?sc=3Dnl/signature" originalsrc=3D"https://www.qima.com/?=
+sc=3Dnl/signature" data-auth=3D"NotApplicable"><img src=3D"https://s3.amazo=
+naws.com/s3.asiainspection.com/QIMA_logo_150px.png"></a><br>
+<br>
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.qima.com%2F%3Fsc%3Dnl%2Fsignature&amp;data=3D05%7C02%7Csupport%40qi=
+ma.com%7Ccb69f6d405ba4d2110ca08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35=
+c%7C0%7C0%7C638828855922110450%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRy=
+dWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C=
+0%7C%7C%7C&amp;sdata=3DUzN34bTsKEi2qnvSnSOVD1U4MAfDweHlw11ZL3bEIEA%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.qima.com/?sc=3Dnl/signature" id=3D"=
+OWA0d34f344-7cc8-e55a-f3f9-f4acb2e92064" class=3D"OWAAutoLink" title=3D"htt=
+ps://www.qima.com/?sc=3Dnl/signature" originalsrc=3D"https://www.qima.com/?=
+sc=3Dnl/signature" data-auth=3D"NotApplicable">Check
+ us out!</a>&nbsp;| <a href=3D"https://apc01.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fquality-control-coverage%3Fsc%3Dnl%2=
+52Fsignature&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110ca=
+08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C63882885592212280=
+8%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiO=
+iJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DtxQ1cY=
+y9N6STVb%2BETCHlkhwWE7hWsDgXw%2F2fyVvFf0w%3D&amp;reserved=3D0" originalsrc=
+=3D"https://www.qima.com/quality-control-coverage?sc=3Dnl%2Fsignature" id=
+=3D"OWAf6a22f94-5327-ecf2-0c6c-c3b47c931809" class=3D"OWAAutoLink" title=3D=
+"https://www.qima.com/quality-control-coverage?sc=3Dnl%2Fsignature" origina=
+lsrc=3D"https://www.qima.com/quality-control-coverage?sc=3Dnl%2Fsignature" =
+data-auth=3D"NotApplicable">
+Operating in 95 countries</a>&nbsp;| <a href=3D"https://apc01.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.qima.com%2Fcontact-us%3Fsc%3Dn=
+l%2Fsignature&amp;data=3D05%7C02%7Csupport%40qima.com%7Ccb69f6d405ba4d2110c=
+a08dd9375b27a%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0%7C0%7C6388288559221350=
+65%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAi=
+OiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DhoU3e=
+lLY64M0ln23KmL0DAGy7kTa2M2X9KdykmIMiPo%3D&amp;reserved=3D0" originalsrc=3D"=
+https://www.qima.com/contact-us?sc=3Dnl/signature" id=3D"OWAcceb1ec1-989f-8=
+ed9-a3f2-83e5d19845e1" class=3D"OWAAutoLink" title=3D"https://www.qima.com/=
+contact-us?sc=3Dnl/signature" originalsrc=3D"https://www.qima.com/contact-u=
+s?sc=3Dnl/signature" data-auth=3D"NotApplicable">
+Find a QIMA office</a></div>
+</blockquote>
+<div style=3D"direction: ltr;"><span style=3D"font-family: arial, sans-seri=
+f; font-size: 13px;"><br>
+</span><span style=3D"font-family: fdtktid; font-size: 0px; color: rgb(255,=
+ 255, 255); line-height: 0px;">7922027:248534</span></div>
+</body>
+</html>
+
+--_000_SEZPR01MB435195F21CCB0CCB4D85792CEC90ASEZPR01MB4351apcp_--

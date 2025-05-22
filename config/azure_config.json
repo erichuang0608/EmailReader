@@ -1,0 +1,16 @@
+{
+  "azure_openai": {
+    "endpoint": "https://qimagpt-eastus2.openai.azure.com/",
+    "api_key": "5ef8b2bf366948769983b8a178c75431",
+    "api_version": "2024-02-01",
+    "deployment_name": "qimagpt-4o-PROD"
+  },
+  "rate_limit": {
+    "rpm": 300,
+    "max_retries": 5
+  },
+  "cost_tracking": {
+    "enabled": true,
+    "log_path": "azure_api_usage.log"
+  }
+} 

@@ -1,0 +1,6 @@
+{
+  "mail_dir": "./mails",
+  "output_json": "results.json",
+  "output_csv": "results.csv",
+  "log_path": "app.log"
+} 
