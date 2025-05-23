@@ -314,3 +314,180 @@ class MailAnalyzer:
 ----
 
 理论上大部历史邮件都应该有这些信息，所以可以取的出来的，请修改成这样的逻辑，先用python分析取得数据，如果pyhton分析不出取不到数据，请将邮件给个LLm，让LLM理解，并分析出这些内容。
+
+
+--------
+另一个问题，邮件的顺序不对，正确的逻辑应该是优先按邮件的时间排序，如果有的转发邮件没有时间，则需要按照整个邮件的内容拆解历史邮件时自上而下排序，需要分解邮件时间，为每个封邮件编号，然后按照编号的顺序排序
+
+------
+你这个排序还是不对，你的第一封是12:55:00，这是不对的，最早的一封邮件是hursday, May 15, 2025 8:22 AM（这里有一个问题是你没有取得到am和pm）。无论是按时间还是按编号都不应该是你这个结果，所以为了保证邮件顺序的正确，你应该只按编号的顺序。
+
+正确的逻辑是，你优先分析整个邮件，按规则拆分出每一卦邮件，按邮件自上而下的顺序为每个邮件编号，然后输出时按邮件编号排序显示。
+
+----------
+邮件1: 时间：2025-05-15 12:55:00
+发件人：[('Pratiwi Sundarini', '')]
+收件人：[('Md Abdullah-Rahman ; Linda Guo ; Support', '')]
+抄送：[('Ridha Laksamana ; Dora Liu', '')]
+主题：Re: R-Cloud-25100910 - late finish production and packing
+摘要：摘要： Pratiwi Sundarini 通知 Abdullah 等人关于 R-Cloud-25100910 项目的最新进展：缝制阶段有123件（2.47%），完成和质检阶段有1122件（22.60%），装箱阶段有3719件（75%）。工厂预计今天下午4点完成。请确认是否需要对该项目进行缺失检查，并分配新的 R-Cloud 编号。
+情绪：该内容的情绪为中性。邮件中主要是提供了生产和包装的最新状态更新，并请求确认是否需要进行缺失检查和分配新的任务，没有明显的情绪表达。
+----------
+----------
+邮件2: 时间：2025-05-15 09:32:38+0000
+发件人：[('Pratiwi Sundarini', 'pratiwi.sundarini@qima.com')]
+收件人：[('Support', 'support@qima.com'), ('IP Creation', 'ipcreation@qima.com'), ('Coordination', 'coordination@qima.com')]
+抄送：[('Ridha Laksamana', 'ridha.laksamana@qima.com'), ('Md Abdullah-Rahman', 'md.abdullah-rahman@qima.com')]
+主题：New Allocation and New Qima one assignment to replace R-Cloud-25100910
+摘要：客户Asian / Splash今天重新预订了PSI，请发送新的分配并重新分配一个不同的R-Cloud编号。由于等待反馈超过30分钟，决定中止检查。协调和IP团队请更新新的分配并重新分配新的R-Cloud编号。
+情绪：这段内容的情绪是中性的。邮件主要是关于工作任务的沟通和安排，没有明显的情绪表达。内容主要集中在任务的状态更新、重新分配和协调上，没有表现出明显的积极或
+----------
+----------
+邮件3: 时间：2025-05-15 08:22:00
+发件人：[('Pratiwi Sundarini', '')]
+收件人：[('Md Abdullah-Rahman ; Dora Liu', '')]
+抄送：[('Ridha Laksamana', '')]
+主题：R-Cloud-25100910 - late finish production and packing
+摘要：Pratiwi Sundarini 通知 Abdullah 和 Dora 关于 R-Cloud-25100910 的生产和包装进度。当前生产状态为：裁剪完成 4964 件（95.5%），缝纫完成 4464 件（89.92%），500 件在缝纫线，2064 件在完成和质检中。包装状态为：2400 件在塑料袋中，1595 件（32.13%）在纸箱中。工厂表示无法在中午12点前完成包装。Pratiwi 请求指导下一步行动。
+情绪：该邮件内容的情绪为中性。邮件主要是提供生产和包装状态的更新，并请求指导下一步的行动，没有明显的情绪表达。
+
+
+---------
+
+你的邮件1～7，和8～15，是重复的啊，为什么会有两次。8～15内容更多，更准确：
+-----输出的邮件如下--------
+----------
+邮件1: 时间：未知
+发件人：[('Pratiwi Sundarini', 'pratiwi.sundarini@qima.com')]
+收件人：未知
+抄送：未知
+主题：未知
+摘要：Pratiwi Sundarini 通知 Md Abdullah-Rahman 和 Dora Liu 关于 R-Cloud-25100910 的生产和包装进度。当前生产和包装状态如下： 1. 已裁剪 4964 件，占总量的 95.5%。 2. 生产状态： - 4464 件（89.92%）已缝制完成 - 500 件（10.07%）在缝制中 - 2064 件在整理和质检中 3. 包装状态： - 2400 件已装入塑料袋，其中 1595 件（32.13%）已装箱 工厂表示无法在中午12点前完成包装。Pratiwi 请求指导下一步该如何处理。
+情绪：该内容的情绪是中性的。邮件主要是描述生产和包装的进度，并请求指导，没有明显的积极或消极情绪。
+----------
+----------
+邮件2: 时间：未知
+发件人：[('Md Abdullah-Rahman', 'md.abdullah-rahman@qima.com')]
+收件人：未知
+抄送：未知
+主题：未知
+摘要：Md Abdullah-Rahman询问Pratiwi Sundarini关于R-Cloud-25100910项目的最终状态，特别是已准备和包装的数量以及发货数量，并提醒在邮件中始终包含support@qima.com。
+情绪：中性
+----------
+----------
+邮件3: 时间：未知
+发件人：[('Pratiwi Sundarini', 'pratiwi.sundarini@qima.com')]
+收件人：未知
+抄送：未知
+主题：未知
+摘要：摘要： Pratiwi Sundarini 通知 Abdullah、Linda 和支持团队关于 R-Cloud-25100910 项目的最新生产和包装进度。当前状态为：缝纫生产中有 123 件（2.47%），完成和质检中有 1122 件（22.60%），装箱中有 3719 件（75%）。工厂预计今天下午4点完成。Pratiwi 请求确认并安排新的检查。
+情绪：该内容的情绪是中性的。邮件中主要是提供了生产和包装的最新状态，并请求确认和进一步的安排，没有明显的积极或消极情绪。
+----------
+----------
+邮件4: 时间：未知
+发件人：[('Md Abdullah-Rahman', 'md.abdullah-rahman@qima.com')]
+收件人：未知
+抄送：未知
+主题：未知
+摘要：Md Abdullah-Rahman在邮件中要求Pratiwi Sundarini回复之前的问题，并按照GI中的指示进行操作。
+情绪：该邮件内容的情绪是消极的。邮件中提到“我问了你一个不同的问题。请回复下面的问题并按照GI中的指示进行操作。”这表明发件人对收件人未能回答
+----------
+----------
+邮件5: 时间：未知
+发件人：[('Pratiwi Sundarini', 'pratiwi.sundarini@qima.com')]
+收件人：未知
+抄送：未知
+主题：未知
+摘要：摘要： Pratiwi Sundarini 通知 Md Abdullah-Rahman、Linda Guo 和支持团队，当前已准备并包装了3719件产品，计划发货4964件。
+情绪：该内容的情绪为中性。邮件中只是提供了关于生产和包装数量的信息，没有明显的情绪表达。
+----------
+----------
+邮件6: 时间：未知
+发件人：[('Remwell Ruta', 'support@qima.com')]
+收件人：未知
+抄送：未知
+主题：未知
+摘要：Remwell Ruta告知Md Abdullah-Rahman，他已经将最新的生产和包装进度更新发送给客户。Md Abdullah-Rahman提醒检查员注意，提供的数量少于发货数量，并要求Pratiwi Sundarini等待30分钟以获得最终确认，如果没有反馈，则按照GI中止检查。
+情绪：该邮件的情绪是中性的。邮件内容主要是关于工作任务的更新和沟通，没有明显的情绪表达。
+----------
+----------
+邮件7: 时间：未知
+发件人：[('Pratiwi Sundarini', 'pratiwi.sundarini@qima.com')]
+收件人：未知
+抄送：未知
+主题：未知
+摘要：Pratiwi Sundarini在邮件中表示，由于等待反馈超过30分钟，决定中止对R-Cloud-25100910的检查。与亚洲团队确认后，他们同意缺失检查并重新预订最终检查。Pratiwi将提交缺失检查状态，并请协调和IP团队更新新的分配和任务。
+情绪：该内容的情绪是中性的。邮件中描述了一个工作流程中的情况和决定，没有明显的情绪表达或情感倾向。
+----------
+----------
+邮件8: 时间：2025-05-15 08:22:00
+发件人：[('Pratiwi Sundarini', '')]
+收件人：[('Md Abdullah-Rahman ; Dora Liu', '')]
+抄送：[('Ridha Laksamana', '')]
+主题：R-Cloud-25100910 - late finish production and packing
+摘要：Pratiwi Sundarini 通知 Abdullah 和 Dora，编号为 R-Cloud-25100910 的生产和包装进度滞后。当前生产状态为：95.5% 的裁剪已完成，89.92% 的缝制已完成，10.07% 在缝制中，2064 件在完成和质检中。包装状态为：2400 件在塑料袋中，1595 件（32.13%）在纸箱中。工厂表示无法在中午12点前完成包装。Pratiwi 请求指导下一步该如何处理。
+情绪：该邮件内容的情绪为中性。邮件主要是提供生产和包装状态的更新，并请求指导下一步的行动。邮件中没有明显的情绪表达，主要是客观陈述事实和请求帮助。
+----------
+----------
+邮件9: 时间：2025-05-15 01:27:44
+发件人：[('Md Abdullah-Rahman', '')]
+收件人：[('Pratiwi Sundarini ; Linda Guo ; Support', '')]
+抄送：[('Ridha Laksamana ; Dora Liu', '')]
+主题：Re: R-Cloud-25100910 - late finish production and packing
+摘要：Md Abdullah-Rahman在邮件中询问Pratiwi Sundarini关于R-Cloud-25100910项目的最终状态，包括已准备和包装的数量以及发货数量，并提醒将support@qima.com始终列入收件人名单。
+情绪：该邮件内容的情绪是中性的。邮件中没有明显的情绪表达，主要是询问和要求提供信息，并且礼貌地提醒收件人保持特定邮箱在收件人列表中。
+----------
+----------
+邮件10: 时间：2025-05-15 12:55:00
+发件人：[('Pratiwi Sundarini', '')]
+收件人：[('Md Abdullah-Rahman ; Linda Guo ; Support', '')]
+抄送：[('Ridha Laksamana ; Dora Liu', '')]
+主题：Re: R-Cloud-25100910 - late finish production and packing
+摘要：摘要： Pratiwi Sundarini 通知 Abdullah 等人关于 R-Cloud-25100910 的最新生产和包装状态：缝制中有123件（2.47%），完成和质检中有1122件（22.60%），装箱中有3719件（75%）。工厂预计今天下午4点完成。请确认是否需要对该订单进行缺失检查，并分配新的 R-Cloud 编号。
+情绪：这封邮件的情绪是中性的。邮件内容主要是关于生产和包装进度的更新，并没有明显的积极或消极情绪表达。
+----------
+----------
+邮件11: 时间：2025-05-15 02:06:52
+发件人：[('Md Abdullah-Rahman', '')]
+收件人：[('Pratiwi Sundarini ; Linda Guo ; Support', '')]
+抄送：[('Ridha Laksamana ; Dora Liu', '')]
+主题：Re: R-Cloud-25100910 - late finish production and packing
+摘要：Md Abdullah-Rahman在邮件中要求Pratiwi Sundarini回复其之前提出的问题，并按照GI中的指示进行操作。
+情绪：该邮件的情绪是中性的。邮件内容主要是要求对方回答问题并遵循指示，没有明显的情绪表达。
+----------
+----------
+邮件12: 时间：2025-05-15 01:12:00
+发件人：[('Pratiwi Sundarini', '')]
+收件人：[('Md Abdullah-Rahman ; Linda Guo ; Support', '')]
+抄送：[('Ridha Laksamana ; Dora Liu', '')]
+主题：Re: R-Cloud-25100910 - late finish production and packing
+摘要：摘要： Pratiwi Sundarini 通知 Abdullah 等人，目前已包装完成的数量为3719件，计划发货数量为4964件。
+情绪：中性
+----------
+----------
+邮件13: 时间：2025-05-15 02:40:58
+发件人：[('Remwell Ruta', '')]
+收件人：[('Md Abdullah-Rahman', '')]
+抄送：[('Pratiwi Sundarini ; Linda Guo ; Ridha Laksamana ; Dora Liu ; Md Abdullah-Rahman ; Remwell Ruta', '')]
+主题：Re: Re: R-Cloud-25100910 - late finish production and packing
+摘要：Remwell Ruta通知Md Abdullah-Rahman，他已将相关更新发送给客户。Md Abdullah-Rahman要求检查员关注客户的反馈，并在30分钟内等待最终确认，否则按规定中止检查。
+情绪：这封邮件的情绪是中性的。邮件内容主要是关于工作任务的更新和指示，没有明显的情绪表达。
+----------
+----------
+邮件14: 时间：2025-05-15 03:08:00
+发件人：[('Pratiwi Sundarini', '')]
+收件人：[('Support ; Md Abdullah-Rahman', '')]
+抄送：[('Linda Guo ; Ridha Laksamana ; Dora Liu ; Md Abdullah-Rahman ; Remwell Ruta ; IP Creation ; Coordination', '')]
+主题：Re: Re: R-Cloud-25100910 - late finish production and packing
+摘要：摘要： Pratiwi Sundarini 通知支持团队和相关人员，由于等待反馈超过30分钟，决定中止对R-Cloud-25100910的检查，并重新预约最终检查。协调和IP团队需更新新的分配和任务。
+情绪：这封邮件的情绪倾向于消极。邮件中提到等待反馈超过30分钟，决定中止检查，并且需要重新安排检查。这些内容表明了对当前情况的不满和失望。
+----------
+----------
+邮件15: 时间：2025-05-15 09:32:38+0000
+发件人：[('Pratiwi Sundarini', 'pratiwi.sundarini@qima.com')]
+收件人：[('Support', 'support@qima.com'), ('IP Creation', 'ipcreation@qima.com'), ('Coordination', 'coordination@qima.com')]
+抄送：[('Ridha Laksamana', 'ridha.laksamana@qima.com'), ('Md Abdullah-Rahman', 'md.abdullah-rahman@qima.com')]
+主题：New Allocation and New Qima one assignment to replace R-Cloud-25100910
+摘要：客户Asian/Splash今天重新预订了PSI，请发送新的分配并重新分配一个不同的R-Cloud编号。由于等待反馈超过30分钟，决定中止检查并重新预订最终检查。协调和IP团队请更新新的分配和新的R-Cloud编号。
+情绪：这段内容的情绪是中性的。邮件内容主要是关于工作任务的沟通和安排，没有明显的情绪表达。邮件中使用的语言是正式且礼貌的，主要关注于任务的完成和协调。
+----------

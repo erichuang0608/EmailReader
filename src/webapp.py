@@ -33,7 +33,7 @@ async def analyze_eml(request: Request, file: UploadFile = File(...)):
     with open(file_path, "wb") as f:
         shutil.copyfileobj(file.file, f)
     # 解析邮件
-    mail_processor = MailProcessor(UPLOAD_DIR)
+    mail_processor = MailProcessor(UPLOAD_DIR, azure_client=azure_client)
     mails = mail_processor.process_all_mails()
     if not mails:
         return templates.TemplateResponse("result.html", {"request": request, "error": "邮件解析失败"})

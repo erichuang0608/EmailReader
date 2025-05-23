@@ -6,8 +6,9 @@ from email.utils import parsedate_to_datetime
 import html
 
 class MailProcessor:
-    def __init__(self, mail_dir: str):
+    def __init__(self, mail_dir: str, azure_client=None):
         self.mail_dir = mail_dir
+        self.azure_client = azure_client
 
     def process_all_mails(self) -> List[Dict]:
         mails = []
@@ -46,22 +47,17 @@ class MailProcessor:
         }
 
     def parse_mail_thread(self, file_path: str) -> list:
-        """
-        解析单个eml文件中的主邮件和历史邮件，返回按时间顺序的邮件链。
-        """
         import re
         mail = mailparser.parse_from_file(file_path)
-        thread = [{
-            "subject": mail.subject,
-            "from": mail.from_,
-            "to": mail.to,
-            "cc": mail.cc,
-            "date": mail.date,
-            "body": mail.body or (mail.text_plain[0] if mail.text_plain else ''),
-            "attachments": mail.attachments
-        }]
-        body = thread[0]["body"]
+        body = mail.body or (mail.text_plain[0] if mail.text_plain else '')
         history = self._split_mail_history(body)
+        thread = []
+        def extract_name_email(s):
+            matches = re.findall(r'([\w\s\.\'\-]+)?\s*<([\w\.-]+@[\w\.-]+)>', s)
+            if matches:
+                return [(name.strip(), email) for name, email in matches]
+            emails = re.findall(r'[\w\.-]+@[\w\.-]+', s)
+            return [('', email) for email in emails] if emails else [(s, '')]
         def _extract_metadata_from_history(text):
             meta = {}
             def clean(s):
@@ -70,8 +66,7 @@ class MailProcessor:
                 s = re.sub(r'<[^>]+>', '', str(s))
                 s = html.unescape(s)
                 return s.strip()
-            # 支持换行、冒号后有空格、大小写、分号分隔
-            m = re.search(r'^(?:时间|Date)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
+            m = re.search(r'^(?:时间|Date|Sent)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
                 try:
                     meta['date'] = parsedate_to_datetime(clean(m.group(1)))
@@ -79,45 +74,54 @@ class MailProcessor:
                     meta['date'] = clean(m.group(1))
             m = re.search(r'^(?:发件人|From)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
-                meta['from'] = clean(m.group(1))
+                meta['from'] = extract_name_email(clean(m.group(1)))
             m = re.search(r'^(?:收件人|To)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
-                meta['to'] = clean(m.group(1))
+                meta['to'] = extract_name_email(clean(m.group(1)))
             m = re.search(r'^(?:抄送|Cc)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
-                meta['cc'] = clean(m.group(1))
+                meta['cc'] = extract_name_email(clean(m.group(1)))
             m = re.search(r'^(?:主题|Subject)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
                 meta['subject'] = clean(m.group(1))
             return meta
+        def llm_extract_metadata(text):
+            if not self.azure_client:
+                return {}
+            prompt = (
+                "请从以下邮件内容中提取元数据，返回JSON，字段包括：时间、发件人（姓名和邮箱）、收件人（姓名和邮箱）、抄送（姓名和邮箱）、主题。"
+                "格式示例：{\"date\": \"...\", \"from\": [[\"姓名\", \"邮箱\"]], \"to\": [[\"姓名\", \"邮箱\"]], \"cc\": [[\"姓名\", \"邮箱\"]], \"subject\": \"...\"}\n"
+                "邮件内容：\n" + text
+            )
+            resp = self.azure_client._call_openai(prompt, 300)
+            import json
+            try:
+                return json.loads(resp['choices'][0]['message']['content'])
+            except Exception:
+                return {}
         for h in history:
             meta = _extract_metadata_from_history(h)
+            if not all([meta.get("date"), meta.get("from"), meta.get("to"), meta.get("subject")]):
+                llm_meta = llm_extract_metadata(h)
+                for k in ["date", "from", "to", "cc", "subject"]:
+                    if not meta.get(k) and llm_meta.get(k):
+                        meta[k] = llm_meta[k]
             thread.append({
-                "subject": meta.get("subject", ""),
-                "from": meta.get("from", ""),
-                "to": meta.get("to", ""),
-                "cc": meta.get("cc", ""),
-                "date": meta.get("date", ""),
+                "subject": meta.get("subject", "未知"),
+                "from": meta.get("from", "未知"),
+                "to": meta.get("to", "未知"),
+                "cc": meta.get("cc", "未知"),
+                "date": meta.get("date", "未知"),
                 "body": h,
                 "attachments": []
             })
-        def _date_key(x):
-            d = x["date"]
-            if isinstance(d, datetime):
-                # 转为offset-naive
-                if d.tzinfo is not None:
-                    return d.replace(tzinfo=None)
-                return d
-            if isinstance(d, str) and d:
-                try:
-                    return datetime.fromisoformat(d)
-                except Exception:
-                    return datetime.min
-            return datetime.min
-        thread = sorted(thread, key=_date_key)
+        for idx, mail in enumerate(thread, 1):
+            mail['idx'] = idx
         return thread
 
     def _split_mail_history(self, body: str) -> list:
         import re
-        parts = re.split(r'-----Original Message-----|发件人：|From:', body)
-        return [p.strip() for p in parts[1:]] if len(parts) > 1 else [] 
+        # 匹配所有以From:或发件人：开头的历史邮件块，保留头部
+        pattern = r'((?:From:|发件人：)[\s\S]+?)(?=(?:From:|发件人：|$))'
+        matches = re.findall(pattern, body)
+        return [m.strip() for m in matches] if matches else [] 
