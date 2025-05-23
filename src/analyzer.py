@@ -65,7 +65,8 @@ class MailAnalyzer:
                 "subject": clean_text(mail["subject"]),
                 "summary": summary,
                 "sentiment": sentiment,
-                "dialogue": dialogue_str
+                "dialogue": dialogue_str,
+                "original_body": clean_text(mail["body"])
             }
         results = []
         dialogue = []

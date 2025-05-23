@@ -19,7 +19,7 @@
     {% if error %}
         <div class="error">{{ error }}</div>
     {% else %}
-        <div class="section">
+        <!-- <div class="section">
             <h3>最新邮件</h3>
             <ul>
             {% if result.timeline and result.timeline|length > 0 %}
@@ -32,7 +32,7 @@
                 <li>未解析到任何邮件内容</li>
             {% endif %}
             </ul>
-        </div>
+        </div> -->
         {% if result.attachments and result.attachments|length > 0 %}
         <div class="section">
             <h3>附件摘要</h3>
@@ -59,6 +59,10 @@
             主题：{{ mail.subject }}<br>
             摘要：{{ mail.summary }}<br>
             情绪：{{ mail.sentiment }}<br>
+            <button type="button" onclick="toggleBody('body-{{ mail.idx }}')">显示原文</button>
+            <div id="body-{{ mail.idx }}" style="display:none;">
+                <pre>{{ mail.original_body }}</pre>
+            </div>
             ----------<br>
             {% endfor %}
         </div>
@@ -82,5 +86,15 @@
         </div>
     {% endif %}
     <a href="/">返回上传</a>
+    <script>
+    function toggleBody(id) {
+        var el = document.getElementById(id);
+        if (el.style.display === 'none') {
+            el.style.display = 'block';
+        } else {
+            el.style.display = 'none';
+        }
+    }
+    </script>
 </body>
 </html> 

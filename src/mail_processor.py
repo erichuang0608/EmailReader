@@ -66,22 +66,25 @@ class MailProcessor:
                 s = re.sub(r'<[^>]+>', '', str(s))
                 s = html.unescape(s)
                 return s.strip()
-            m = re.search(r'^(?:时间|Date|Sent)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
+            # 新增：去除每行前后空白
+            lines = [line.strip() for line in text.splitlines()]
+            text = "\n".join(lines)
+            m = re.search(r'^\s*(?:时间|Date|Sent)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
                 try:
                     meta['date'] = parsedate_to_datetime(clean(m.group(1)))
                 except Exception:
                     meta['date'] = clean(m.group(1))
-            m = re.search(r'^(?:发件人|From)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
+            m = re.search(r'^\s*(?:发件人|From)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
                 meta['from'] = extract_name_email(clean(m.group(1)))
-            m = re.search(r'^(?:收件人|To)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
+            m = re.search(r'^\s*(?:收件人|To)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
                 meta['to'] = extract_name_email(clean(m.group(1)))
-            m = re.search(r'^(?:抄送|Cc)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
+            m = re.search(r'^\s*(?:抄送|Cc)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
                 meta['cc'] = extract_name_email(clean(m.group(1)))
-            m = re.search(r'^(?:主题|Subject)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
+            m = re.search(r'^\s*(?:主题|Subject)\s*[:：]?\s*(.+)$', text, re.MULTILINE | re.IGNORECASE)
             if m:
                 meta['subject'] = clean(m.group(1))
             return meta
@@ -89,23 +92,41 @@ class MailProcessor:
             if not self.azure_client:
                 return {}
             prompt = (
-                "请从以下邮件内容中提取元数据，返回JSON，字段包括：时间、发件人（姓名和邮箱）、收件人（姓名和邮箱）、抄送（姓名和邮箱）、主题。"
+                "请从以下邮件内容中提取元数据，只返回JSON，字段包括：date, from, to, cc, subject。"
                 "格式示例：{\"date\": \"...\", \"from\": [[\"姓名\", \"邮箱\"]], \"to\": [[\"姓名\", \"邮箱\"]], \"cc\": [[\"姓名\", \"邮箱\"]], \"subject\": \"...\"}\n"
                 "邮件内容：\n" + text
             )
             resp = self.azure_client._call_openai(prompt, 300)
-            import json
+            import json, re
             try:
-                return json.loads(resp['choices'][0]['message']['content'])
-            except Exception:
+                content = resp['choices'][0]['message']['content']
+                print("LLM元数据返回：", content)
+                # 尝试只提取第一个大括号包裹的 JSON
+                match = re.search(r'\{[\s\S]*\}', content)
+                if match:
+                    content = match.group(0)
+                data = json.loads(content)
+                # 字段名中英文自动映射
+                field_map = {
+                    '时间': 'date', '发件人': 'from', '收件人': 'to', '抄送': 'cc', '主题': 'subject',
+                    'date': 'date', 'from': 'from', 'to': 'to', 'cc': 'cc', 'subject': 'subject'
+                }
+                mapped = {}
+                for k, v in data.items():
+                    std_k = field_map.get(k, k)
+                    mapped[std_k] = v
+                return mapped
+            except Exception as e:
+                print("LLM元数据解析失败：", e)
                 return {}
         for h in history:
-            meta = _extract_metadata_from_history(h)
+            meta = llm_extract_metadata(h)
+            # 如果 LLM 失败或返回不全，再用正则兜底补全
             if not all([meta.get("date"), meta.get("from"), meta.get("to"), meta.get("subject")]):
-                llm_meta = llm_extract_metadata(h)
+                regex_meta = _extract_metadata_from_history(h)
                 for k in ["date", "from", "to", "cc", "subject"]:
-                    if not meta.get(k) and llm_meta.get(k):
-                        meta[k] = llm_meta[k]
+                    if not meta.get(k) and regex_meta.get(k):
+                        meta[k] = regex_meta[k]
             thread.append({
                 "subject": meta.get("subject", "未知"),
                 "from": meta.get("from", "未知"),

@@ -29,3 +29,4 @@ python main.py --input /path/to/mails --output results.json
 ```bash
 pytest tests/
 ``` 
+
