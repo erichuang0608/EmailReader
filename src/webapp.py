@@ -38,7 +38,13 @@ async def analyze_eml(request: Request, file: UploadFile = File(...)):
     if not mails:
         return templates.TemplateResponse("result.html", {"request": request, "error": "邮件解析失败"})
     mail = mails[-1]  # 只分析最新上传的
-    # 附件处理
+    # 解析邮件链
+    try:
+        mail_thread = mail_processor.parse_mail_thread(file_path)
+    except Exception as e:
+        return templates.TemplateResponse("result.html", {"request": request, "error": f"邮件解析失败: {e}"})
+    conversation = analyzer.analyze_conversation(mail_thread)
+    # 附件处理（只处理主邮件的附件）
     attachments = []
     for att in mail['attachments']:
         fname = att['filename']
@@ -86,6 +92,10 @@ async def analyze_eml(request: Request, file: UploadFile = File(...)):
             "action_items": analysis['action_items'],
             "sentiment": analysis['sentiment'],
             "risk_points": analysis['risk_points']
-        }
+        },
+        "timeline": conversation["timeline"],
+        "dialogue": conversation["dialogue"],
+        "overall_summary": conversation["overall_summary"],
+        "reply_suggestions": conversation["reply_suggestions"]
     }
     return templates.TemplateResponse("result.html", {"request": request, "result": result}) 

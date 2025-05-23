@@ -267,3 +267,50 @@ class MailAnalyzer:
 针对关键问题提供具体回应策略
 自动填充需要确认的信息（如日期、数据）
 标记需要跟进的行动项和责任分配
+
+
+这个邮件链路的时间轴正确，更正的需求如下：
+需求一共有两部分：
+第一部分：
+将邮件中的每一封历史邮件进行汇总，并以以下例子的的形式显示，然以时间倒序的形式展示：
+不是只展示最后一封邮件的内容，要求整个邮件历史中的每一封邮件都显示出来。
+----------
+邮件1: 时间：2025-05-15 06:31:31+00:00
+发件人：[('Katrin Piepenstock', 'Katrin.Piepenstock@alberts.de')]
+收件人：('Vanessa Buhayan', 'support@qima.com')
+抄送：('Claudia Zeller', 'Claudia.Zeller@alberts.de'), ('Silke Knust', 'Silke.Knust@alberts.de'), ('Claire Mouclier', 'claire.mouclier@qima.com'), ('', 'jeannette.quial@qima.com'), ('', 'mary_cris.quiroy@qima.com')
+主题：Antw: Re: [PAYMENT REMINDER] Castorama - Gust Alberts - INV-13W250007312
+摘要：Vanessa Buhayan询问关于逾期发票INV-13W250007312的付款状态。Katrin Piepenstock回复称，Claudia Zeller已于2025年5月13日通过邮件通知该发票已于同日支付，并附上了付款通知。如果有进一步问题，可以联系Katrin。
+情绪：这段内容的情绪是中性的。邮件的内容主要是关于付款状态的确认和沟通，没有明显的情绪表达。双方都在礼貌地交流信息，没有表现出明显的积极或消极情绪。
+
+邮件2: 时间：2025-05-14 06:31:31+00:00
+发件人：[('Katrin Piepenstock', 'Katrin.Piepenstock@alberts.de')]
+收件人：('Vanessa Buhayan', 'support@qima.com')
+抄送：('Claudia Zeller', 'Claudia.Zeller@alberts.de'), ('Silke Knust', 'Silke.Knust@alberts.de'), ('Claire Mouclier', 'claire.mouclier@qima.com'), ('', 'jeannette.quial@qima.com'), ('', 'mary_cris.quiroy@qima.com')
+主题：Antw: Re: [PAYMENT REMINDER] Castorama - Gust Alberts - INV-13W250007312
+摘要：Vanessa Buhayan询问关于逾期发票INV-13W250007312的付款状态。Katrin Piepenstock回复称，Claudia Zeller已于2025年5月13日通过邮件通知该发票已于同日支付，并附上了付款通知。如果有进一步问题，可以联系Katrin。
+情绪：这段内容的情绪是中性的。邮件的内容主要是关于付款状态的确认和沟通，没有明显的情绪表达。双方都在礼貌地交流信息，没有表现出明显的积极或消极情绪。
+
+邮件3: 时间：2025-05-13 06:31:31+00:00
+发件人：[('Katrin Piepenstock', 'Katrin.Piepenstock@alberts.de')]
+收件人：('Vanessa Buhayan', 'support@qima.com')
+抄送：('Claudia Zeller', 'Claudia.Zeller@alberts.de'), ('Silke Knust', 'Silke.Knust@alberts.de'), ('Claire Mouclier', 'claire.mouclier@qima.com'), ('', 'jeannette.quial@qima.com'), ('', 'mary_cris.quiroy@qima.com')
+主题：Antw: Re: [PAYMENT REMINDER] Castorama - Gust Alberts - INV-13W250007312
+摘要：Vanessa Buhayan询问关于逾期发票INV-13W250007312的付款状态。Katrin Piepenstock回复称，Claudia Zeller已于2025年5月13日通过邮件通知该发票已于同日支付，并附上了付款通知。如果有进一步问题，可以联系Katrin。
+情绪：这段内容的情绪是中性的。邮件的内容主要是关于付款状态的确认和沟通，没有明显的情绪表达。双方都在礼貌地交流信息，没有表现出明显的积极或消极情绪。
+----------
+
+第二部分，以时间+对话的形式显示整个邮件历史沟通记录，
+格式如下：
+发件人1，在时间1，邮件提到：邮件内容汇总
+发件人2，在时间2，邮件回复：邮件内容汇总
+发件人3，在时间3，邮件回复：邮件内容汇总
+发件人1，在时间3，邮件回复：邮件内容汇总
+
+
+我的想法是这样的，先读取邮件的数量，然后根据数据创建线程，如邮件中有10封历史邮件，这样就创建5个线程，并行调用LLM执行分析，全部执行完成后，再将结果再次调用LLM汇总整个邮件的内容，这样可以加快速度
+
+不能有这个限制，我需要分析完整的邮件内容： 正文长度限制：每封邮件正文只取前2000字，整体汇总只取最后10000字符，避免超长内容拖慢分析。
+----
+
+理论上大部历史邮件都应该有这些信息，所以可以取的出来的，请修改成这样的逻辑，先用python分析取得数据，如果pyhton分析不出取不到数据，请将邮件给个LLm，让LLM理解，并分析出这些内容。

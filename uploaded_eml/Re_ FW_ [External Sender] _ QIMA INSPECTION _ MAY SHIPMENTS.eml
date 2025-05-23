@@ -1,0 +1,2595 @@
+Received: from TYSPR01MB6086.apcprd01.prod.exchangelabs.com
+ (2603:1096:405:59::6) by KL1PR01MB4862.apcprd01.prod.exchangelabs.com with
+ HTTPS; Thu, 15 May 2025 12:07:57 +0000
+Received: from SG2P153CA0053.APCP153.PROD.OUTLOOK.COM (2603:1096:4:c6::22) by
+ TYSPR01MB6086.apcprd01.prod.exchangelabs.com (2603:1096:405:59::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8746.16; Thu, 15 May
+ 2025 12:07:51 +0000
+Received: from SG1PEPF000082E1.apcprd02.prod.outlook.com
+ (2603:1096:4:c6:cafe::dd) by SG2P153CA0053.outlook.office365.com
+ (2603:1096:4:c6::22) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8769.8 via Frontend Transport; Thu,
+ 15 May 2025 12:07:50 +0000
+Authentication-Results: spf=pass (sender IP is 2607:f8b0:4864:20::d30)
+ smtp.mailfrom=angelsoverseas.in; dkim=pass (signature was verified)
+ header.d=angelsoverseas-in.20230601.gappssmtp.com;dmarc=bestguesspass
+ action=none header.from=angelsoverseas.in;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of angelsoverseas.in
+ designates 2607:f8b0:4864:20::d30 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2607:f8b0:4864:20::d30;
+ helo=mail-io1-xd30.google.com; pr=C
+Received: from mail-io1-xd30.google.com (2607:f8b0:4864:20::d30) by
+ SG1PEPF000082E1.mail.protection.outlook.com (2603:1096:f:fff5::4) with
+ Microsoft SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id
+ 15.20.8722.18 via Frontend Transport; Thu, 15 May 2025 12:07:49 +0000
+Received: by mail-io1-xd30.google.com with SMTP id ca18e2360f4ac-8647a81e683so20293939f.1
+        for <support@qima.com>; Thu, 15 May 2025 05:07:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=angelsoverseas-in.20230601.gappssmtp.com; s=20230601; t=1747310867; x=1747915667; darn=qima.com;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=SDI5rPkT3pK8EnE5kkWF1l6PBuywgd72Umh6JfxUlL4=;
+        b=xwxbNXjTNHxDmu/wbVquQNJgNgFBrKIiPZTDNJBz6B46FatoLZLgyPEJUNFl7yjr/L
+         rNZoOss+AePg6wPt6RerL0+Y5ag5L8p6Y9/4J59Hy2o72sk0EEMZwRWRIh/VQv9oMFKI
+         soxIj7GShuovh2iPV4dYDPYqTNkIVCDexiSgKGJL1tklp3iEiop7vOFV3h5M2eWZDU9Q
+         XtKRZSbcCC3PInSN6tZwaRn42P000J2fPhvrb7fb1VgOxbdR8UsAHHkq0SesJbm+EVBk
+         pobmjJfOn8RtC95PnVnxLxkZ1pmczvonZBtS3a+kXELA2FglJMLI/OW+EgGvnMoEG1Xj
+         EvaA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1747310867; x=1747915667;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=SDI5rPkT3pK8EnE5kkWF1l6PBuywgd72Umh6JfxUlL4=;
+        b=R34yt9gMnwZ95iCNFUxd9fM4nKjQxVWKCkXkMsUEA1zJoVH1MXOdHFvV65AYTAhU6a
+         glnPz+GCYJyFSZ839BVwFi/hQU7LQXyTVWHhjItqJy8BN+TvNIBXutI1077bJp/RQ4oe
+         HAvAs53udUMcogayzXxRcfN9HLzF5u5rKq9Bx4ndYAsSe6A9jTN9dtPUab0jNchLXNUw
+         vuXQ1WrtCemoHvmfOldHNJB7BvQrf647PorXe//9xOz00L5CRl7/6zquQiQMhLn1a57I
+         mgDlFgJg8gLN5BB8luL0iOXaWpfYoc+ekqfaQ2t8J88vStoUp0r39MwmA/KBmIh/1gnu
+         RAyw==
+X-Gm-Message-State: AOJu0Yz1pE3Rco7SU3NNLAtxbIVMjrJy/SGnCK3fRMwePhApq2jrrO32
+	mSqmmWrvgGtRxfzW2eh/R0rqsOBovga59ODi7++O7+1C5tFIkr4y6oislYvxa1k2Usy1aL2SRnc
+	9rdgN3FRFqhHukWyeWf91FwqL5mf6n2QhWhzDyQ==
+X-Gm-Gg: ASbGnctnq8XYIIA3Ut3PZhFBKel41NttEIT/Waht7NSX5xICHzBiGdpbK9FUQQxm0vL
+	TAg11dHD52V/38tC/Ot51qsQ9srJUan+VfkwR/YFgLWn16fWaAOHiRL6jkeCbNYU0Dg6xewrBO1
+	kmqRF8Etu59shCJc91MOSHzun3OykUJxGM5ss=
+X-Google-Smtp-Source: AGHT+IFzv+bJhD2svKou7bn+hw+tbWXl4CJey85JweJ9lu8B3InuJgSQ46z2XO6xh+jrhtWqwsELpUKxM9W7kQ3IFfg=
+X-Received: by 2002:a05:6602:6002:b0:86a:93c:5571 with SMTP id
+ ca18e2360f4ac-86a093c5640mr780449939f.1.1747310866863; Thu, 15 May 2025
+ 05:07:46 -0700 (PDT)
+References: <CA+hJ15sNaLfrniGU3N86nx6tzSpcakQ0z1i4J8snU8Qj5Y4qfw@mail.gmail.com>
+ <JN1P275MB181610177115A1B1FD485B5ECD802@JN1P275MB1816.ZAFP275.PROD.OUTLOOK.COM>
+ <CA+hJ15vgcsoges0NU7m004rDrK+gN0Jmia_KqcUGmiGCvs0BwA@mail.gmail.com>
+ <JN1P275MB18166F7ECA683836646A068CCD832@JN1P275MB1816.ZAFP275.PROD.OUTLOOK.COM>
+ <CA+hJ15vbRsoEWNY-ZsXe14LTNKJYBXrEWVmf-D2d5JZ7iQLEwA@mail.gmail.com> <JNAP275MB259668D0E5815627D01A271FD190A@JNAP275MB2596.ZAFP275.PROD.OUTLOOK.COM>
+In-Reply-To: <JNAP275MB259668D0E5815627D01A271FD190A@JNAP275MB2596.ZAFP275.PROD.OUTLOOK.COM>
+From: Alka Gupta <alka@angelsoverseas.in>
+Date: Thu, 15 May 2025 17:37:36 +0530
+X-Gm-Features: AX0GCFvfxXl_QHIqptUYg-D3aagOXPbAO2SgGuyl-bJJipPkVbLE5DW1tN67woM
+Message-ID: <CA+hJ15u1hwXopXhhXJRQ2Hh_aVquzF=TJTUOjtZxebF_39ujcg@mail.gmail.com>
+Subject: Re: FW: [External Sender] : QIMA INSPECTION / MAY SHIPMENTS
+To: Lee-Ann Watson <LWatson@mrpricesport.com>
+Cc: QIMA Certificate <support@qima.com>, Ashwin Mungal <AMungal@mrpsport.com>, 
+	Annaleesha Ponnan <APonnan@mrpsport.com>, Zuzile Gema <ZGema@mrpricesport.com>
+Content-Type: multipart/related; boundary="000000000000884a9d06352b83f8"
+Return-Path: alka@angelsoverseas.in
+X-MS-Exchange-Organization-ExpirationStartTime: 15 May 2025 12:07:50.4774
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: e06e6214-72f2-4781-c9c8-08dd93a91d2d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: ed4961a7-e434-4dab-bd13-eeb8ac6ce35c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SG1PEPF000082E1:EE_|TYSPR01MB6086:EE_|KL1PR01MB4862:EE_
+X-MS-Exchange-Organization-AuthSource: SG1PEPF000082E1.apcprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: e06e6214-72f2-4781-c9c8-08dd93a91d2d
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|43022699015|12012899012|4053099003|13003099007|8096899003;
+X-Forefront-Antispam-Report: CIP:2607:f8b0:4864:20::d30;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-io1-xd30.google.com;PTR:mail-io1-xd30.google.com;CAT:NONE;SFS:(13230040)(43022699015)(12012899012)(4053099003)(13003099007)(8096899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 May 2025 12:07:49.7121
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e06e6214-72f2-4781-c9c8-08dd93a91d2d
+X-MS-Exchange-CrossTenant-Id: ed4961a7-e434-4dab-bd13-eeb8ac6ce35c
+X-MS-Exchange-CrossTenant-AuthSource: SG1PEPF000082E1.apcprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: TYSPR01MB6086
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.3171291
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8722.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UzlDNlpXY0tlL2w2dzZPNFg5N0xJbVk3V0NOQ3RDMDY4WVhQU0RCalBRNFd3?=
+ =?utf-8?B?a2o0Wm9RZzFuUTE5a2l4ckYrK3h3d0hNNG5SSkkrd1YzbXllSFJhVEJqRER0?=
+ =?utf-8?B?VjNMa3loVnZjVk0vd3dJZDVkaTdCdEg5MkcrMmY5V1FqS0YxQ3RMOHBEMlNw?=
+ =?utf-8?B?U3ptam50dkh0VDhLS1lqS0tpbCtWeVhFTGJRUG1Fa0M3Mm1VS2I4RVBxMmFS?=
+ =?utf-8?B?UkRGcWpSd3BTRVpBVjBMZVhzdnVLbXFBWm1LemVaeU9iZjM1QUlhMU1YeGlD?=
+ =?utf-8?B?VjJjc2hGZ2hPTFQwaVFNcWtDcmF2NDdPTVNMdmhrakdaN2FCc1ZHUDhnMklV?=
+ =?utf-8?B?dlVneGV4SUxwMnY1bFlhbXZpOHZxazVMVjhkZ292SXJ5NUI4c01XNEM0MFEr?=
+ =?utf-8?B?ZmsxZ3hpZ2lxbVhlTWlyRWI5NFpUM3ZUQnRidVZaYUJkWERwZFFJMmtXcVh1?=
+ =?utf-8?B?cTlBNDVPTWpnQjNIUDBiS0syZmpXSnUybFFCOG1SUGVUaUJReXNMWk4vWUVq?=
+ =?utf-8?B?USt2ZUE1VC9ML0ppczVPZEJsbEx5bkJNV2MweG5jRFdHQnd3eEdSQjJNeVdi?=
+ =?utf-8?B?US9TUE1ZOVZFZW52VS96TGNzMmtydksrcEhCaVlrR21XTkpLcVRtdWxWbWwr?=
+ =?utf-8?B?UllxS3lYUWVHRDhXcEpqTGdpMFRrcHZKK3JHZUtBU3ZzSnNObllWU3lLdHFu?=
+ =?utf-8?B?ZFRzanE4TGNXa2I5U1J5VjRSaU9jZTE4QmtnZEt0U3BNSGdocElIOGpZT3k5?=
+ =?utf-8?B?S2ZsYUpSeEVVcGlob0lMUHJvajJOc3REMTBiTGN4M0dNZlZHWXg2bTJyam1H?=
+ =?utf-8?B?d2FZU1ZRb3lyMzVMMGV3RjdPL1p1a1BBbzIzTXAzRkN2bUtLb3BUelRxZnpm?=
+ =?utf-8?B?THdFcnAzYUdMOUVVMkxuMWVibGJoT0M4TVgvVDhXQkJWZWxYKzVOSXg5ZGNZ?=
+ =?utf-8?B?V01oQ094NzBqRXNvYjlDWkZyeTQ2ZGRKM2tTTE1OVFFLd1RBMjI2MzU5Vmxx?=
+ =?utf-8?B?S1hwNGZxUW1idWp2Wlg1SnBRTVh5WHBhL2dXNVBXbVBuWnFKOFJOQzZJcDRB?=
+ =?utf-8?B?cEpwbE9nOTdxend1WGozVHRRM2FScHRrcHpKSlBkOGVUVkFBUitON0ovZ3R6?=
+ =?utf-8?B?aUdBSXBUcWJOck9MZTZOM001MFoyeWRhZndnK0NCeldnV3YxZ0hVR1YzU1I1?=
+ =?utf-8?B?TDl2bE1jNFVTK09iWUt4ajBQSmRJc0o3VGFaMXVEaVdQeHBKd1dpVVQzL3dS?=
+ =?utf-8?B?blo5aXh3R1ZWYVhjbnBRTCsySjduV01ZVlZtb0NjNURHVlMyUGJvMnI1ZWxT?=
+ =?utf-8?B?cW94dTU4ZnhuMXdDRWFUeUV0SmNLUVpDajlvNituWmZ2NTlaejNPcmdKZUIx?=
+ =?utf-8?B?amdRdVJsbEwwT2NVTVNrVEc5U3BCd2swQmVNVjZ6MlFqQ3JMTll2QXNEQS9j?=
+ =?utf-8?B?OFpIZkg1V3V5SWNIMSs1QTh1clpoQWw2U2lnTUVtcGliWS9DQjRJWFFiRndZ?=
+ =?utf-8?B?RnN1aTY2RkhRUGxWZHZuWEVoMEwxUXdhVmxvSHdPWXZ3SHdNaDk1V1MrYXJ2?=
+ =?utf-8?B?NmpBeFlBdE01RXRrclVtWjdUYmhOdnVxZjVxYmdiOFRVWHd2SStsakxOeGN1?=
+ =?utf-8?B?eE9lN2wrS0psTDJKcTduVFAvbVpESWgzbndhVERuLzZaaFZZZHBlb09iTllk?=
+ =?utf-8?B?aThLWGJ4N0JFdDM1ZW4rZ0xQRDdWNlJoMkg2WE1JRGtnU3Q2Y0UzU2NQdW8r?=
+ =?utf-8?B?UWthK21kRE5VMFl2ZC9NNGxhSGJQRnNwbHAwaXl4ODlDbXpEQzFPWFpqWHNU?=
+ =?utf-8?B?UVNZb1hMaE55cUpubTc0WVdSblR5d3JaOXArbmRxZ1BOejA3S0xvejYrazQ3?=
+ =?utf-8?B?aWp3MHlMQ2JCMzdrdzVwR1RnUUhGc1pXMDc3a3ljbGVWTVV1VkhITGhvaURO?=
+ =?utf-8?B?NmpuRmF4d1VhY2hQT0MzNER0ZmhtakJXTFdPMzc1a2Qra3MvMEU4MjBQeG9t?=
+ =?utf-8?B?R2doUjZ5TUQvVmdaOE9rSnpXbFlEZ04zUWFETEhJc0xaMzc2UlFXTmtBWWdv?=
+ =?utf-8?B?TnVPQkpSZE5oNE1xZE8rbXVmMXNSMjJHVlgvRnIwNm9oNHpVcnJ1Q3hhMkZw?=
+ =?utf-8?B?UHlYTW1vMkVST3pNTVdSTGFBeVNHS2FMWkR5UDlmNm5EZkpxMnRvcnlXYmhW?=
+ =?utf-8?B?VWtVVmNJUjNqbkhCb2h3SmNodVdLWXBMcDdycVFla3g0cTY4eWdTbldZS0lN?=
+ =?utf-8?B?Qld0MC81Zi8xUHBJQm5LVUY4M0FZWFhmL1QxL2dMaHNab0piR0tuMnVFZjZW?=
+ =?utf-8?B?RTF3OUFoWG5lRHpjWXoyZWl0YVpnQnRJQy9aTlR6b25RZGNPRHpRWm0vTDB3?=
+ =?utf-8?B?ZGRRaXRRQkJmczBHU3p3OFNRcUpwTHNNNWh5RDNpNksvYnBYWWF2SE0vMXEx?=
+ =?utf-8?B?QUZCd0VQT25nVmU5N21Sa2loWWhXVDNzOGNpNFdWb3hhcmd5RytGYXZWT01K?=
+ =?utf-8?B?eFpUUWNEd21aR1dqbTI2QS9SM0tjVUJ2dk1WK1QySW1lVXUvZUZEaWYya2kv?=
+ =?utf-8?Q?JvsQco26U=3D?=
+MIME-Version: 1.0
+
+--000000000000884a9d06352b83f8
+Content-Type: multipart/alternative; boundary="000000000000884a9c06352b83f7"
+
+--000000000000884a9c06352b83f7
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Lee-Ann,
+
+QIMA has already started the inspection and will be complete in the next
+couple of hrs.
+
+Please note we included po#961119 in QIMA as this style was completely
+packed.
+PO#961204 is in finishing and will be packed by EOD and that's why we were
+not able to include this style for QIMA inspection.
+Please be rest assured as we are checking this style thoroughly and as
+suggested and discussed QA is checking pieces inline so that once goods are
+packed we will not find many issues.
+
+Therefore as  informed yesterday,  we are getting the following 6 styles
+inspected by QIMA tomorrow, R-CLOUD-25099194.
+
+
+
+1. PO#950351 / 105373736 -- STYLE : JADE, LADIES SHORT
+
+2. PO#959859 / 105398935 -- STYLE : JEENA, LADIES SHORT
+
+3. PO#839181 / 104447220 -- STYLE: NAMINA, GIRLS SHORT
+
+4. PO#954021 / 105227601 -- STYLE: JAMA, MEN'S SHORT
+
+5. PO#945921 / 105334102 -- STYLE: JACKSON, MEN'S SHIRT
+
+6. PO#961119 / 105374462 -- STYLE : JAZQUE , MEN'S SHIRT
+
+
+
+There is one another style , PO#961204/105393813, STYLE: JEENA SHIRT, QTY:
+880 PCS We request you to please arrange exempt AI for this PO, on receipt
+of internal audit report which will be shared with you later today. thanks
+
+
+Best Regards,
+
+Allka Guptha
+
+Angels Overseas
+
+9873390038
+
+alka@angelsoverseas.in
+
+
+
+On Thu, May 15, 2025 at 4:58=E2=80=AFPM Lee-Ann Watson <LWatson@mrpricespor=
+t.com>
+wrote:
+
+> Hi Alka
+>
+>
+>
+> Upon review with Ashwin, we would like you to audit 6 styles and below
+> Jackson can be exempt from audit as I have approved supplier self-audit
+> report, but please can this be included in the shipment.(included in the
+> issue of certificates)
+>
+>
+>
+> PO#945921 / 105334102 -- STYLE: JACKSON, MEN'S SHIRT
+>
+>
+>
+> Trusting the above is workable so ladies, kids and x1 menswear order will
+> be audited by Qima.
+>
+>
+>
+> Regards
+>
+>
+>
+> Lee-ann
+>
+> *From:* Alka Gupta <alka@angelsoverseas.in>
+> *Sent:* 14 May 2025 3:17 PM
+> *To:* Ashwin Mungal <AMungal@mrpsport.com>; Lee-Ann Watson <
+> LWatson@mrpricesport.com>
+> *Cc:* Annaleesha Ponnan <APonnan@mrpsport.com>; Zuzile Gema <
+> ZGema@mrpricesport.com>
+> *Subject:* Re: [External Sender] : QIMA INSPECTION / MAY SHIPMENTS
+>
+>
+>
+> Hi Ashwin and Lee-Ann,
+>
+>
+>
+> Trust you are well.
+>
+>
+>
+> As discussed in our QA meeting, find enclosed herewith the bulk specs don=
+e
+> by fcty for your kind review.
+>
+>
+>
+> As per discussion we are getting the following 6 styles inspected by QIMA
+> tomorrow, R-CLOUD-25099194.
+>
+>
+>
+> 1. PO#950351 / 105373736 -- STYLE : JADE, LADIES SHORT
+>
+> 2. PO#959859 / 105398935 -- STYLE : JEENA, LADIES SHORT
+>
+> 3. PO#839181 / 104447220 -- STYLE: NAMINA, GIRLS SHORT
+>
+> 4. PO#954021 / 105227601 -- STYLE: JAMA, MEN'S SHORT
+>
+> 5. PO#945921 / 105334102 -- STYLE: JACKSON, MEN'S SHIRT
+>
+> 6. PO#961119 / 105374462 -- STYLE : JAZQUE , MEN'S SHIRT
+>
+>
+>
+> There is one another style , PO#961204/105393813, STYLE: JEENA SHIRT, QTY=
+:
+> 880 PCS We request you to please arrange exempt AI for this PO, on receip=
+t
+> of internal audit report which will be shared with you tomorrow.
+> Measurements are included in this e-mail. thanks
+>
+>
+>
+> Shall look forward to hearing from you. thanks
+>
+>
+>
+> Best Regards,
+>
+> Allka Guptha
+>
+> Angels Overseas
+>
+> 9873390038
+>
+> alka@angelsoverseas.in
+>
+>
+>
+>
+>
+>
+>
+> On Wed, Apr 30, 2025 at 12:49=E2=80=AFPM Ashwin Mungal <AMungal@mrpsport.=
+com>
+> wrote:
+>
+> Hi Alka
+>
+>
+>
+> All good and trust you to do your best.
+>
+>
+>
+> regards,
+>
+> Ashwin
+> ------------------------------
+>
+> *From:* Alka Gupta <alka@angelsoverseas.in>
+> *Sent:* Wednesday, April 30, 2025 09:05
+> *To:* Ashwin Mungal <AMungal@mrpsport.com>
+> *Cc:* Annaleesha Ponnan <APonnan@mrpsport.com>; Zuzile Gema <
+> ZGema@mrpricesport.com>
+> *Subject:* Re: [External Sender] : QIMA INSPECTION / MAY SHIPMENTS
+>
+>
+>
+> Hi Ashwin,
+>
+>
+>
+> Trust you are well.
+>
+>
+>
+> Thank you so much for your help and i will let you know the PO# and will
+> share an internal audit report for exempt AI.
+>
+> Once again  thanks and really appreciate your help =F0=9F=98=8A=F0=9F=99=
+=8F
+>
+>
+>
+> Best Regards,
+>
+> Allka Guptha
+>
+> Angels Overseas
+>
+> 9873390038
+>
+> alka@angelsoverseas.in
+>
+>
+>
+> On Tue, Apr 29, 2025 at 6:44=E2=80=AFPM Ashwin Mungal <AMungal@mrpsport.c=
+om>
+> wrote:
+>
+> Hi Alka
+>
+>
+>
+> Noted and going with your suggestion as per below:
+>
+>
+>
+> 2. Request an exemption for one of the seven POs, allowing us to conduct =
+a
+> self-inspection and share the internal audit report with you.
+>
+>
+>
+> You choose the PO to exempt.
+>
+>
+>
+> regards,
+>
+> Ashwin
+>
+>
+>
+> <http://www.Mrpsport.com>
+>
+> *Ashwin Mungal *
+> *Quality Manager *
+>
+> *T:* +27313108376
+> *E:* AMungal@Mrpricesport.com
+> *W:* http://www.mrpricesport.com
+>
+>
+>
+> The information in this email, including any attachments, is confidential
+> and may be legally privileged. It is intended solely for the use of the
+> addressee. If you have received this email in error, please notify the
+> sender immediately and delete it from your system. View our privacy polic=
+y
+> at https://www.mrpricegroup.com/privacy-policy and message disclaimer
+> here: https://www.mrpricegroup.com/message-disclaimer
+>
+> Mr Price Group is an Authorised Financial Services and Credit Provider:
+> FSP31450 and NCRCP46.
+>
+> PPlease consider the environment before printing this email.
+>
+>
+>
+>
+> ------------------------------
+>
+> *From:* Alka Gupta
+> *Sent:* Tuesday, April 29, 2025 13:49
+> *To:* Ashwin Mungal
+> *Cc:* Annaleesha Ponnan; Zuzile Gema
+> *Subject:* [External Sender] : QIMA INSPECTION / MAY SHIPMENTS
+>
+>
+>
+> Hi Ashwin,
+>
+>
+>
+> I hope you're doing well.
+>
+>
+>
+> In need of your help and guidance for May shipment QIMA inspection.
+>
+> Here are the details of the Purchase Orders (POs) and styles planned for
+> May shipping. We have a total of seven styles scheduled to ship in May, a=
+nd
+> we've consolidated them to be on a single vessel.
+>
+>
+>
+> We need to book QIMA for the inspection of these styles. Please note that
+> QIMA's policy allows a maximum of six POs/styles to be inspected in one
+> person-day. Given this, we have two options:
+>
+>
+>
+> 1. Request QIMA to make an exception and inspect all seven POs in one
+> person-day.
+>
+> 2. Request an exemption for one of the seven POs, allowing us to conduct =
+a
+> self-inspection and share the internal audit report with you.
+>
+>
+>
+> For your consideration, PO#961119 (Men's shirt, Navy) is identical in
+> style to PO#959516 (Men's shirt, another combo), which was already
+> inspected on April 25th.
+>
+>
+>
+> We are operating in a very competitive market with tight pricing, and our
+> target is to have at least four to five POs inspected per person-day to
+> manage costs effectively. Your understanding and assistance in this matte=
+r
+> would be greatly appreciated.
+>
+>
+>
+> Could you please let us know your thoughts on how we should proceed with
+> the QIMA inspection for these seven styles?
+>
+>
+>
+> Thanks for your time and guidance.
+>
+>
+>
+>
+>
+> Order Number
+>
+> Supplier Site
+>
+> Description
+>
+> Colour
+>
+> Quantity
+>
+> Plan Sub Dept
+>
+> Item
+>
+> Last Delivery Week
+>
+> Delivery Date
+>
+> Ship by
+>
+> 961119
+>
+> MPS ANGELS OVERSEAS
+>
+> Jacque 25 Check Shirt
+>
+> Navy
+>
+> 1,400
+>
+> OUT Mens App Top
+>
+> 105374462
+>
+> 202527
+>
+> 2025-07-04
+>
+> 2025-05-28
+>
+> 950351
+>
+> MPS ANGELS OVERSEAS
+>
+> JADE 25 SHORT PLAIN
+>
+> Stone
+>
+> 1,400
+>
+> OUT Ladies App Bot
+>
+> 105373736
+>
+> 202527
+>
+> 2025-07-04
+>
+> 2025-05-28
+>
+> 839181
+>
+> MPS ANGELS OVERSEAS
+>
+> NAMINA24 PAPERBAG STRIPE SHORT
+>
+> French Blue
+>
+> 1,000
+>
+> OUT Girls App
+>
+> 104447220
+>
+> 202527
+>
+> 2025-07-04
+>
+> 2025-05-28
+>
+>
+>
+>
+>
+> Order Number
+>
+> Supplier Site
+>
+> Description
+>
+> Colour
+>
+> Quantity
+>
+> Plan Sub Dept
+>
+> Comments
+>
+> Item
+>
+> Last Delivery Week
+>
+> Delivery Date
+>
+> Ship by
+>
+> 959858
+>
+> MPS ANGELS OVERSEAS
+>
+> JENNA 25 SHORT PLAIN
+>
+> Sky Blue
+>
+> 880
+>
+> OUT Ladies App Bot
+>
+> Pull forward week 27
+>
+> 105398935
+>
+> 202528
+>
+> 2025-07-11
+>
+> 2025-05-31
+>
+> 961204
+>
+> MPS ANGELS OVERSEAS
+>
+> JENNA 25 SS SHIRT PLAIN
+>
+> Sky Blue
+>
+> 880
+>
+> OUT Ladies App Top
+>
+> Pull forward week 27
+>
+> 105393813
+>
+> 202528
+>
+> 2025-07-11
+>
+> 2025-05-31
+>
+> 954021
+>
+> MPS ANGELS OVERSEAS
+>
+> JAMA PLAIN SHORTS
+>
+> Military Blue
+>
+> 830
+>
+> OUT Mens App Bot
+>
+> Pull forward week 27
+>
+> 105227601
+>
+> 202530
+>
+> 2025-07-25
+>
+> 2025-06-18
+>
+> 945921
+>
+> MPS ANGELS OVERSEAS
+>
+> JACKSON PLAIN SS SHIRT
+>
+> Military Blue
+>
+> 830
+>
+> OUT Mens App Top
+>
+> Pull forward week 27
+>
+> 105334102
+>
+> 202530
+>
+> 2025-07-25
+>
+> 2025-06-18
+>
+>
+>
+> Best Regards,
+>
+> Allka Guptha
+>
+> Angels Overseas
+>
+> 9873390038
+>
+> alka@angelsoverseas.in
+>
+>
+>
+>
+
+--000000000000884a9c06352b83f7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr"><div dir=3D"ltr">Hi&nbsp;Lee-Ann,<div><br></div><div>QIMA ha=
+s already started the inspection and will be complete in the next couple of=
+ hrs.&nbsp;</div><div><br></div><div>Please note we included po#961119 in Q=
+IMA as this style was completely packed.&nbsp;</div><div>PO#961204 is in fi=
+nishing and will be packed by EOD and that's why we were not able to includ=
+e this style for QIMA inspection.&nbsp;</div><div>Please be rest assured as=
+ we are checking this style thoroughly&nbsp;and as suggested and discussed =
+QA is checking pieces inline so that once goods are packed we will not find=
+ many issues.&nbsp;</div><div><br></div><div>Therefore as&nbsp; informed ye=
+sterday,&nbsp; we are getting the following 6 styles inspected by QIMA tomo=
+rrow, R-CLOUD-25099194.&nbsp;</div><div><div><p class=3D"MsoNormal"><u></u>=
+&nbsp;<u></u></p></div><div><p class=3D"MsoNormal">1. PO#950351 / 105373736=
+ -- STYLE : JADE, LADIES SHORT<u></u><u></u></p></div><div><p class=3D"MsoN=
+ormal">2. PO#959859 / 105398935 -- STYLE : JEENA, LADIES SHORT<u></u><u></u=
+></p></div><div><p class=3D"MsoNormal">3. PO#839181 / 104447220 -- STYLE: N=
+AMINA, GIRLS SHORT<u></u><u></u></p></div><div><p class=3D"MsoNormal">4. PO=
+#954021 / 105227601 -- STYLE: JAMA, MEN'S SHORT<u></u><u></u></p></div><div=
+><p class=3D"MsoNormal">5. PO#945921 / 105334102 -- STYLE: JACKSON, MEN'S S=
+HIRT<u></u><u></u></p></div><div><p class=3D"MsoNormal">6. PO#961119 / 1053=
+74462 -- STYLE : JAZQUE , MEN'S SHIRT<u></u><u></u></p></div><div><p class=
+=3D"MsoNormal"><u></u>&nbsp;<u></u></p></div><div><p class=3D"MsoNormal">Th=
+ere is one another style , PO#961204/105393813, STYLE: JEENA SHIRT, QTY: 88=
+0 PCS We request you to please arrange exempt AI for this PO, on receipt of=
+ internal audit report which will be shared with you later today. thanks&nb=
+sp;</p><p class=3D"MsoNormal"><br></p><p class=3D"MsoNormal">Best Regards,<=
+/p><p class=3D"MsoNormal">Allka Guptha</p><p class=3D"MsoNormal">Angels Ove=
+rseas</p><p class=3D"MsoNormal">9873390038</p><p class=3D"MsoNormal"><a hre=
+f=3D"mailto:alka@angelsoverseas.in">alka@angelsoverseas.in</a></p></div></d=
+iv><div><br></div><div><br></div></div><br><div class=3D"gmail_quote gmail_=
+quote_container"><div dir=3D"ltr" class=3D"gmail_attr">On Thu, May 15, 2025=
+ at 4:58=E2=80=AFPM Lee-Ann Watson &lt;<a href=3D"mailto:LWatson@mrpricespo=
+rt.com">LWatson@mrpricesport.com</a>&gt; wrote:<br></div><blockquote class=
+=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rg=
+b(204,204,204);padding-left:1ex"><div class=3D"msg6860586506706838117">
+
+
+
+
+
+<div lang=3D"EN-ZA" style=3D"overflow-wrap: break-word;">
+<div class=3D"m_6860586506706838117WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt">Hi Alka<u></u><u></u>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt"><u></u>&nbsp;<u></u><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt">Upon review with Ashw=
+in, we would like you to audit 6 styles and below Jackson can be exempt fro=
+m audit as I have approved supplier self-audit report, but please can this =
+be included
+ in the shipment.(included in the issue of certificates)<u></u><u></u></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt"><u></u>&nbsp;<u></u><=
+/span></p>
+<p class=3D"MsoNormal">PO#945921 / 105334102 -- STYLE: JACKSON, MEN'S SHIRT=
+<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+<p class=3D"MsoNormal">Trusting the above is workable so ladies, kids and x=
+1 menswear order will be audited by Qima.<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+<p class=3D"MsoNormal">Regards<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+<p class=3D"MsoNormal">Lee-ann<span style=3D"font-size:11pt"><u></u><u></u>=
+</span></p>
+<div style=3D"border-right:none;border-bottom:none;border-left:none;border-=
+top:1pt solid rgb(225,225,225);padding:3pt 0cm 0cm">
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-size:11pt;font=
+-family:Calibri,sans-serif">From:</span></b><span lang=3D"EN-US" style=3D"f=
+ont-size:11pt;font-family:Calibri,sans-serif"> Alka Gupta &lt;<a href=3D"ma=
+ilto:alka@angelsoverseas.in" target=3D"_blank">alka@angelsoverseas.in</a>&g=
+t;
+<br>
+<b>Sent:</b> 14 May 2025 3:17 PM<br>
+<b>To:</b> Ashwin Mungal &lt;<a href=3D"mailto:AMungal@mrpsport.com" target=
+=3D"_blank">AMungal@mrpsport.com</a>&gt;; Lee-Ann Watson &lt;<a href=3D"mai=
+lto:LWatson@mrpricesport.com" target=3D"_blank">LWatson@mrpricesport.com</a=
+>&gt;<br>
+<b>Cc:</b> Annaleesha Ponnan &lt;<a href=3D"mailto:APonnan@mrpsport.com" ta=
+rget=3D"_blank">APonnan@mrpsport.com</a>&gt;; Zuzile Gema &lt;<a href=3D"ma=
+ilto:ZGema@mrpricesport.com" target=3D"_blank">ZGema@mrpricesport.com</a>&g=
+t;<br>
+<b>Subject:</b> Re: [External Sender] : QIMA INSPECTION / MAY SHIPMENTS<u><=
+/u><u></u></span></p>
+</div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+<div>
+<div>
+<p class=3D"MsoNormal">Hi&nbsp;Ashwin and Lee-Ann,<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Trust&nbsp;you are well.<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">As discussed in our QA meeting, find enclosed herewi=
+th the bulk specs done by fcty for your kind review.&nbsp;<u></u><u></u></p=
+>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">As per discussion we are getting the following 6 sty=
+les inspected by QIMA tomorrow, R-CLOUD-25099194.&nbsp;<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">1. PO#950351 / 105373736 -- STYLE : JADE, LADIES SHO=
+RT<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">2. PO#959859 / 105398935 -- STYLE : JEENA, LADIES SH=
+ORT<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">3. PO#839181 / 104447220 -- STYLE: NAMINA, GIRLS SHO=
+RT<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">4. PO#954021 / 105227601 -- STYLE: JAMA, MEN'S SHORT=
+<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">5. PO#945921 / 105334102 -- STYLE: JACKSON, MEN'S SH=
+IRT<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">6. PO#961119 / 105374462 -- STYLE : JAZQUE , MEN'S S=
+HIRT<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">There is one another style , PO#961204/105393813, ST=
+YLE: JEENA SHIRT, QTY: 880 PCS We request you to please arrange exempt AI f=
+or this PO, on receipt of internal audit report which will be shared with y=
+ou tomorrow. Measurements are included
+ in this e-mail. thanks&nbsp;<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Shall look forward&nbsp;to hearing from you. thanks&=
+nbsp;<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Best Regards,<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Allka Guptha<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Angels Overseas<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">9873390038<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><a href=3D"mailto:alka@angelsoverseas.in" target=3D"=
+_blank">alka@angelsoverseas.in</a><u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+<div>
+<div>
+<p class=3D"MsoNormal">On Wed, Apr 30, 2025 at 12:49<span style=3D"font-fam=
+ily:Arial,sans-serif">=E2=80=AF</span>PM Ashwin Mungal &lt;<a href=3D"mailt=
+o:AMungal@mrpsport.com" target=3D"_blank">AMungal@mrpsport.com</a>&gt; wrot=
+e:<u></u><u></u></p>
+</div>
+<blockquote style=3D"border-top:none;border-right:none;border-bottom:none;b=
+order-left:1pt solid rgb(204,204,204);padding:0cm 0cm 0cm 6pt;margin-left:4=
+.8pt;margin-right:0cm">
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black">Hi Alka<u=
+></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black"><u></u>&n=
+bsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black">All good =
+and trust you to do your best.<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black"><u></u>&n=
+bsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black">regards,<=
+u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black">Ashwin<u>=
+</u><u></u></span></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"m_6860586506706838117m_-3708547288881128327divRplyFwdMsg">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11pt;font-family:Calibri=
+,sans-serif;color:black">From:</span></b><span style=3D"font-size:11pt;font=
+-family:Calibri,sans-serif;color:black"> Alka Gupta &lt;<a href=3D"mailto:a=
+lka@angelsoverseas.in" target=3D"_blank">alka@angelsoverseas.in</a>&gt;<br>
+<b>Sent:</b> Wednesday, April 30, 2025 09:05<br>
+<b>To:</b> Ashwin Mungal &lt;<a href=3D"mailto:AMungal@mrpsport.com" target=
+=3D"_blank">AMungal@mrpsport.com</a>&gt;<br>
+<b>Cc:</b> Annaleesha Ponnan &lt;<a href=3D"mailto:APonnan@mrpsport.com" ta=
+rget=3D"_blank">APonnan@mrpsport.com</a>&gt;; Zuzile Gema &lt;<a href=3D"ma=
+ilto:ZGema@mrpricesport.com" target=3D"_blank">ZGema@mrpricesport.com</a>&g=
+t;<br>
+<b>Subject:</b> Re: [External Sender] : QIMA INSPECTION / MAY SHIPMENTS</sp=
+an> <u></u>
+<u></u></p>
+<div>
+<p class=3D"MsoNormal">&nbsp;<u></u><u></u></p>
+</div>
+</div>
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal">Hi&nbsp;Ashwin, <u></u><u></u></p>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Trust you are well.<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Thank you so much for your help and i will let you k=
+now the PO# and will share an internal audit report for exempt AI.&nbsp;<u>=
+</u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Once again&nbsp; thanks and really appreciate your h=
+elp&nbsp;<span style=3D"font-family:&quot;Segoe UI Emoji&quot;,sans-serif">=
+=F0=9F=98=8A=F0=9F=99=8F</span><u></u><u></u></p>
+</div>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+<p class=3D"MsoNormal">Best Regards, <u></u><u></u></p>
+<div>
+<p class=3D"MsoNormal">Allka Guptha<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Angels Overseas<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">9873390038<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><a href=3D"mailto:alka@angelsoverseas.in" target=3D"=
+_blank">alka@angelsoverseas.in</a><u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+<div>
+<div>
+<p class=3D"MsoNormal">On Tue, Apr 29, 2025 at 6:44<span style=3D"font-fami=
+ly:Arial,sans-serif">=E2=80=AF</span>PM Ashwin Mungal &lt;<a href=3D"mailto=
+:AMungal@mrpsport.com" target=3D"_blank">AMungal@mrpsport.com</a>&gt; wrote=
+:<u></u><u></u></p>
+</div>
+<blockquote style=3D"border-top:none;border-right:none;border-bottom:none;b=
+order-left:1pt solid rgb(204,204,204);padding:0cm 0cm 0cm 6pt;margin-left:4=
+.8pt;margin-right:0cm">
+<div>
+<div>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D"width:100%">
+<tbody>
+<tr>
+<td style=3D"padding:0cm">
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black">Hi Alka<u=
+></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black"><u></u>&n=
+bsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black">Noted and=
+ going with your suggestion as per below:<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black"><u></u>&n=
+bsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black;background=
+:rgb(204,204,204)">2. Request an exemption for one of the seven POs, allowi=
+ng us to conduct a self-inspection and share the internal audit report with=
+ you.</span><span style=3D"font-size:11pt;color:black"><u></u><u></u></span=
+></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black"><u></u>&n=
+bsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black;background=
+:rgb(204,204,204)">You choose the PO to exempt.</span><span style=3D"font-s=
+ize:11pt;color:black"><u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black"><u></u>&n=
+bsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black;background=
+:rgb(204,204,204)">regards,</span><span style=3D"font-size:11pt;color:black=
+"><u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11pt;color:black">Ashwin<u>=
+</u><u></u></span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12pt"><u></u>&nbsp;<u></u></p=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=
+=3D"width:450pt">
+<tbody>
+<tr>
+<td width=3D"180" style=3D"width:135pt;padding:0.75pt 15pt 0.75pt 0.75pt">
+<div align=3D"right">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding:0cm">
+<p class=3D"MsoNormal"><a href=3D"https://apc01.safelinks.protection.outloo=
+k.com/?url=3Dhttp%3A%2F%2Fwww.mrpsport.com%2F&amp;data=3D05%7C02%7Csupport%=
+40qima.com%7Ce06e621472f24781c9c808dd93a91d2d%7Ced4961a7e4344dabbd13eeb8ac6=
+ce35c%7C0%7C0%7C638829076771701994%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGki=
+OnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3=
+D%7C0%7C%7C%7C&amp;sdata=3Df0Keiw5QLKFBDNCAkvgc83RjMdDjqTVFYgloA%2BiN01U%3D=
+&amp;reserved=3D0" originalsrc=3D"http://www.mrpsport.com/" target=3D"_blan=
+k"><span style=3D"text-decoration:none"><img border=3D"0" width=3D"289" hei=
+ght=3D"67" style=3D"width: 3.0138in; height: 0.7013in;" id=3D"m_68605865067=
+06838117Picture_x0020_1" src=3D"cid:ii_196d3d294762baed231"></span></a><u><=
+/u><u></u></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td width=3D"420" style=3D"width:315pt;padding:0.75pt">
+<div style=3D"border-top:none;border-right:none;border-bottom:none;border-l=
+eft:1pt solid rgb(204,204,204);padding:0cm 0cm 0cm 15pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:15pt;font-family:&quot;H=
+elvetica Neue&quot;,serif">Ashwin Mungal
+</span></b><span style=3D"font-size:9pt;font-family:&quot;Helvetica Neue&qu=
+ot;,serif"><br>
+<b><span style=3D"color:rgb(218,33,49)">Quality Manager </span></b><br>
+<br>
+<b>T:</b> +27313108376 <br>
+<b>E:</b> <a href=3D"mailto:AMungal@Mrpricesport.com" target=3D"_blank">AMu=
+ngal@Mrpricesport.com</a> <br>
+<b>W:</b> <a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3D=
+http%3A%2F%2Fwww.mrpricesport.com%2F&amp;data=3D05%7C02%7Csupport%40qima.co=
+m%7Ce06e621472f24781c9c808dd93a91d2d%7Ced4961a7e4344dabbd13eeb8ac6ce35c%7C0=
+%7C0%7C638829076771735060%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsI=
+lYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%=
+7C%7C&amp;sdata=3DrHaHBzhW%2FyUjqMmTyzzHqKvjTx3AjCgLEkAQBulUSxU%3D&amp;rese=
+rved=3D0" originalsrc=3D"http://www.mrpricesport.com/" target=3D"_blank">
+http://www.mrpricesport.com</a> <u></u><u></u></span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12pt"><u></u>&nbsp;<u></u></p=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D"width:100%">
+<tbody>
+<tr>
+<td style=3D"padding:0cm">
+<p style=3D"line-height:130%"><span style=3D"font-size:7.5pt;line-height:13=
+0%;font-family:Arial,sans-serif;color:gray">The information in this email, =
+including any attachments, is confidential and may be legally privileged. I=
+t is intended solely for the use of
+ the addressee. If you have received this email in error, please notify the=
+ sender immediately and delete it from your system. View our privacy policy=
+ at
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.mrpricegroup.com%2Fprivacy-policy&amp;data=3D05%7C02%7Csupport%40qi=
+ma.com%7Ce06e621472f24781c9c808dd93a91d2d%7Ced4961a7e4344dabbd13eeb8ac6ce35=
+c%7C0%7C0%7C638829076771752889%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRy=
+dWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C=
+0%7C%7C%7C&amp;sdata=3Duo9hY0LnFp0DlrztoPsx6dEmlWssQyIapYd8w2MjjDc%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.mrpricegroup.com/privacy-policy" ta=
+rget=3D"_blank">
+https://www.mrpricegroup.com/privacy-policy</a> and message disclaimer here=
+: <a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Fwww.mrpricegroup.com%2Fmessage-disclaimer&amp;data=3D05%7C02%7Csuppor=
+t%40qima.com%7Ce06e621472f24781c9c808dd93a91d2d%7Ced4961a7e4344dabbd13eeb8a=
+c6ce35c%7C0%7C0%7C638829076771770208%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcG=
+kiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D=
+%3D%7C0%7C%7C%7C&amp;sdata=3D8AJbx5KoVVsrgFihjUnEncaU98PHP7NwOeUQhajctWY%3D=
+&amp;reserved=3D0" originalsrc=3D"https://www.mrpricegroup.com/message-disc=
+laimer" target=3D"_blank">
+https://www.mrpricegroup.com/message-disclaimer</a><u></u><u></u></span></p=
+>
+<p style=3D"line-height:130%"><span style=3D"font-size:7.5pt;line-height:13=
+0%;font-family:Arial,sans-serif;color:gray">Mr Price Group is an Authorised=
+ Financial Services and Credit Provider: FSP31450 and NCRCP46.<u></u><u></u=
+></span></p>
+<p style=3D"line-height:130%"><span style=3D"font-family:Webdings;color:rgb=
+(0,153,0)">P</span><span style=3D"font-size:7.5pt;line-height:130%;font-fam=
+ily:Arial,sans-serif;color:rgb(0,153,0)">Please consider the environment be=
+fore printing this email.</span><span style=3D"font-size:10.5pt;line-height=
+:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)"><u></u><u></u></=
+span></p>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-famil=
+y:Calibri,sans-serif;color:black"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-h=
+eight:130%">
+<span style=3D"font-size:10.5pt;line-height:130%;font-family:Arial,sans-ser=
+if;color:rgb(102,102,102)">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</span></div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><b><span style=3D"font-fa=
+mily:Calibri,sans-serif;color:black">From:</span></b><span style=3D"font-fa=
+mily:Calibri,sans-serif;color:black">&nbsp;Alka Gupta<br>
+<b>Sent:</b>&nbsp;Tuesday, April 29, 2025 13:49<br>
+<b>To:</b>&nbsp;Ashwin Mungal<br>
+<b>Cc:</b>&nbsp;Annaleesha Ponnan; Zuzile Gema<br>
+<b>Subject:</b>&nbsp;[External Sender] : QIMA INSPECTION / MAY SHIPMENTS <u=
+></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-famil=
+y:Calibri,sans-serif;color:black"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">Hi Ashwin,<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">I hope you're doing well.<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">In need of your help and guidance for&nbsp;May shipment QIMA inspection.&=
+nbsp;<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">Here are the details of the Purchase Orders (POs) and styles planned for =
+May shipping. We have a total of seven styles
+ scheduled to ship in May, and we've consolidated them to be on a single ve=
+ssel.<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">We need to book QIMA for the inspection of these styles. Please note that=
+ QIMA's policy allows a maximum of six POs/styles
+ to be inspected in one person-day. Given this, we have two options:<u></u>=
+<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">1. Request QIMA to make an exception and inspect all seven POs in one per=
+son-day.<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">2. Request an exemption for one of the seven POs, allowing us to conduct =
+a self-inspection and share the internal audit
+ report with you.<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">For your consideration, PO#961119 (Men's shirt, Navy) is identical in sty=
+le to PO#959516 (Men's shirt, another combo),
+ which was already inspected on April 25th.<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">We are operating in a very competitive market with tight pricing, and our=
+ target is to have at least four to five POs
+ inspected per person-day to manage costs effectively. Your understanding a=
+nd assistance in this matter would be greatly appreciated.<u></u><u></u></s=
+pan></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">Could you please let us know your thoughts on how we should proceed with =
+the QIMA inspection for these seven styles?<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">Thanks for your time and guidance.<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"1086" styl=
+e=3D"width:814.85pt;border-collapse:collapse;box-sizing:border-box;border-s=
+pacing:0px">
+<tbody>
+<tr style=3D"height:19.5pt">
+<td width=3D"97" style=3D"width:73pt;border:1pt solid darkgray;background:l=
+ightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Order Number</span><span style=
+=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"184" style=3D"width:138pt;border-top:1pt solid darkgray;border=
+-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none=
+;background:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Supplier Site</span><span styl=
+e=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"196" style=3D"width:147pt;border-top:1pt solid darkgray;border=
+-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none=
+;background:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Description</span><span style=
+=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"99" style=3D"width:74pt;border-top:1pt solid darkgray;border-r=
+ight:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;b=
+ackground:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Colour</span><span style=3D"co=
+lor:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"65" style=3D"width:49pt;border-top:1pt solid darkgray;border-r=
+ight:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;b=
+ackground:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Quantity</span><span style=3D"=
+color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"104" style=3D"width:78pt;border-top:1pt solid darkgray;border-=
+right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;=
+background:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Plan Sub Dept</span><span styl=
+e=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"101" style=3D"width:76pt;border-top:1pt solid darkgray;border-=
+right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;=
+background:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Item</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"63" style=3D"width:47pt;border-top:1pt solid darkgray;border-r=
+ight:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;b=
+ackground:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Last Delivery Week</span><span=
+ style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:1pt solid darkgray;border-=
+right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;=
+background:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Delivery Date</span><span styl=
+e=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"74" style=3D"width:55.85pt;border-top:1pt solid darkgray;borde=
+r-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:non=
+e;background:lightgrey;padding:0cm 5.4pt;height:19.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Ship by</span><span style=3D"c=
+olor:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+</tr>
+<tr style=3D"height:17.25pt">
+<td width=3D"97" style=3D"width:73pt;border-right:1pt solid darkgray;border=
+-bottom:1pt solid darkgray;border-left:1pt solid darkgray;border-top:none;p=
+adding:0cm 5.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+961119</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"184" style=3D"width:138pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+MPS ANGELS OVERSEAS</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u>=
+</span></p>
+</td>
+<td width=3D"196" style=3D"width:147pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+Jacque 25 Check Shirt</span><span style=3D"color:rgb(80,0,80)"><u></u><u></=
+u></span></p>
+</td>
+<td width=3D"99" style=3D"width:74pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+Navy</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"65" style=3D"width:49pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">1,400</span><span style=3D"color=
+:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"104" style=3D"width:78pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+OUT Mens App Top</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></s=
+pan></p>
+</td>
+<td width=3D"101" style=3D"width:76pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+105374462</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p=
+>
+</td>
+<td width=3D"63" style=3D"width:47pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">202527</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-07-04</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+<td width=3D"74" style=3D"width:55.85pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-05-28</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+</tr>
+<tr style=3D"height:17.25pt">
+<td width=3D"97" style=3D"width:73pt;border-right:1pt solid darkgray;border=
+-bottom:1pt solid darkgray;border-left:1pt solid darkgray;border-top:none;p=
+adding:0cm 5.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+950351</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"184" style=3D"width:138pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+MPS ANGELS OVERSEAS</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u>=
+</span></p>
+</td>
+<td width=3D"196" style=3D"width:147pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+JADE 25 SHORT PLAIN</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u>=
+</span></p>
+</td>
+<td width=3D"99" style=3D"width:74pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+Stone</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"65" style=3D"width:49pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">1,400</span><span style=3D"color=
+:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"104" style=3D"width:78pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+OUT Ladies App Bot</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u><=
+/span></p>
+</td>
+<td width=3D"101" style=3D"width:76pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+105373736</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p=
+>
+</td>
+<td width=3D"63" style=3D"width:47pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">202527</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-07-04</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+<td width=3D"74" style=3D"width:55.85pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-05-28</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+</tr>
+<tr style=3D"height:17.25pt">
+<td width=3D"97" style=3D"width:73pt;border-right:1pt solid darkgray;border=
+-bottom:1pt solid darkgray;border-left:1pt solid darkgray;border-top:none;p=
+adding:0cm 5.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+839181</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"184" style=3D"width:138pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+MPS ANGELS OVERSEAS</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u>=
+</span></p>
+</td>
+<td width=3D"196" style=3D"width:147pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+NAMINA24 PAPERBAG STRIPE SHORT</span><span style=3D"color:rgb(80,0,80)"><u>=
+</u><u></u></span></p>
+</td>
+<td width=3D"99" style=3D"width:74pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+French Blue</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span><=
+/p>
+</td>
+<td width=3D"65" style=3D"width:49pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">1,000</span><span style=3D"color=
+:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"104" style=3D"width:78pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+OUT Girls App</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span=
+></p>
+</td>
+<td width=3D"101" style=3D"width:76pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+104447220</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p=
+>
+</td>
+<td width=3D"63" style=3D"width:47pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:17.25pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">202527</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-07-04</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+<td width=3D"74" style=3D"width:55.85pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:17.25pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-05-28</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style=3D"line-height:130%"><span style=3D"font-size:11pt;line-height:130=
+%;font-family:Arial,sans-serif;color:rgb(80,0,80)">&nbsp;</span><span style=
+=3D"font-size:10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rg=
+b(80,0,80)"><u></u><u></u></span></p>
+<p style=3D"line-height:130%"><span style=3D"font-size:11pt;line-height:130=
+%;font-family:Arial,sans-serif;color:rgb(80,0,80)">&nbsp;</span><span style=
+=3D"font-size:10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rg=
+b(80,0,80)"><u></u><u></u></span></p>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"1064" styl=
+e=3D"width:798.1pt;border-collapse:collapse;box-sizing:border-box;border-sp=
+acing:0px">
+<tbody>
+<tr style=3D"height:14.5pt">
+<td width=3D"97" style=3D"width:73pt;border:1pt solid darkgray;background:l=
+ightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Order Number</span><span style=
+=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"159" style=3D"width:119pt;border-top:1pt solid darkgray;border=
+-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none=
+;background:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Supplier Site</span><span styl=
+e=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"179" style=3D"width:134pt;border-top:1pt solid darkgray;border=
+-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none=
+;background:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Description</span><span style=
+=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"66" style=3D"width:49.15pt;border-top:1pt solid darkgray;borde=
+r-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:non=
+e;background:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Colour</span><span style=3D"co=
+lor:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:1pt solid darkgray;border-r=
+ight:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;b=
+ackground:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Quantity</span><span style=3D"=
+color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:1pt solid darkgray;border-=
+right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;=
+background:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Plan Sub Dept</span><span styl=
+e=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"117" style=3D"width:87.9pt;border-top:1pt solid darkgray;borde=
+r-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:non=
+e;background:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Comments</span><span style=3D"=
+color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"61" style=3D"width:46.05pt;border-top:1pt solid darkgray;borde=
+r-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:non=
+e;background:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Item</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:1pt solid darkgray;border-r=
+ight:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:none;b=
+ackground:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Last Delivery Week</span><span=
+ style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"73" style=3D"width:54.75pt;border-top:1pt solid darkgray;borde=
+r-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:non=
+e;background:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Delivery Date</span><span styl=
+e=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"82" style=3D"width:61.25pt;border-top:1pt solid darkgray;borde=
+r-right:1pt solid darkgray;border-bottom:1pt solid darkgray;border-left:non=
+e;background:lightgrey;padding:0cm 5.4pt;height:14.5pt">
+<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size:8p=
+t;font-family:Tahoma,sans-serif;color:black">Ship by</span><span style=3D"c=
+olor:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+</tr>
+<tr style=3D"height:15pt">
+<td width=3D"97" style=3D"width:73pt;border-right:1pt solid darkgray;border=
+-bottom:1pt solid darkgray;border-left:1pt solid darkgray;border-top:none;p=
+adding:0cm 5.4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+959858</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"159" style=3D"width:119pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+MPS ANGELS OVERSEAS</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u>=
+</span></p>
+</td>
+<td width=3D"179" style=3D"width:134pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+JENNA 25 SHORT PLAIN</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u=
+></span></p>
+</td>
+<td width=3D"66" style=3D"width:49.15pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+Sky Blue</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:15pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">880</span><span style=3D"color:r=
+gb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+OUT Ladies App Bot</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u><=
+/span></p>
+</td>
+<td width=3D"117" style=3D"width:87.9pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black;b=
+ackground:yellow">Pull forward week 27</span><span style=3D"color:rgb(80,0,=
+80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"61" style=3D"width:46.05pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+105398935</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p=
+>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:15pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">202528</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"73" style=3D"width:54.75pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-07-11</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+<td width=3D"82" style=3D"width:61.25pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-05-31</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+</tr>
+<tr style=3D"height:15.5pt">
+<td width=3D"97" style=3D"width:73pt;border-right:1pt solid darkgray;border=
+-bottom:1pt solid darkgray;border-left:1pt solid darkgray;border-top:none;p=
+adding:0cm 5.4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+961204</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"159" style=3D"width:119pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+MPS ANGELS OVERSEAS</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u>=
+</span></p>
+</td>
+<td width=3D"179" style=3D"width:134pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+JENNA 25 SS SHIRT PLAIN</span><span style=3D"color:rgb(80,0,80)"><u></u><u>=
+</u></span></p>
+</td>
+<td width=3D"66" style=3D"width:49.15pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+Sky Blue</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:15.5pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">880</span><span style=3D"color:r=
+gb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+OUT Ladies App Top</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u><=
+/span></p>
+</td>
+<td width=3D"117" style=3D"width:87.9pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black;b=
+ackground:yellow">Pull forward week 27</span><span style=3D"color:rgb(80,0,=
+80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"61" style=3D"width:46.05pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+105393813</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p=
+>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:15.5pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">202528</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"73" style=3D"width:54.75pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-07-11</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+<td width=3D"82" style=3D"width:61.25pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:15.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-05-31</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+</tr>
+<tr style=3D"height:14.5pt">
+<td width=3D"97" style=3D"width:73pt;border-right:1pt solid darkgray;border=
+-bottom:1pt solid darkgray;border-left:1pt solid darkgray;border-top:none;p=
+adding:0cm 5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+954021</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"159" style=3D"width:119pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+MPS ANGELS OVERSEAS</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u>=
+</span></p>
+</td>
+<td width=3D"179" style=3D"width:134pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+JAMA PLAIN SHORTS</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></=
+span></p>
+</td>
+<td width=3D"66" style=3D"width:49.15pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+Military Blue</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span=
+></p>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:14.5pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">830</span><span style=3D"color:r=
+gb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+OUT Mens App Bot</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></s=
+pan></p>
+</td>
+<td width=3D"117" style=3D"width:87.9pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black;b=
+ackground:yellow">Pull forward week 27</span><span style=3D"color:rgb(80,0,=
+80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"61" style=3D"width:46.05pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+105227601</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p=
+>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:14.5pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">202530</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"73" style=3D"width:54.75pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-07-25</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+<td width=3D"82" style=3D"width:61.25pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-06-18</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+</tr>
+<tr style=3D"height:14.5pt">
+<td width=3D"97" style=3D"width:73pt;border-right:1pt solid darkgray;border=
+-bottom:1pt solid darkgray;border-left:1pt solid darkgray;border-top:none;p=
+adding:0cm 5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+945921</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"159" style=3D"width:119pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+MPS ANGELS OVERSEAS</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u>=
+</span></p>
+</td>
+<td width=3D"179" style=3D"width:134pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+JACKSON PLAIN SS SHIRT</span><span style=3D"color:rgb(80,0,80)"><u></u><u><=
+/u></span></p>
+</td>
+<td width=3D"66" style=3D"width:49.15pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+Military Blue</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span=
+></p>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:14.5pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">830</span><span style=3D"color:r=
+gb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+OUT Mens App Top</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></s=
+pan></p>
+</td>
+<td width=3D"117" style=3D"width:87.9pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black;b=
+ackground:yellow">Pull forward week 27</span><span style=3D"color:rgb(80,0,=
+80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"61" style=3D"width:46.05pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+105334102</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></p=
+>
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:14.5pt">
+<p align=3D"right" style=3D"text-align:right"><span style=3D"font-size:8pt;=
+font-family:Tahoma,sans-serif;color:black">202530</span><span style=3D"colo=
+r:rgb(80,0,80)"><u></u><u></u></span></p>
+</td>
+<td width=3D"73" style=3D"width:54.75pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-07-25</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+<td width=3D"82" style=3D"width:61.25pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+<p><span style=3D"font-size:8pt;font-family:Tahoma,sans-serif;color:black">=
+2025-06-18</span><span style=3D"color:rgb(80,0,80)"><u></u><u></u></span></=
+p>
+</td>
+</tr>
+<tr style=3D"height:14.5pt">
+<td width=3D"97" style=3D"width:73pt;border-right:1pt solid darkgray;border=
+-bottom:1pt solid darkgray;border-left:1pt solid darkgray;border-top:none;p=
+adding:0cm 5.4pt;height:14.5pt">
+</td>
+<td width=3D"159" style=3D"width:119pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:14.5pt">
+</td>
+<td width=3D"179" style=3D"width:134pt;border-top:none;border-left:none;bor=
+der-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5=
+.4pt;height:14.5pt">
+</td>
+<td width=3D"66" style=3D"width:49.15pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:14.5pt">
+</td>
+<td width=3D"103" style=3D"width:77pt;border-top:none;border-left:none;bord=
+er-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.=
+4pt;height:14.5pt">
+</td>
+<td width=3D"117" style=3D"width:87.9pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+</td>
+<td width=3D"61" style=3D"width:46.05pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+</td>
+<td width=3D"64" style=3D"width:48pt;border-top:none;border-left:none;borde=
+r-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm 5.4=
+pt;height:14.5pt">
+</td>
+<td width=3D"73" style=3D"width:54.75pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+</td>
+<td width=3D"82" style=3D"width:61.25pt;border-top:none;border-left:none;bo=
+rder-bottom:1pt solid darkgray;border-right:1pt solid darkgray;padding:0cm =
+5.4pt;height:14.5pt">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><u></u>&nbsp;<u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">Best Regards,<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">Allka Guptha<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">Angels Overseas<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+">9873390038<u></u><u></u></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"line-height:130%"><span style=3D"font-size:=
+10.5pt;line-height:130%;font-family:Arial,sans-serif;color:rgb(102,102,102)=
+"><a href=3D"mailto:alka@angelsoverseas.in" target=3D"_blank">alka@angelsov=
+erseas.in</a><u></u><u></u></span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+
+</div></blockquote></div></div>
+
+--000000000000884a9c06352b83f7--
+
+--000000000000884a9d06352b83f8
+Content-Type: image/jpeg; name="0.jpg"
+Content-Disposition: inline; filename="0.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <ii_196d3d294762baed231>
+X-Attachment-Id: ii_196d3d294762baed231
+
+/9j/4AAQSkZJRgABAQEASABIAAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/
+7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEAAQBIAAAAAQAB/+FG52h0dHA6Ly9u
+cy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhp
+SHpyZVN6TlRjemtjOWQiPz4NCjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6
+eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDQ2MCwgMjAyMC8wNS8xMi0xNjow
+NDoxNyAgICAgICAgIj4NCgk8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5
+OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPg0KCQk8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0i
+IiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcD0i
+aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wR0ltZz0iaHR0cDovL25zLmFk
+b2JlLmNvbS94YXAvMS4wL2cvaW1nLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20v
+eGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5
+cGUvUmVzb3VyY2VSZWYjIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4w
+L3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczppbGx1c3RyYXRvcj0iaHR0cDovL25zLmFkb2Jl
+LmNvbS9pbGx1c3RyYXRvci8xLjAvIiB4bWxuczpwZGY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGRm
+LzEuMy8iPg0KCQkJPGRjOmZvcm1hdD5pbWFnZS9qcGVnPC9kYzpmb3JtYXQ+DQoJCQk8ZGM6dGl0
+bGU+DQoJCQkJPHJkZjpBbHQ+DQoJCQkJCTxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+TVJf
+UFJJQ0VfU1BPUlRfTE9HT19BSV9DTVlLX0JMQUNLX0lOX0xJTkU8L3JkZjpsaT4NCgkJCQk8L3Jk
+ZjpBbHQ+DQoJCQk8L2RjOnRpdGxlPg0KCQkJPHhtcDpNZXRhZGF0YURhdGU+MjAyMC0wOS0xN1Qx
+NjozOToyMSswMjowMDwveG1wOk1ldGFkYXRhRGF0ZT4NCgkJCTx4bXA6TW9kaWZ5RGF0ZT4yMDIw
+LTA5LTE3VDE0OjM5OjIyWjwveG1wOk1vZGlmeURhdGU+DQoJCQk8eG1wOkNyZWF0ZURhdGU+MjAy
+MC0wOS0xN1QxNjozOToyMSswMjowMDwveG1wOkNyZWF0ZURhdGU+DQoJCQk8eG1wOkNyZWF0b3JU
+b29sPkFkb2JlIElsbHVzdHJhdG9yIDI0LjIgKE1hY2ludG9zaCk8L3htcDpDcmVhdG9yVG9vbD4N
+CgkJCTx4bXA6VGh1bWJuYWlscz4NCgkJCQk8cmRmOkFsdD4NCgkJCQkJPHJkZjpsaSByZGY6cGFy
+c2VUeXBlPSJSZXNvdXJjZSI+DQoJCQkJCQk8eG1wR0ltZzp3aWR0aD4yNTY8L3htcEdJbWc6d2lk
+dGg+DQoJCQkJCQk8eG1wR0ltZzpoZWlnaHQ+MzI8L3htcEdJbWc6aGVpZ2h0Pg0KCQkJCQkJPHht
+cEdJbWc6Zm9ybWF0PkpQRUc8L3htcEdJbWc6Zm9ybWF0Pg0KCQkJCQkJPHhtcEdJbWc6aW1hZ2U+
+LzlqLzRBQVFTa1pKUmdBQkFnRUFTQUJJQUFELzdRQXNVR2h2ZEc5emFHOXdJRE11TUFBNFFrbE5B
+KzBBQUFBQUFCQUFTQUFBQUFFQQ0KQVFCSUFBQUFBUUFCLytJTVdFbERRMTlRVWs5R1NVeEZBQUVC
+QUFBTVNFeHBibThDRUFBQWJXNTBjbEpIUWlCWVdWb2dCODRBQWdBSg0KQUFZQU1RQUFZV056Y0Ux
+VFJsUUFBQUFBU1VWRElITlNSMElBQUFBQUFBQUFBQUFBQUFBQUFQYldBQUVBQUFBQTB5MUlVQ0Fn
+QUFBQQ0KQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFB
+QUFBQUFBQUFSWTNCeWRBQUFBVkFBQUFBeg0KWkdWell3QUFBWVFBQUFCc2QzUndkQUFBQWZBQUFB
+QVVZbXR3ZEFBQUFnUUFBQUFVY2xoWldnQUFBaGdBQUFBVVoxaFpXZ0FBQWl3QQ0KQUFBVVlsaFpX
+Z0FBQWtBQUFBQVVaRzF1WkFBQUFsUUFBQUJ3Wkcxa1pBQUFBc1FBQUFDSWRuVmxaQUFBQTB3QUFB
+Q0dkbWxsZHdBQQ0KQTlRQUFBQWtiSFZ0YVFBQUEvZ0FBQUFVYldWaGN3QUFCQXdBQUFBa2RHVmph
+QUFBQkRBQUFBQU1jbFJTUXdBQUJEd0FBQWdNWjFSUw0KUXdBQUJEd0FBQWdNWWxSU1F3QUFCRHdB
+QUFnTWRHVjRkQUFBQUFCRGIzQjVjbWxuYUhRZ0tHTXBJREU1T1RnZ1NHVjNiR1YwZEMxUQ0KWVdO
+cllYSmtJRU52YlhCaGJua0FBR1JsYzJNQUFBQUFBQUFBRW5OU1IwSWdTVVZETmpFNU5qWXRNaTR4
+QUFBQUFBQUFBQUFBQUFBUw0KYzFKSFFpQkpSVU0yTVRrMk5pMHlMakVBQUFBQUFBQUFBQUFBQUFB
+QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQQ0KQUFBQUFBQUFBQUFBQUZoWldp
+QUFBQUFBQUFEelVRQUJBQUFBQVJiTVdGbGFJQUFBQUFBQUFBQUFBQUFBQUFBQUFBQllXVm9nQUFB
+QQ0KQUFBQWI2SUFBRGoxQUFBRGtGaFpXaUFBQUFBQUFBQmltUUFBdDRVQUFCamFXRmxhSUFBQUFB
+QUFBQ1NnQUFBUGhBQUF0czlrWlhOag0KQUFBQUFBQUFBQlpKUlVNZ2FIUjBjRG92TDNkM2R5NXBa
+V011WTJnQUFBQUFBQUFBQUFBQUFCWkpSVU1nYUhSMGNEb3ZMM2QzZHk1cA0KWldNdVkyZ0FBQUFB
+QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFa
+R1Z6WXdBQQ0KQUFBQUFBQXVTVVZESURZeE9UWTJMVEl1TVNCRVpXWmhkV3gwSUZKSFFpQmpiMnh2
+ZFhJZ2MzQmhZMlVnTFNCelVrZENBQUFBQUFBQQ0KQUFBQUFBQXVTVVZESURZeE9UWTJMVEl1TVNC
+RVpXWmhkV3gwSUZKSFFpQmpiMnh2ZFhJZ2MzQmhZMlVnTFNCelVrZENBQUFBQUFBQQ0KQUFBQUFB
+QUFBQUFBQUFBQUFBQUFBR1JsYzJNQUFBQUFBQUFBTEZKbFptVnlaVzVqWlNCV2FXVjNhVzVuSUVO
+dmJtUnBkR2x2YmlCcA0KYmlCSlJVTTJNVGsyTmkweUxqRUFBQUFBQUFBQUFBQUFBQ3hTWldabGNt
+VnVZMlVnVm1sbGQybHVaeUJEYjI1a2FYUnBiMjRnYVc0Zw0KU1VWRE5qRTVOall0TWk0eEFBQUFB
+QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCMmFXVjNBQUFBQUFBVHBQNEFGRjh1QUJEUA0K
+RkFBRDdjd0FCQk1MQUFOY25nQUFBQUZZV1ZvZ0FBQUFBQUJNQ1ZZQVVBQUFBRmNmNTIxbFlYTUFB
+QUFBQUFBQUFRQUFBQUFBQUFBQQ0KQUFBQUFBQUFBQUFBQUFLUEFBQUFBbk5wWnlBQUFBQUFRMUpV
+SUdOMWNuWUFBQUFBQUFBRUFBQUFBQVVBQ2dBUEFCUUFHUUFlQUNNQQ0KS0FBdEFESUFOd0E3QUVB
+QVJRQktBRThBVkFCWkFGNEFZd0JvQUcwQWNnQjNBSHdBZ1FDR0FJc0FrQUNWQUpvQW53Q2tBS2tB
+cmdDeQ0KQUxjQXZBREJBTVlBeXdEUUFOVUEyd0RnQU9VQTZ3RHdBUFlBK3dFQkFRY0JEUUVUQVJr
+Qkh3RWxBU3NCTWdFNEFUNEJSUUZNQVZJQg0KV1FGZ0FXY0JiZ0YxQVh3Qmd3R0xBWklCbWdHaEFh
+a0JzUUc1QWNFQnlRSFJBZGtCNFFIcEFmSUIrZ0lEQWd3Q0ZBSWRBaVlDTHdJNA0KQWtFQ1N3SlVB
+bDBDWndKeEFub0NoQUtPQXBnQ29nS3NBcllDd1FMTEF0VUM0QUxyQXZVREFBTUxBeFlESVFNdEF6
+Z0RRd05QQTFvRA0KWmdOeUEzNERpZ09XQTZJRHJnTzZBOGNEMHdQZ0Erd0QrUVFHQkJNRUlBUXRC
+RHNFU0FSVkJHTUVjUVIrQkl3RW1nU29CTFlFeEFUVA0KQk9FRThBVCtCUTBGSEFVckJUb0ZTUVZZ
+QldjRmR3V0dCWllGcGdXMUJjVUYxUVhsQmZZR0JnWVdCaWNHTndaSUJsa0dhZ1o3Qm93Rw0KblFh
+dkJzQUcwUWJqQnZVSEJ3Y1pCeXNIUFFkUEIyRUhkQWVHQjVrSHJBZS9COUlINVFmNENBc0lId2d5
+Q0VZSVdnaHVDSUlJbGdpcQ0KQ0w0STBnam5DUHNKRUFrbENUb0pUd2xrQ1hrSmp3bWtDYm9Kendu
+bENmc0tFUW9uQ2owS1ZBcHFDb0VLbUFxdUNzVUszQXJ6Q3dzTA0KSWdzNUMxRUxhUXVBQzVnTHNB
+dklDK0VMK1F3U0RDb01Rd3hjREhVTWpneW5ETUFNMlF6ekRRME5KZzFBRFZvTmRBMk9EYWtOd3cz
+ZQ0KRGZnT0V3NHVEa2tPWkE1L0Rwc090ZzdTRHU0UENROGxEMEVQWGc5NkQ1WVBzdy9QRCt3UUNS
+QW1FRU1RWVJCK0VKc1F1UkRYRVBVUg0KRXhFeEVVOFJiUkdNRWFvUnlSSG9FZ2NTSmhKRkVtUVNo
+QktqRXNNUzR4TURFeU1UUXhOakU0TVRwQlBGRStVVUJoUW5GRWtVYWhTTA0KRkswVXpoVHdGUklW
+TkJWV0ZYZ1ZteFc5RmVBV0F4WW1Ga2tXYkJhUEZySVcxaGI2RngwWFFSZGxGNGtYcmhmU0YvY1lH
+eGhBR0dVWQ0KaWhpdkdOVVkraGtnR1VVWmF4bVJHYmNaM1JvRUdpb2FVUnAzR3A0YXhScnNHeFFi
+T3h0akc0b2JzaHZhSEFJY0toeFNISHNjb3h6TQ0KSFBVZEhoMUhIWEFkbVIzREhld2VGaDVBSG1v
+ZWxCNitIdWtmRXg4K0gya2ZsQisvSCtvZ0ZTQkJJR3dnbUNERUlQQWhIQ0ZJSVhVaA0Kb1NIT0lm
+c2lKeUpWSW9JaXJ5TGRJd29qT0NObUk1UWp3aVB3SkI4a1RTUjhKS3NrMmlVSkpUZ2xhQ1dYSmNj
+bDl5WW5KbGNtaHlhMw0KSnVnbkdDZEpKM29ucXlmY0tBMG9QeWh4S0tJbzFDa0dLVGdwYXltZEtk
+QXFBaW8xS21ncW15clBLd0lyTml0cEs1MHIwU3dGTERrcw0KYml5aUxOY3REQzFCTFhZdHF5M2hM
+aFl1VEM2Q0xyY3U3aThrTDFvdmtTL0hMLzR3TlRCc01LUXcyekVTTVVveGdqRzZNZkl5S2pKag0K
+TXBzeTFETU5NMFl6ZnpPNE0vRTBLelJsTko0MDJEVVROVTAxaHpYQ05mMDJOelp5TnE0MjZUY2tO
+MkEzbkRmWE9CUTRVRGlNT01nNQ0KQlRsQ09YODV2RG41T2pZNmREcXlPdTg3TFR0ck82bzc2RHdu
+UEdVOHBEempQU0k5WVQyaFBlQStJRDVnUHFBKzREOGhQMkUvb2ovaQ0KUUNOQVpFQ21RT2RCS1VG
+cVFheEI3a0l3UW5KQ3RVTDNRenBEZlVQQVJBTkVSMFNLUk01RkVrVlZSWnBGM2tZaVJtZEdxMGJ3
+UnpWSA0KZTBmQVNBVklTMGlSU05kSkhVbGpTYWxKOEVvM1NuMUt4RXNNUzFOTG1rdmlUQ3BNY2t5
+NlRRSk5TazJUVGR4T0pVNXVUcmRQQUU5Sg0KVDVOUDNWQW5VSEZRdTFFR1VWQlJtMUhtVWpGU2ZG
+TEhVeE5UWDFPcVUvWlVRbFNQVk50VktGVjFWY0pXRDFaY1ZxbFc5MWRFVjVKWA0KNEZndldIMVl5
+MWthV1dsWnVGb0hXbFphcGxyMVcwVmJsVnZsWERWY2hseldYU2RkZUYzSlhocGViRjY5WHc5ZllW
+K3pZQVZnVjJDcQ0KWVB4aFQyR2lZZlZpU1dLY1l2QmpRMk9YWSt0a1FHU1VaT2xsUFdXU1plZG1Q
+V2FTWnVoblBXZVRaK2xvUDJpV2FPeHBRMm1hYWZGcQ0KU0dxZmF2ZHJUMnVuYS85c1YyeXZiUWh0
+WUcyNWJoSnVhMjdFYng1dmVHL1JjQ3R3aG5EZ2NUcHhsWEh3Y2t0eXBuTUJjMTF6dUhRVQ0KZEhC
+MHpIVW9kWVYxNFhZK2RwdDIrSGRXZDdONEVYaHVlTXg1S25tSmVlZDZSbnFsZXdSN1kzdkNmQ0Y4
+Z1h6aGZVRjlvWDRCZm1KKw0Kd244amY0Ui81WUJIZ0tpQkNvRnJnYzJDTUlLU2d2U0RWNE82aEIy
+RWdJVGpoVWVGcTRZT2huS0cxNGM3aDUrSUJJaHBpTTZKTTRtWg0KaWY2S1pJcktpekNMbG92OGpH
+T015bzB4alppTi80NW1qczZQTm8rZWtBYVFicERXa1QrUnFKSVJrbnFTNDVOTms3YVVJSlNLbFBT
+Vg0KWDVYSmxqU1duNWNLbDNXWDRKaE1tTGlaSkptUW1meWFhSnJWbTBLYnI1d2NuSW1jOTUxa25k
+S2VRSjZ1bngyZmk1LzZvR21nMktGSA0Kb2JhaUpxS1dvd2FqZHFQbXBGYWt4NlU0cGFtbUdxYUxw
+djJuYnFmZ3FGS294S2szcWFtcUhLcVBxd0tyZGF2cHJGeXMwSzFFcmJpdQ0KTGE2aHJ4YXZpN0FB
+c0hXdzZyRmdzZGF5UzdMQ3N6aXpyclFsdEp5MUU3V0t0Z0cyZWJid3QyaTM0TGhadU5HNVNybkN1
+anU2dGJzdQ0KdTZlOElieWJ2Ulc5ajc0S3ZvUysvNzk2di9YQWNNRHN3V2ZCNDhKZnd0dkRXTVBV
+eEZIRXpzVkx4Y2pHUnNiRHgwSEh2OGc5eUx6Sg0KT3NtNXlqakt0OHMyeTdiTU5jeTF6VFhOdGM0
+MnpyYlBOOCs0MERuUXV0RTgwYjdTUDlMQjAwVFR4dFJKMU12VlR0WFIxbFhXMk5kYw0KMStEWVpO
+am8yV3paOGRwMjJ2dmJnTndGM0lyZEVOMlczaHplb3Q4cDM2L2dOdUM5NFVUaHpPSlQ0dHZqWStQ
+cjVIUGsvT1dFNWczbQ0KbHVjZjU2bm9NdWk4NlVicDBPcGI2dVhyY092NzdJYnRFZTJjN2lqdXRP
+OUE3OHp3V1BEbDhYTHgvL0tNOHhuenAvUTA5TUwxVVBYZQ0KOW0zMisvZUsrQm40cVBrNCtjZjZW
+L3JuKzNmOEIveVkvU245dXY1TC90ei9iZi8vLys0QURrRmtiMkpsQUdUQUFBQUFBZi9iQUlRQQ0K
+QmdRRUJBVUVCZ1VGQmdrR0JRWUpDd2dHQmdnTERBb0tDd29LREJBTURBd01EQXdRREE0UEVBOE9E
+Qk1URkJRVEV4d2JHeHNjSHg4Zg0KSHg4Zkh4OGZId0VIQndjTkRBMFlFQkFZR2hVUkZSb2ZIeDhm
+SHg4Zkh4OGZIeDhmSHg4Zkh4OGZIeDhmSHg4Zkh4OGZIeDhmSHg4Zg0KSHg4Zkh4OGZIeDhmSHg4
+Zkh4OGYvOEFBRVFnQUlBRUFBd0VSQUFJUkFRTVJBZi9FQWFJQUFBQUhBUUVCQVFFQUFBQUFBQUFB
+QUFRRg0KQXdJR0FRQUhDQWtLQ3dFQUFnSURBUUVCQVFFQUFBQUFBQUFBQVFBQ0F3UUZCZ2NJQ1Fv
+TEVBQUNBUU1EQWdRQ0JnY0RCQUlHQW5NQg0KQWdNUkJBQUZJUkl4UVZFR0UyRWljWUVVTXBHaEJ4
+V3hRaVBCVXRIaE14Wmk4Q1J5Z3ZFbFF6UlRrcUt5WTNQQ05VUW5rNk96TmhkVQ0KWkhURDB1SUlK
+b01KQ2hnWmhKUkZScVMwVnROVktCcnk0L1BFMU9UMFpYV0ZsYVcxeGRYbDlXWjJocGFtdHNiVzV2
+WTNSMWRuZDRlWA0KcDdmSDErZjNPRWhZYUhpSW1LaTR5TmpvK0NrNVNWbHBlWW1acWJuSjJlbjVL
+anBLV21wNmlwcXF1c3JhNnZvUkFBSUNBUUlEQlFVRQ0KQlFZRUNBTURiUUVBQWhFREJDRVNNVUVG
+VVJOaElnWnhnWkV5b2JId0ZNSFI0U05DRlZKaWN2RXpKRFJEZ2hhU1V5V2lZN0xDQjNQUw0KTmVK
+RWd4ZFVrd2dKQ2hnWkpqWkZHaWRrZEZVMzhxT3p3eWdwMCtQemhKU2t0TVRVNVBSbGRZV1ZwYlhG
+MWVYMVJsWm1kb2FXcHJiRw0KMXViMlIxZG5kNGVYcDdmSDErZjNPRWhZYUhpSW1LaTR5TmpvK0Rs
+SldXbDVpWm1wdWNuWjZma3FPa3BhYW5xS21xcTZ5dHJxK3YvYQ0KQUF3REFRQUNFUU1SQUQ4QTdW
+K2Evd0NaUThwMktXbGdGazF1N1V0Q0czV0dPdFBWWWQ5OWxIajhxSEgxR2ZnRkRtN25zanN2OHpM
+aQ0KbC9keCszeS9Xa0hsVDhxQjVrMG1IWGZPbDllWHQvcUNpYUtBeWxWampmZEs3RThpdllVQXJT
+bVZZOVB4QzVubTVtcjdYOENaeDRJeA0KakdPM0xtamIzOHMvTUhsZFcxTHlIcXR3REQ4YjZKZE42
+a013RzVWZnNpdE9sUlgvQUNoa2pnbERlQitEVkR0VEZxUFJxWWpmK0liRQ0KZmo4Qmxua1B6cmEr
+YTlKYTRFUnRkUXRYOUhVYkZxOG9wUjh3RHhhbTMwanFNdXhaZU1lYnJ1ME5DZFBPcnVKM2llOE1s
+eTF3R0krZg0KL3dBMWZKWGtINmgvaWE3ZTEvU1hxL1ZPRU1zM0wwT0hxVjlOV3BUMVY2NG9KU1BX
+ditjaS93QW85RytwaTgxcjk1ZlcwTjdGRkZCTg0KSzZ3M01ZbGlNb1JEd1prWUhpM3hlMksybVZ6
+K2QzNVcyL2xXSHpUSnI4QjBlNGRvWUpGV1JwbmxRVmFNUUJmV0RBRUVncUtBZ25ZNA0KcmJ2Slg1
+MS9scDUwdnpwdWdhd3MybzBMTFp6Unl3U3VxamtUR0pWUVBRQWs4U1NCaXRxVWY1NC9sdS9uQ1h5
+Z2RTYVBXNEpwb0pvNQ0KSVpVaVI3ZFdlWGxNeWlNS3FvVHlyVEZiUlhsTDg0UHkrODNlWWJyUVBM
+dXAvcEMvczRYdVppa1VxeGVuRzZSc3l5dXFvM3hTcjlrNw0KOXNWdEQ2dCtkdjVkNlQ1MVh5WGYz
+OGtXdnRQYjJvdC9RbEtlcmRxalFneWhlRkNKVnFhN2Q4VnRLYm4vQUp5Wi9KZTMxSjdCOWY1UA0K
+SEo2VHp4Mjl4SkJ5Qm9TSkZqS3N0ZjJscVBveFcyWTYxNSs4cWFQNVFrODRYTitrdmwyTlkzK3Yy
+d053akxOS3NLRmZTNUZ2amNEYg0KcGltMk5SZjg1QmZsTy9sbHZNamEwSXRNRnk5bW5xUlNyTkpQ
+R2tjanJIRHg5UitLekpWZ3RCWGM0b3Q0ditmczM1VStlZFM4dmVZcg0KenpsTm90dmQ2YWZxRVkw
+cWU3TXNTM01xbVFrU1FsUGpWbDRrZHE0VUY5STZuNW04dCtWL0xjV3A2M3FNVmpwa01VYWk2blBE
+bjhIdw0KaFUzWm1ZRFpWQk9Ca3dlMC93Q2NuL3lWdXJ4TFZkZWFJeU54V2FhMXVZNHFrMEJMdEhS
+Ujd0VDN4UmIwKzB1N1M4dFlydXptanViVw0KZFJKQmNRc0hqZEdGUXlPcElZSHhHS1huM21YL0FK
+eUYvS1B5N3FVbW0zK3VwSmV3a3JQSGFSUzNJallHaFZuaVZrNUE3RmVWUjN4Ug0KYkkvSmY1aWVU
+UE90bkpkZVdkVWkxQklhZXZFb2FPYUxsV25xUlNCSkZyUTBKRkQyeFRhZlhkM2EyZHRKZFhVcVFX
+MEtsNVpwR0NvcQ0KanFTVHNNQk5jMlVJR1JBQXNsaGN2NTEvbHhITVl2MG16ME5ESWtFNVg3K0cv
+d0JHVWZtb2Q3dFIySHFpTDRmdEg2MlIyM21yeS9kNg0KSFBybHBlSmM2WmJSeVN6enhWWXFzUzgz
+QlduSU1GMzRrVnkwWklrV09UZ3kwbVNPUVk1Q3BuOUtTVy81dWVRcHRPdU5SR3BjTFcyZA0KSW5M
+eFNLeGVRRXFxSng1TnNwNkRidmxZMUVLdTNLbDJQcVJJUjRkejVoRWVYL3pPOGs2L2VDeTA3VVZO
+NDM5M0JLanhNL2Y0T1lVTQ0KZllHdVNobmhJMEN3MUhaZW93eDRwUjlQelpGZlgxbFlXa2wzZXpw
+YldzSTVTelNzRlJSN2s1WVNBTExoWThjcGtSaUxKWVkzNTJmbA0Kd3N4ai9TYkVBMDlRVzg1WDUv
+WXJUNk1vL05RNzNhRHNQVlZmRDlvL1d5cURYOUh1ZEhmV0xXNlM0MDZPTjVXdUlqekhHTUZtMkc5
+UQ0KQjA2NWNKZ2kranJwYWVjWjhCRlM3a2owL3dETlR5TmZXRjdmeGFpSTdUVC9BRXhjeVN4eVIw
+TTNMZ0ZVcnljbmdkbEJPVmpQQWdtKw0KVG1aT3lkUkNRaVk3eXV1WFJTbC9NL3lqYytXN25WYlhV
+aERFVE5iVzBzcU5HVGNwRUpPS2hodjl0Y0hqeE1iQlNPeXM4Y29nWTN5Sg0KOTF2UHZ5cS9OaTdr
+MUMrSG0vV3dMWVJMOVY5ZFVVYytXOU9DanRtUHA5UWJQRVhkZHJka1JFWStCRGU5NlNEeldKTmQw
+N3pINXRtSQ0KSzNXcXc2VnA3djBqdDRxdVNQQ3ZHUGYvQUZzcnllb0dYblRtYVNzTXNlQWRJR1I5
+NS9CK3g5SHhva1VheG9Bc2FBS283QUFVR2JONA0KY216Ykc5Vy9NdnlKcFVwaXZkWmdFcW1qeHhj
+cDJVK0RDRVNFZlRsVXM4QnpMbllleTlSa0Z4Z2Z1KytubmRsNTI4bndmbTNEcWVpNg0KbEdOSzFx
+M2FMVjJkWHQ0MG5VRXBJZldXTWZFVlhmeEo4Y3hobGo0bGc3SG03dWVoem5SR0dTUHJnZlQxMitG
+L2ludEVja2NzYXlSTw0KSGpjVlYxSUlJUGNFWm5QTEVFR2krWGYrYzRQK21MLzdlZjhBMktZUXdr
+cStYLzhBbkgzOHY3cjhnRzh3WFZxOHZtVzQwaVhWWXRUOQ0KYVVHT1VRdE5GR3NZWVI4QUFGWUZT
+VHZ2MG9yV3p6Ly9BSnhmL0sveTE1Njh4Nm8vbVNFM21uYVJCSElsajZqeHE4MDdFS3ptTXEzRg0K
+UkdkZ1JVMHJ0dGlnQkErZXZMbW4vbDkvemtMYldQbHZuYldkbGY2ZGMyY1JkMk1ZbDlLUm8rYkVz
+eTFZajRqOW5ZMXhYcWdQT25sNg0KODh5Zjg1Q2F6b0ZuTDZFK3FhN1BhZXZ1UWlTeWxaR0lCRlFF
+SkpIZkZlcjYyL0xUOGgvSkg1ZWFpK3FhSzEzTHFVdHExblBjWE1vYw0KUEc3cEl4NEtxS0R5aVhw
+Z1pBUGw3OC90Smwxbi9uSkhVOUloZjA1dFJ1dEx0STVLVjR0UGFXc1lOQjRGc0xFODN0WDVqZjhB
+T01YNQ0KYVduNWNhbEpvbGs5bnJPazJjbDFCcVRUeXU4elc4WmQxbVZtTVo5WGoreW80bjdOQnRp
+a2g0WDVKOHozMHY1Qy9tTjVabWRuczdiOQ0KR1gxbXBOUkcwbW93eHpBVjdOUkRUeHI0NG82Snov
+empsK1Jtay9tSEJxT3ErWUxtZE5IMDZaWUlMUzJjSTBzN3FIa0xNUXhWVlRqMA0KRldyMUZNVkFX
+LzhBT1UvbGZTdksydWVWdEEwbFhYVHJEU0NsdXNqYzNBYTdtYzFZOWZpWTRxVy96KzFUVmZPSDV1
+NlI1TGpuNDJ0bQ0KdW5hYlpJRFdNVDM4Y1R5U2tEOXJsTXFuL1Z4VXZhdk5mL09LUDVkM2ZrNTlN
+OHVXZ3NOZmlSUHFtcnp6VHVYa1VqbVp4VmxJY1ZyeA0KUVVQMmFZR1ZNVDF6U2ZQdjVNZmtEcmVr
+M3VydzNjdDlkeDJ1anpXclNrMnlYWUp1VlhtcUZLcWpGYWRHWW5yaFJ5RHliOHBkWC9JVA0KU3RL
+dUpmUCttWDJyYXpOS1JESEVwTnZGQUFBS2Nab2VUc2ExTERiYW5mRkFwVDhrZWJ0RThzL25uWWFs
+NUtrdUlmTE4xZncyeXdYZg0Kd3lmVTd0a1NhS1FjbXFJeXg0RXNmc3FUdmlyNjQvTy9TZFkxUHlR
+MGVtUnlUTkRjeHozVU1RSlpvVlZ3ZmhHN2NYWldwN1Z6RjFVUw0KWWJPODdDelF4Nmk1bXJCQTk3
+eDd5bDVrL0w2MTBXWFNQTXVnTk5PNWNIVllPTFRyeTJId3VVSzhQWnZvekR4emdCVWc5UHJOTHFa
+Wg0KQlBGa29melR5L0JadDVTMFh5bmFlVFBOdDU1ZDEyWFVZNXRKdVV1cktaQkUwYkNGeWpzblgr
+WUE5TXZ4eGlJeU1UZXpxZFpuelN6NA0KbzVZQ05URkViOVF4bjhsUEkyamVaOVMxQ2ZWNHpjV21u
+SkZ4dHVUSUdrbUxjU3hVZzBVUm5hdVZhWEVKazMwYy90elh6d1FpSWJTbA0KZS91L3RYL25ONUow
+dnlscTJtWDJoSzFwQmVDUmxpVjNiMHByY29lU014TEN2cUFqZllqSFU0aEFnaEhZbXVucVlTamsz
+TWZ0QmQrYg0KL25MVU5Zc1BMVm83OFlwdE9oMUc2UmRnMXhNQ3U0L3llQjQvNjJPb3lHUUE4clhz
+YlJSeHl5UzZpWmlQY1B4OWowYXgvSXp5WC9oeQ0KS3l1clp6cWp3ajF0UkVrbnFMTVYzWlU1Y0tL
+ZWk4ZW5YZmZNa2FXUERYVjBlVHQ3UDRwa0Q2TCtueSs5NWY4QWxscTE5cHQzNWk4dg0KeU9UYjNX
+blh3ZUd0VkU5dkV4NWovWXF3OTl2RE1YQklnbVBrWG9PMU1NWnh4NVJ6RTQvSWxCL2xWNUhqODM2
+MVBaM2M4a09tV3NZbg0KdWxpTkdkcThJMUZhZ2ZhYmVoMitlUjArTGpOSGsyOXJhODZiR0pSRnpP
+dy9TOXB2dnlxOGxXbmxPNjAvNm84MXZibWUrZ0VrMGxWbg0KTUlUbFZHU3UwWTJPWngwOEJHbmxz
+ZmEyZVdZU3VpYWp5SEsvMnZLUHlVOG8rWHZNdXFhbEJyVnA5Yml0NEVlRmZVbGpveGVoTlltUQ0K
+bmJ4ekQwdU9NaWJlaTdjMW1YQkNKeG1yUGwrbDExckduNlorWEdwK1J0V2ptdHZNTnJlK3BER1l5
+VWY5NHJjZ3c3RlFhZU94R0prQg0KQXdQTzFoaGxrMVVkUkFnNHpIOURNZEdpODYvbWZZd3o2aGVE
+Ui9Lb0hweVFXamhwN3A0L2hmbWV3NUEvYUZQOGs5Y3ZqeDVSdnRGMQ0KZWM0TkJJaUk0ODNueWor
+UHdXYTIzazM4dlBLZW1TWGIyRnJCYjJ5Y3ByMjZVU3lVSGZuSUdhcFBaZXA2REx4amhBWFRxNWEz
+VmFpZg0KRHhTSlBRYlBMUE91bzZyNXYwZTZ2ZkxmbGFLTHk5YUdoMUpyZUkzVW9Cb3pRaW5JS1Ay
+dUZhZHlPbVltV1JtTGpIMHZRYUhGRFRURQ0KY3VVbklmNGJQQ1BmKzFRL0x6V20wZnpOb2VuZVdO
+WXVOWXM5VGZqcXVtelc3UXBBQ1J5Y0F2SXZKVnF4S0h0dVRYQmhsd3lBaWJ0bg0KMmxnOFhGT1dh
+QWhLUDB5QnUvdSsxSWYrYzRQK21MLzdlZjhBMktac3c4Uko2bDVZL3dEV2FiYi9BTUJaL3dEcUNi
+QW5vOGkvNXdqLw0KQU9PcDVzLzR3V1gvQUJPYkNVUll0L3prQi82MGtQOEFqUHBYL0p1SEZCNXUw
+My8xcnAvL0FBSXJqL2lUNHIxZmJHQm0rRnYrY2duMQ0KT1A4QTV5TjFXVFNsTGFtbHpwaldDcUFT
+WnhaMnhpQUIyUHgwd3NEelp2NS8vd0NjdHBOVjhsWC9BSmV0ZEFuMHp6QmZRdlk2Zzg3Zw0KeHdC
+MU1jL3ByUlpDOUNRT1FISDNwaW0yTjZIK1cycytYdjhBbkhMeng1bDFtMmUwbTFzYVpIcDl2S0Nz
+Z3RvdFFoWXlzcDNBbFp4eA0KcjJXdlFqRkZiUFVmK2NMUCtVQzF6L3Rxbi9xSGl4S1lzQi81elQv
+NVQzUS8rMlVQK29pWEVMSnYvbkpIeUI1ajBYelRwbjVrNlJDOA0KMWxORFpTM1Z3aWx4YlhkbkhH
+a1prSFpIU05LSHBVRUh0VlVoTVBPUC9PWVUycitUSk5OMExTcmpTL01sNGl4U1h3bFV4d1ZwemFB
+cg0KOGJNZHd0UUtkZDhhWGlaRm9uNVgvbVg1eS9JWFY3YnpiZlhkMTVrMU9XTy8wTzAxR1ZtZUZi
+WUF4bzNxSDkyMDRMaWg2Vld2Y0JXdA0Kbm0zNVUvbkJwSDViNmRmZVZ2T25sRTNsekJjUExHOGtN
+UzNVVHNxaG9aVW5VSGpWYWcxMnIwT0tBV2NmbForWVBuYjh4L3pIamJSLw0KTGVtNlY1TnRwbG12
+SlRZeFNOREZHQWZUK3NsVnJOS3cyNGlvclhvSzRwQmU1Zm1kZStjckR5K0wvd0FyR3R4YlNjcnlJ
+UnJLelFjVA0KVmxWZzMyVFN0TzJVWnpJUnVMdGV5b1lKNWVITnlQTGV0M21DL210NUwxZnk4OXY1
+dzBNM3V0aEdScnFHS0ZTNU5lTExMVkhpUGpRSA0KK0dZbjVpTW8rb2J1L1BaR2ZIbHZCUGh4OXhK
+KzdxazM1WjZEcS82SDgxYTJZbWowc2FKZjJ3bWFvRWtqeDhncS93QTNIaFVuSVlJRw0KcEhwUmNy
+dFRVUTQ4V08vWDRrVDlxRi9LN3p0ZitVYmkvd0JRK295WHVqeWlLTFVUSHNZM0pjd055TzM4NG9l
+dVJ3WlRDeld6WjJybw0KWTZrUmp4Y005Nit5L3dCQ0o4NithZFUvTTd6SFlXT2o2ZklzZHVycGF3
+RWhucklRWkpaR0h3cXRGWHZ0VEpaY2h5eUFBYTlEcElhRA0KRktXU1hQbitnQmt2NXY4QTViWDhH
+aWFMZjZiRzEydWtXTWVuM3dRRXNJNFFXV2JpUDJlVE55OE51M1MzVVlUUUk2QndPeHUwNG5KTw0K
+TTl1T1hFUGowKzV1eS81eUdFSGx5TzJrMHg1TmFpaEVTemMxOUJuVmVJa1lmYTl5djQ0aldlbmx1
+cy9aeTh0aVhvSitQdVN2OHNmSg0KMnFOcG12OEFtdlVJM2l0LzBiZVIyUmtIRnBaSlltNXlMWDlr
+TFVWN2sreHlHREdhTWozT1IycnJZY2VQREU3OGNiOHFQSk12K2NiZg0KOTdkZC93Q01WdjhBOFNr
+eWVpNWxvOXB2cGg3eitoN1ZxME1rMmxYc01RNVNTUVNvaStMTWhBR1owaHM4cmhrQk1FOTRmTXY1
+YWVlbw0KL0pHcjMwdDdaU1RyUEY2RWtTa0pJa2lQWGNOOUlPYXJCbDhNbXc5NzJwb0Rxb1JFWkFV
+YmZVTFF3czRrYU5USUJRT1FDUVBubTJwOA0KL3dDSThubWMzbHJ6ajVIMW02di9BQ2ZhcHF1Z1g3
+K3JjNkl6aU40WDdtRWs5UENsZHRpRFFITVF3bGpOeDNIYzc2T3F3YXVBam5QQg0Ka2p5bDMrLzhm
+RjBmbER6ZjUyMVNHOTg3eHJwMmgycmM3WFFJWk9Sa2IrYVowUDhBR3ZZQmNmRGxNM1BZZHluV1lO
+TEF4MC9xeUhuTQ0KL28vSHplbVFRUXdRcEJBaXhReEtFampRQlZWVkZBQUJzQUJtV0E2R1VpVFo1
+cklyS3ppbWVhS0NPT2FUKzhsVkZWbXJ2dXdGVGdvSg0KTTVFVVRzaHRWOHY2RHEvcGZwYlRiWFVQ
+UTVlajliZ2puNGM2Y3VQcUszSGx4RmFlR0ZpaUk5UHNJN0VhZkhiUkpZQ1AwUmFLaWlFUg0KVTQ4
+UFRBNDhhYlVwVEZVTnBYbDN5L3BEU05wT21XbW50TUFKVGF3Undsd3RhY3ZUVmEwcjN4VlR2UEt2
+bGU5dnZyOTdvOWpjMzFWUA0KMXVhMmlrbHFsT1A3eGxMZkRUYmZGWEw1VjhycnFYNlRYUjdFYWx6
+TXYxNFcwUW45UTlYOVhqejVlOWNWVFRGWHloK1puNVgvQUpnYQ0Kbi96a2NmTVZob2R6Y2FIK2tk
+Sm0rdm9CNmZwd1EyeXl0V3RhSVkycjhzTEVqZDlQVCtXdkxseGZycU54cFZuTnFDRUZieVMzaWFZ
+RQ0KZEtTRlMzNDRHU0t2OVBzTlJ0SHM5UXRvcnkwbHA2dHZPaXl4dHhJWmVTT0Nwb3dCR0txV2w2
+TG8ya3d2RHBWaGI2ZkRJM040N1dKSQ0KVlpxVTVFUmhRVFFkY1ZVZFU4cytXOVdtU2JWZEpzOVFt
+alhna2wxYnhUTXExcnhCa1ZpQlU5TVZURUlnVDB3b0NBY2VOTnFkS1V4Vg0KTExYeXI1WHM3ejY3
+YWFQWTI5NVd2MW1LMmhTV3AveTFVTitPS3BwaXFBMVR5OW9HckZEcXVtV21vR1A3QnVvSTV1UHk5
+UldwMXhWRg0KVzFyYldzS3dXc0tRUUo5aUtKUWlENUt0QmlxcmlxQnVOQjBPNW4rc1hHbldzMDlh
+K3JKREd6MThlUkJPUk1BZWpkSFVaSWloS1FIdg0KS0c4MldjMXo1UjFteXRJdWMwMm4zTU52Q2cz
+TE5DeW9xajNKcGd5QzRrRHVaNk9Zam1oS1IyRWdUODNuZjVGK1V0YzBlUFhvOWMwNQ0KN2FPN0Zx
+STBuVUZaQW5yY3hUZXRPUXpHMHVNeHV3N3Z0L1dZOHBnY2Nycmk1ZkI2bFphWHBsZ0dGamFRMm9m
+N1lnalNPdFBIaUJtVw0KSWdjbm41NVp6K29rKzhvbkMxb0Z0QjBKcmo2eTJuV3JYTmErdVlZeTlm
+SGx4cmtlQWR6Y05Sa3F1S1ZlOG95U09PU05vNUZEeHVDcg0Kb3dCVXFSUWdnOVFjazFBa0d3aHJI
+U05Lc0M1c2JLQzBNbEJJWUlrakxBZEs4UUswcmdFUU9UUEptblA2aVQ3eWk4TFdnYnJRdEV1NQ0K
+dlh1dFB0cmliL2Zzc01idC93QUV3SnlKZ0QwYllhakpFVUpFRDNsLy85az08L3htcEdJbWc6aW1h
+Z2U+DQoJCQkJCTwvcmRmOmxpPg0KCQkJCTwvcmRmOkFsdD4NCgkJCTwveG1wOlRodW1ibmFpbHM+
+DQoJCQk8eG1wTU06SW5zdGFuY2VJRD54bXAuaWlkOmRhZDUxZTQ0LWZjMWQtNDkyZS04N2E3LTFm
+M2U4NTQwOGViMjwveG1wTU06SW5zdGFuY2VJRD4NCgkJCTx4bXBNTTpEb2N1bWVudElEPnhtcC5k
+aWQ6ZGFkNTFlNDQtZmMxZC00OTJlLTg3YTctMWYzZTg1NDA4ZWIyPC94bXBNTTpEb2N1bWVudElE
+Pg0KCQkJPHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD51dWlkOjVEMjA4OTI0OTNCRkRCMTE5MTRB
+ODU5MEQzMTUwOEM4PC94bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ+DQoJCQk8eG1wTU06UmVuZGl0
+aW9uQ2xhc3M+ZGVmYXVsdDwveG1wTU06UmVuZGl0aW9uQ2xhc3M+DQoJCQk8eG1wTU06RGVyaXZl
+ZEZyb20gcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPg0KCQkJCTxzdFJlZjppbnN0YW5jZUlEPnht
+cC5paWQ6OGY2YjhlM2ItZTM3OS00YTczLWFhOWQtMzJlMzNiN2UzZWU5PC9zdFJlZjppbnN0YW5j
+ZUlEPg0KCQkJCTxzdFJlZjpkb2N1bWVudElEPnhtcC5kaWQ6OGY2YjhlM2ItZTM3OS00YTczLWFh
+OWQtMzJlMzNiN2UzZWU5PC9zdFJlZjpkb2N1bWVudElEPg0KCQkJCTxzdFJlZjpvcmlnaW5hbERv
+Y3VtZW50SUQ+dXVpZDo1RDIwODkyNDkzQkZEQjExOTE0QTg1OTBEMzE1MDhDODwvc3RSZWY6b3Jp
+Z2luYWxEb2N1bWVudElEPg0KCQkJCTxzdFJlZjpyZW5kaXRpb25DbGFzcz5kZWZhdWx0PC9zdFJl
+ZjpyZW5kaXRpb25DbGFzcz4NCgkJCTwveG1wTU06RGVyaXZlZEZyb20+DQoJCQk8eG1wTU06SGlz
+dG9yeT4NCgkJCQk8cmRmOlNlcT4NCgkJCQkJPHJkZjpsaSByZGY6cGFyc2VUeXBlPSJSZXNvdXJj
+ZSI+DQoJCQkJCQk8c3RFdnQ6YWN0aW9uPnNhdmVkPC9zdEV2dDphY3Rpb24+DQoJCQkJCQk8c3RF
+dnQ6aW5zdGFuY2VJRD54bXAuaWlkOmEwNzQwMTIyLTA2MzctNDhlZS1iODUxLTg1OWU3YTg1MmNm
+YTwvc3RFdnQ6aW5zdGFuY2VJRD4NCgkJCQkJCTxzdEV2dDp3aGVuPjIwMjAtMDktMTVUMDk6Mzc6
+MzArMDI6MDA8L3N0RXZ0OndoZW4+DQoJCQkJCQk8c3RFdnQ6c29mdHdhcmVBZ2VudD5BZG9iZSBJ
+bGx1c3RyYXRvciAyNC4yIChNYWNpbnRvc2gpPC9zdEV2dDpzb2Z0d2FyZUFnZW50Pg0KCQkJCQkJ
+PHN0RXZ0OmNoYW5nZWQ+Lzwvc3RFdnQ6Y2hhbmdlZD4NCgkJCQkJPC9yZGY6bGk+DQoJCQkJCTxy
+ZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPg0KCQkJCQkJPHN0RXZ0OmFjdGlvbj5zYXZl
+ZDwvc3RFdnQ6YWN0aW9uPg0KCQkJCQkJPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDpkYWQ1MWU0
+NC1mYzFkLTQ5MmUtODdhNy0xZjNlODU0MDhlYjI8L3N0RXZ0Omluc3RhbmNlSUQ+DQoJCQkJCQk8
+c3RFdnQ6d2hlbj4yMDIwLTA5LTE3VDE2OjM5OjIxKzAyOjAwPC9zdEV2dDp3aGVuPg0KCQkJCQkJ
+PHN0RXZ0OnNvZnR3YXJlQWdlbnQ+QWRvYmUgSWxsdXN0cmF0b3IgMjQuMiAoTWFjaW50b3NoKTwv
+c3RFdnQ6c29mdHdhcmVBZ2VudD4NCgkJCQkJCTxzdEV2dDpjaGFuZ2VkPi88L3N0RXZ0OmNoYW5n
+ZWQ+DQoJCQkJCTwvcmRmOmxpPg0KCQkJCTwvcmRmOlNlcT4NCgkJCTwveG1wTU06SGlzdG9yeT4N
+CgkJCTxpbGx1c3RyYXRvcjpTdGFydHVwUHJvZmlsZT5QcmludDwvaWxsdXN0cmF0b3I6U3RhcnR1
+cFByb2ZpbGU+DQoJCQk8aWxsdXN0cmF0b3I6Q3JlYXRvclN1YlRvb2w+QWRvYmUgSWxsdXN0cmF0
+b3I8L2lsbHVzdHJhdG9yOkNyZWF0b3JTdWJUb29sPg0KCQkJPHBkZjpQcm9kdWNlcj5BZG9iZSBQ
+REYgbGlicmFyeSAxNS4wMDwvcGRmOlByb2R1Y2VyPg0KCQk8L3JkZjpEZXNjcmlwdGlvbj4NCgk8
+L3JkZjpSREY+DQo8L3g6eG1wbWV0YT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAog
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hw
+YWNrZXQgZW5kPSd3Jz8+/+IMWElDQ19QUk9GSUxFAAEBAAAMSExpbm8CEAAAbW50clJHQiBYWVog
+B84AAgAJAAYAMQAAYWNzcE1TRlQAAAAASUVDIHNSR0IAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1I
+UCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARY3BydAAA
+AVAAAAAzZGVzYwAAAYQAAABsd3RwdAAAAfAAAAAUYmtwdAAAAgQAAAAUclhZWgAAAhgAAAAUZ1hZ
+WgAAAiwAAAAUYlhZWgAAAkAAAAAUZG1uZAAAAlQAAABwZG1kZAAAAsQAAACIdnVlZAAAA0wAAACG
+dmlldwAAA9QAAAAkbHVtaQAAA/gAAAAUbWVhcwAABAwAAAAkdGVjaAAABDAAAAAMclRSQwAABDwA
+AAgMZ1RSQwAABDwAAAgMYlRSQwAABDwAAAgMdGV4dAAAAABDb3B5cmlnaHQgKGMpIDE5OTggSGV3
+bGV0dC1QYWNrYXJkIENvbXBhbnkAAGRlc2MAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAA
+AAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAADzUQABAAAAARbMWFlaIAAAAAAAAAAAAAAAAAAAAABY
+WVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAA
+ts9kZXNjAAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAAAAAAAAAAABZJRUMgaHR0cDov
+L3d3dy5pZWMuY2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ZGVzYwAAAAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3BhY2UgLSBzUkdC
+AAAAAAAAAAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3BhY2UgLSBzUkdC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRp
+dGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRp
+b24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB2aWV3AAAAAAATpP4A
+FF8uABDPFAAD7cwABBMLAANcngAAAAFYWVogAAAAAABMCVYAUAAAAFcf521lYXMAAAAAAAAAAQAA
+AAAAAAAAAAAAAAAAAAAAAAKPAAAAAnNpZyAAAAAAQ1JUIGN1cnYAAAAAAAAEAAAAAAUACgAPABQA
+GQAeACMAKAAtADIANwA7AEAARQBKAE8AVABZAF4AYwBoAG0AcgB3AHwAgQCGAIsAkACVAJoAnwCk
+AKkArgCyALcAvADBAMYAywDQANUA2wDgAOUA6wDwAPYA+wEBAQcBDQETARkBHwElASsBMgE4AT4B
+RQFMAVIBWQFgAWcBbgF1AXwBgwGLAZIBmgGhAakBsQG5AcEByQHRAdkB4QHpAfIB+gIDAgwCFAId
+AiYCLwI4AkECSwJUAl0CZwJxAnoChAKOApgCogKsArYCwQLLAtUC4ALrAvUDAAMLAxYDIQMtAzgD
+QwNPA1oDZgNyA34DigOWA6IDrgO6A8cD0wPgA+wD+QQGBBMEIAQtBDsESARVBGMEcQR+BIwEmgSo
+BLYExATTBOEE8AT+BQ0FHAUrBToFSQVYBWcFdwWGBZYFpgW1BcUF1QXlBfYGBgYWBicGNwZIBlkG
+agZ7BowGnQavBsAG0QbjBvUHBwcZBysHPQdPB2EHdAeGB5kHrAe/B9IH5Qf4CAsIHwgyCEYIWghu
+CIIIlgiqCL4I0gjnCPsJEAklCToJTwlkCXkJjwmkCboJzwnlCfsKEQonCj0KVApqCoEKmAquCsUK
+3ArzCwsLIgs5C1ELaQuAC5gLsAvIC+EL+QwSDCoMQwxcDHUMjgynDMAM2QzzDQ0NJg1ADVoNdA2O
+DakNww3eDfgOEw4uDkkOZA5/DpsOtg7SDu4PCQ8lD0EPXg96D5YPsw/PD+wQCRAmEEMQYRB+EJsQ
+uRDXEPURExExEU8RbRGMEaoRyRHoEgcSJhJFEmQShBKjEsMS4xMDEyMTQxNjE4MTpBPFE+UUBhQn
+FEkUahSLFK0UzhTwFRIVNBVWFXgVmxW9FeAWAxYmFkkWbBaPFrIW1hb6Fx0XQRdlF4kXrhfSF/cY
+GxhAGGUYihivGNUY+hkgGUUZaxmRGbcZ3RoEGioaURp3Gp4axRrsGxQbOxtjG4obshvaHAIcKhxS
+HHscoxzMHPUdHh1HHXAdmR3DHeweFh5AHmoelB6+HukfEx8+H2kflB+/H+ogFSBBIGwgmCDEIPAh
+HCFIIXUhoSHOIfsiJyJVIoIiryLdIwojOCNmI5QjwiPwJB8kTSR8JKsk2iUJJTglaCWXJccl9yYn
+Jlcmhya3JugnGCdJJ3onqyfcKA0oPyhxKKIo1CkGKTgpaymdKdAqAio1KmgqmyrPKwIrNitpK50r
+0SwFLDksbiyiLNctDC1BLXYtqy3hLhYuTC6CLrcu7i8kL1ovkS/HL/4wNTBsMKQw2zESMUoxgjG6
+MfIyKjJjMpsy1DMNM0YzfzO4M/E0KzRlNJ402DUTNU01hzXCNf02NzZyNq426TckN2A3nDfXOBQ4
+UDiMOMg5BTlCOX85vDn5OjY6dDqyOu87LTtrO6o76DwnPGU8pDzjPSI9YT2hPeA+ID5gPqA+4D8h
+P2E/oj/iQCNAZECmQOdBKUFqQaxB7kIwQnJCtUL3QzpDfUPARANER0SKRM5FEkVVRZpF3kYiRmdG
+q0bwRzVHe0fASAVIS0iRSNdJHUljSalJ8Eo3Sn1KxEsMS1NLmkviTCpMcky6TQJNSk2TTdxOJU5u
+TrdPAE9JT5NP3VAnUHFQu1EGUVBRm1HmUjFSfFLHUxNTX1OqU/ZUQlSPVNtVKFV1VcJWD1ZcVqlW
+91dEV5JX4FgvWH1Yy1kaWWlZuFoHWlZaplr1W0VblVvlXDVchlzWXSddeF3JXhpebF69Xw9fYV+z
+YAVgV2CqYPxhT2GiYfViSWKcYvBjQ2OXY+tkQGSUZOllPWWSZedmPWaSZuhnPWeTZ+loP2iWaOxp
+Q2maafFqSGqfavdrT2una/9sV2yvbQhtYG25bhJua27Ebx5veG/RcCtwhnDgcTpxlXHwcktypnMB
+c11zuHQUdHB0zHUodYV14XY+dpt2+HdWd7N4EXhueMx5KnmJeed6RnqlewR7Y3vCfCF8gXzhfUF9
+oX4BfmJ+wn8jf4R/5YBHgKiBCoFrgc2CMIKSgvSDV4O6hB2EgITjhUeFq4YOhnKG14c7h5+IBIhp
+iM6JM4mZif6KZIrKizCLlov8jGOMyo0xjZiN/45mjs6PNo+ekAaQbpDWkT+RqJIRknqS45NNk7aU
+IJSKlPSVX5XJljSWn5cKl3WX4JhMmLiZJJmQmfyaaJrVm0Kbr5wcnImc951kndKeQJ6unx2fi5/6
+oGmg2KFHobaiJqKWowajdqPmpFakx6U4pammGqaLpv2nbqfgqFKoxKk3qamqHKqPqwKrdavprFys
+0K1ErbiuLa6hrxavi7AAsHWw6rFgsdayS7LCszizrrQltJy1E7WKtgG2ebbwt2i34LhZuNG5SrnC
+uju6tbsuu6e8IbybvRW9j74KvoS+/796v/XAcMDswWfB48JfwtvDWMPUxFHEzsVLxcjGRsbDx0HH
+v8g9yLzJOsm5yjjKt8s2y7bMNcy1zTXNtc42zrbPN8+40DnQutE80b7SP9LB00TTxtRJ1MvVTtXR
+1lXW2Ndc1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p36/gNuC94UThzOJT4tvjY+Pr5HPk
+/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A78zwWPDl8XLx//KM8xnzp/Q0
+9ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf///9sAQwACAQECAQECAgIC
+AgICAgMFAwMDAwMGBAQDBQcGBwcHBgcHCAkLCQgICggHBwoNCgoLDAwMDAcJDg8NDA4LDAwM/9sA
+QwECAgIDAwMGAwMGDAgHCAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+DAwMDAwMDAwM/8AAEQgAQwEhAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYH
+CAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHw
+JDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6
+g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk
+5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIB
+AgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEX
+GBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKT
+lJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX2
+9/j5+v/aAAwDAQACEQMRAD8A/fyiiigAoooLbRQAUUm8ZpaACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooJwKAMvxr400v4de
+E9S17XNQtNJ0XR7aS8vr26kEcNrCilndmPAAAJr4C8N/8FTvjN+318U9Z8O/su+AvC8PhvQMLe+M
+PHbzx2p3Z2EQQkPGX2sUUiVyuGeOPkBP+CyPj+++O3xb8M/APT5rqPw3pvh+9+JfxANuxDTaZp6y
+SW1qxB4WWeHBzyrvbvjjn1L/AIIUfDC0+G//AATS8BXEMCR33iprvXtQlUYNzNLcOiMfcW8UCfSM
+V49TEVK+K+r03yxV7tbtq2i7LVa+qP2DLsjy7JOF/wDWHH0lXxNWUI0qc78kIz9papNJrmk1TlaL
+fKk4Saley5HxB8ff22P2VLb+2/Hfw3+F/wAYvClqDJf/APCBXN3b6vZx93Ec65l29dkcLE92UZI+
+nf2R/wBsPwL+2z8JLfxl4D1Rr7T5H8i6tp0EV5pk4UM0FxHk7HAIOQSrAhlZlIJ9PZs5FfAP7Uvg
+6P8A4Jx/8FCvAHxq8LIul+BPjVrEfg74habCPLtTezlmtdS29Fff5kjsAP8AVydWuXJ2l7TDWnzO
+UOt9WvNPt3Tv3XY8bBywHEsZ4NYeFDGKMpU5U7xhUcU5OnODbSk0n7OUOVOVoyT5lJfoBRQp4r81
+/wDg7D1K50r/AII5+J5rW4uLWZfEmigSQyNG4BulB5BBr0j84P0oor+Z3/gl/wD8Ev8A9p7/AILD
+/wDBOWwtYfj5J8M/hH4Bu9R0nwvoQS7kXxNfPcSXlxc33kyx7kE1z5KTP5zII3CxLgtL5D/wSt+O
+f7ZH7QPxX1D9jPwL8Zde8H2via+mTWNV1C/uLy58H2unCY3i2U4cywJKwVSkBTzJBEN8SvKzOxHO
+f1gUV/KH+3B8Kv2iv+Da/wDbh8JzeHPjZrXiqPWLFPEVpepPdW9hr8aTMlxZahYvPIrjcoyC7grI
+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
+FFFABRRRQAUUUUAFFFFABRRRQB//2Q0K
+
+--000000000000884a9d06352b83f8--
