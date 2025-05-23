@@ -117,11 +117,50 @@ class MailProcessor:
             })
         for idx, mail in enumerate(thread, 1):
             mail['idx'] = idx
-        return thread
+        # 去重：按发件人+时间+主题唯一性
+        seen = set()
+        unique_thread = []
+        for mail in thread:
+            key = (str(mail['from']), str(mail['date']), str(mail['subject']))
+            if key not in seen:
+                seen.add(key)
+                unique_thread.append(mail)
+        # 兜底：如果thread为空，则用主邮件整体内容填充
+        if not unique_thread:
+            meta = {
+                "subject": mail.subject,
+                "from": mail.from_,
+                "to": mail.to,
+                "cc": mail.cc,
+                "date": mail.date,
+            }
+            unique_thread = [{
+                "subject": meta.get("subject", "未知"),
+                "from": meta.get("from", "未知"),
+                "to": meta.get("to", "未知"),
+                "cc": meta.get("cc", "未知"),
+                "date": meta.get("date", "未知"),
+                "body": body,
+                "attachments": mail.attachments,
+                "idx": 1
+            }]
+        return unique_thread
 
     def _split_mail_history(self, body: str) -> list:
         import re
-        # 匹配所有以From:或发件人：开头的历史邮件块，保留头部
-        pattern = r'((?:From:|发件人：)[\s\S]+?)(?=(?:From:|发件人：|$))'
-        matches = re.findall(pattern, body)
-        return [m.strip() for m in matches] if matches else [] 
+        # 1. 尝试From/发件人
+        pattern1 = r'((?:From:|发件人：)[\s\S]+?)(?=(?:From:|发件人：|$))'
+        matches = re.findall(pattern1, body)
+        if matches:
+            return [m.strip() for m in matches if m.strip()]
+        # 2. 尝试Original Message
+        pattern2 = r'(-----Original Message-----[\s\S]+?)(?=(-----Original Message-----|$))'
+        matches = re.findall(pattern2, body)
+        if matches:
+            return [m[0].strip() for m in matches if m[0].strip()]
+        # 3. 尝试On ... wrote:
+        pattern3 = r'(On .+?wrote:[\s\S]+?)(?=(On .+?wrote:|$))'
+        matches = re.findall(pattern3, body)
+        if matches:
+            return [m[0].strip() for m in matches if m[0].strip()]
+        return [] 

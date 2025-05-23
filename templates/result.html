@@ -22,11 +22,15 @@
         <div class="section">
             <h3>最新邮件</h3>
             <ul>
+            {% if result.timeline and result.timeline|length > 0 %}
                 <li><b>主题：</b>{{ result.timeline[0].subject }}</li>
                 <li><b>发件人：</b>{{ result.timeline[0].from }}</li>
                 <li><b>收件人：</b>{{ result.timeline[0].to }}</li>
                 <li><b>时间：</b>{{ result.timeline[0].date }}</li>
                 <li><b>摘要：</b>{{ result.overall_summary }}</li>
+            {% else %}
+                <li>未解析到任何邮件内容</li>
+            {% endif %}
             </ul>
         </div>
         {% if result.attachments and result.attachments|length > 0 %}
